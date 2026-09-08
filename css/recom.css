@@ -1,0 +1,10 @@
+/* === HEADER === */
+
+header {
+    background-color: #C9CBC0;
+    text-align: center;
+}
+
+header nav ul {
+    padding: 5vw 10vw;
+}
