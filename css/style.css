@@ -1,0 +1,71 @@
+/*  === CSS GERAL ===  */
+
+html {
+    font-family: 'bellefair';
+    /* títulos 
+    font-family: 'caesar dressing' 
+    */
+}
+
+
+/* === HEADER === */
+
+header {
+    background-color: #C9CBC0;
+    text-align: center;
+}
+
+header nav ul {
+    padding: 1vw 10vw;
+}
+
+header nav ul li {
+    padding: 1.2vw;
+}
+
+header nav ul li a.marc {
+    color: #5F3A1F;
+}
+
+header nav ul li a:hover{
+    font-size: 1.3rem;
+}
+
+footer {
+    background-color: #C9CBC0;
+    padding: 5vw;
+    line-height: 5vw;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    max-width: 25px;
+    max-height: 25px;
+    
+}
+
+@media only screen and (min-width: 600px) {
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 2vw 4vw;
+    }
+
+    header nav ul {
+        display: flex;
+        padding: 0%;
+        align-items: center;
+    }
+
+    header nav img {
+        max-width: 115px;
+    }
+
+    footer {
+        padding: 2vw 4vw;
+        line-height: 3vw;
+    }
+} 
