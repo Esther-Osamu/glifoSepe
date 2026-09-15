@@ -46,6 +46,24 @@ footer img {
     max-width: 25px;
     max-height: 25px;
 }
+section.banner{
+    text-align: center;
+    background: url(../src/saibamais/background-banner.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+section.banner h2{
+    font-family: "Caesar Dressing";
+    font-size: 2rem;
+    color: #F8D794;
+}
+section.banner div.text img{
+    max-width: 40%;
+}
+section.banner div.img img{
+    max-width: 60%;
+}
 
 @media only screen and (min-width: 600px) {
     header nav {
