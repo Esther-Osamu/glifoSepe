@@ -31,6 +31,23 @@ header nav ul li a:hover{
     font-size: 1.3rem;
 }
 
+section.botao {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #C9CBC0;
+    margin: 4vw 15vw;
+    padding: 3vw;
+    border-radius: 13px;
+}
+
+
+
+section.botao img {
+    max-width: 20px;
+    filter: grayscale();
+}
+
 footer {
     background-color: #C9CBC0;
     padding: 5vw;
