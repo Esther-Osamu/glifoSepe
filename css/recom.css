@@ -8,6 +8,27 @@ html {
     background-color: #F8D794;
 }
 
+section.banner {
+    padding: 5vw 10vw;
+    text-align: center;
+    background-image: url(../src/recomendacoes/gradienteAzul.png);
+}
+
+section.banner h2 {
+    font-size: 2rem;
+    font-family: 'caesar dressing';
+    color: #C9CBC0;
+}
+
+section.banner p {
+    font-size: 0.8rem;
+    padding: 2vw;
+    color: #5F3A1F;
+}
+
+section.banner img {
+    max-width: 270px;
+}
 
 /* === HEADER === */
 
