@@ -8,27 +8,6 @@ html {
     background-color: #F8D794;
 }
 
-section.banner {
-    padding: 5vw 10vw;
-    text-align: center;
-    background-image: url(../src/recomendacoes/gradienteAzul.png);
-}
-
-section.banner h2 {
-    font-size: 2rem;
-    font-family: 'caesar dressing';
-    color: #C9CBC0;
-}
-
-section.banner p {
-    font-size: 0.8rem;
-    padding: 2vw;
-    color: #5F3A1F;
-}
-
-section.banner img {
-    max-width: 270px;
-}
 
 /* === HEADER === */
 
@@ -50,7 +29,29 @@ header nav ul li a.marc {
 }
 
 header nav ul li a:hover{
-    font-size: 1.3rem;
+    color: #5F3A1F;
+}
+
+section.banner {
+    padding: 5vw 10vw;
+    text-align: center;
+    background: linear-gradient(#3F6B76, #F8D794);
+}
+
+section.banner h2 {
+    font-size: 2rem;
+    font-family: 'caesar dressing';
+    color: #C9CBC0;
+}
+
+section.banner p {
+    font-size: 1rem;
+    padding: 2vw;
+    color: #5F3A1F;
+}
+
+section.banner img {
+    max-width: 270px;
 }
 
 
@@ -85,6 +86,24 @@ footer img {
     header nav img {
         max-width: 115px;
     }
+
+    section.banner {
+        display: flex;
+        flex-direction:row-reverse;
+        align-items: center;
+        text-align: left;
+        gap: 28px;
+    }
+
+    section.banner p {
+        padding: 1vw;
+    }
+
+    section.banner h2 {
+        padding: 1vw;
+        font-size: 3rem;
+    }
+
     footer {
         padding: 2vw 4vw;
         line-height: 3vw;
