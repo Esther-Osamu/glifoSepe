@@ -92,16 +92,21 @@ footer img {
         flex-direction:row-reverse;
         align-items: center;
         text-align: left;
-        gap: 28px;
+        justify-content: flex-end;
     }
 
     section.banner p {
-        padding: 1vw;
+        padding: 1vw 5vw;
+        font-size: 1.5rem;
     }
 
     section.banner h2 {
-        padding: 1vw;
-        font-size: 3rem;
+        padding: 1vw 5vw;
+        font-size: 4.5rem;
+    }
+
+    section.banner img {
+        max-width: none;
     }
 
     footer {
