@@ -23,12 +23,13 @@ header nav ul li {
     padding: 1.2vw;
 }
 
+
 header nav ul li a.marc {
     color: #5F3A1F;
 }
 
 header nav ul li a:hover{
-    font-size: 1.3rem;
+    color: #5F3A1F;
 }
 
 section.botao {

@@ -1,7 +1,7 @@
 /*  === CSS GERAL ===  */
 
 html {
-    font-family: 'bellefair';
+    font-family: 'Bellefair';
     /* títulos 
     font-family: 'caesar dressing' 
     */
@@ -23,29 +23,17 @@ header nav ul li {
     padding: 1.2vw;
 }
 
+
 header nav ul li a.marc {
     color: #5F3A1F;
 }
 
 header nav ul li a:hover{
-    font-size: 1.3rem;
+    color: #5F3A1F;
 }
 
+/*section-banner*/
 
-footer {
-    background-color: #C9CBC0;
-    padding: 5vw;
-    line-height: 5vw;
-    font-size: 0.8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer img {
-    max-width: 25px;
-    max-height: 25px;
-}
 section.banner{
     text-align: center;
     background: url(../src/saibamais/background-banner.png);
@@ -65,6 +53,59 @@ section.banner div.img img{
     max-width: 60%;
 }
 
+/*section-projeto*/
+
+section.projeto {
+  background-color: #F8D794;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 25px 20px 0; 
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 0%;
+}
+
+section.projeto img {
+  width: 38%;        
+  max-width: 180px;   
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+section.projeto p {
+  width: 60%;        
+  font-size: 0.9rem; 
+  line-height: 1.35;  
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top:0% ;
+  margin-bottom: 0%;
+  color: #5F3A1F;
+  font-weight: normal; 
+  -webkit-text-stroke: 0.1px #5F3A1F; 
+  text-shadow: 0 0 0.5px #5F3A1F;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: #C9CBC0;
+    padding: 5vw;
+    line-height: 5vw;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    max-width: 25px;
+    max-height: 25px;
+}
 @media only screen and (min-width: 600px) {
     header nav {
         display: flex;
@@ -80,6 +121,12 @@ section.banner div.img img{
 
     header nav img {
         max-width: 115px;
+    }
+    section.banner{
+        display: flex;
+    }
+    section.banner h2{
+        font-size: 3rem;
     }
     footer {
         padding: 2vw 4vw;
