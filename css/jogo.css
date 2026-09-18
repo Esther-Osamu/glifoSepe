@@ -6,6 +6,7 @@ html {
     font-family: 'caesar dressing' 
     */
     background-color: #914A38;
+    text-align: center;
 }
 
 
@@ -32,8 +33,110 @@ header nav ul li a.marc {
 header nav ul li a:hover{
     color: #5F3A1F;
 }
+/*=== SECTION.BNR ===*/
+section.bnr{
+    text-align: center;
+}
+section.bnr h2{
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Caesar Dressing";
+    color:#F8D794;
+    margin:7vw 0vw 0vw 0vw;
+}
+section.vetor p{
+    background-image: url(../src/jogo/mobile/background-banner.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 100%;
+    padding: 25vw 7vw 15vw 7vw;
+     color: #914A38;
+     text-align: center;
 
+}
+section.vetor p span{
+   font-size: 1.9rem;
+}
+section.vetor div{
+    background-color: #F8D794;
+    margin: 0 0 5vw 0;
+}
 
+.carrossel {
+  position: relative;
+  max-width: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.slides {
+  width: 100%;
+}
+
+.slide {
+  display: none; /* Esconde todas as imagens por padrão */
+  width: 100%;
+  border-radius: 10px;
+}
+
+.slide.ativo {
+  display: block; /* Mostra apenas a imagem com a classe 'ativo' */
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.anterior { left: 10px ;
+            color: #914A38;}
+.proximo { right: 10px; 
+          color: #914A38;}
+
+section.vetor div.slides img{
+    width: 50%;
+    text-align: center;
+    padding: 5vw;
+    
+}
+
+/* === Section.Jogos === */
+.jogos h2{
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Caesar Dressing";
+    color:#F8D794;
+    margin:10vw 0vw 10vw 0vw;
+}
+.jogos img{
+    width: 50%;
+}
+.jogos {
+    text-align: center;
+}
+.jogos h3{
+    font-size: 1.2rem;
+}
+.jogos ul li.senet{
+    background-color: #c58754;
+    padding: 5vw 3vw 7vw 3vw;
+    color: #5F3A1F;
+    font
+}
+
+.jogos ul li p{
+    text-align: center;
+    padding: 0 20% 0 20%;
+    margin: 3vw 0 3vw 0;
+}
 
 footer {
     background-color: #C9CBC0;

@@ -44,18 +44,27 @@
       <section class="bnr">
         <img src="src/jogo/bnr.png" alt="bnr" class="img-bnr"/>
         <h2>KEMET: JOGOS</h2>
+        </section>
+        <section class="vetor">
         <p>
-          Os jogos faziam parte do cotidiano dos antigos egípcios,
+          <span>
+          O</span>s jogos faziam parte do cotidiano dos antigos egípcios,
           principalmente os jogos de tabuleiro. Eles eram praticados por pessoas
           de diferentes classes sociais e aparecem representados em pinturas,
           túmulos e objetos arqueológicos. Entre os principais jogos estavam o
           Senet, o Mehen e o jogo dos Cães e Chacais.
+         
         </p>
         <div class="img/carrosel">
-          <img src="src/jogo/elipse1.png" alt="mehen" />
-          <img src="src/jogo/elipse2.png" alt="senet" />
-          <img src="src/jogo/Ellipse3.png" alt="caes" /> 
+          <button class="anterior" onclick="mudarSlide(-1)">&#10094;</button>
+          </div>
+          <div class="slides">
+          <img src="src/jogo/elipse1.png"  class="slide ativo" alt="slide1" />
+          <img src="src/jogo/elipse2.png" class="slide" alt="slide2" />
+          <img src="src/jogo/Ellipse3.png" class="slide" alt="slide3" /> 
+            <button class="proximo" onclick="mudarSlide(1)">&#10095;</button>
         </div>
+         
       </section>
       <section class="jogos">
         <h2>Jogos famosos</h2>
@@ -81,7 +90,6 @@
             <img src="src/jogo/caesechacais.png" alt="caes" />
           </li>
           <li class="mehen">
-            <img src="src/jogo/mehen.png" alt="mehen" />
             <h3>Mehen</h3>
             <p>
               Conhecido como Jogo da Serpente, possuía um tabuleiro circular em
@@ -89,6 +97,8 @@
               relacionado simbolicamente ao deus-serpente Mehen, que protegia o
               deus solar Rá durante sua jornada noturna.
             </p>
+            <img src="src/jogo/mehen.png" alt="mehen" />
+
           </li>
         </ul>
       </section>
