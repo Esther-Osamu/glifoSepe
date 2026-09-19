@@ -58,14 +58,22 @@ section.banner img {
 section.locais {
     text-align: center;
     background-image: url(../src/recomendacoes/backgroundMarrom.png);
-        background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center -68px;
+     background-size: 100% 100%;
 }
+
 
 section.locais h2 {
     font-size: 1.5rem;
     font-family: 'caesar dressing';
     color: #5F3A1F;
-    padding: 8vw;
+    padding: 10vw;
+    text-align: left;
+}
+
+section.locais ul {
+    padding: 12vw;
 }
 
 section.locais ul li h3 {
@@ -85,14 +93,23 @@ section.locais ul li p a {
     text-decoration: underline;
 }
 
-section.locais > p a {
+section.explore {
+    background-color: #914A38;
+    padding:10vw;
+    margin: -20vw;
+    text-align: center;
+}
+
+section.explore p a {
+    text-align: center;
     background-color: #F8D794;
     padding: 2vw 4vw;
     font-family: 'caesar dressing';
     color: #914A38;
     border-radius: 7px;
     display: inline-block;
-    margin: 3vw;
+    margin: 0;
+    
 }
 
 section.locais ul li img {
