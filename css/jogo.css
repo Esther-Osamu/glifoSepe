@@ -109,33 +109,86 @@ section.vetor div.slides img{
 }
 
 /* === Section.Jogos === */
-.jogos h2{
+.jogos h2 {
     font-size: 2rem;
     text-align: center;
     font-family: "Caesar Dressing";
-    color:#F8D794;
-    margin:10vw 0vw 10vw 0vw;
+    color: #F8D794;
+    margin: 10vw 0vw 10vw 0vw;
 }
-.jogos img{
+
+.jogos img {
     width: 50%;
 }
+
 .jogos {
     text-align: center;
 }
-.jogos h3{
+
+.jogos h3 {
     font-size: 1.2rem;
-}
-.jogos ul li.senet{
-    background-color: #c58754;
-    padding: 5vw 3vw 7vw 3vw;
-    color: #5F3A1F;
-    font
+    margin: 2vw 0vw 2vw 0vw;
 }
 
-.jogos ul li p{
+.jogos ul li.senet {
+    background-color: #C99565;
+    padding: 5vw 3vw 7vw 3vw;
+    color: #5F3A1F;
+    font-size: 0.9rem;
+}
+
+.jogos ul li.caes {
+    margin: 7vw 0vw 7vw 0vw;
+    background-color: #3F6B76;
+    padding: 5vw 3vw 7vw 3vw;
+    font-size: 0.9rem;
+    color: #F8D794;
+}
+
+.jogos ul li p {
     text-align: center;
     padding: 0 20% 0 20%;
     margin: 3vw 0 3vw 0;
+}
+
+.jogos ul li.mehen {
+    background-color: #F8D794;
+    color: #5F3A1F;
+    padding: 5vw 3vw 7vw 3vw;
+    font-size: 0.9rem;
+    margin: 7vw 0vw 7vw 0vw;
+}
+
+/* === section.final=== */
+.final h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Caesar Dressing";
+    color:#F8D794 ;
+    margin: 3vw 0vw 3vw 0vw;
+}
+.final p{
+    color: #C9CBC0;
+    font-size: 0.9rem;
+    padding: 0 15% 0 15%;
+    margin: 3vw 0vw 7vw 0vw;
+}
+.final a{
+    background-color: #3F6B76;
+    color: #F8D794;
+    padding: 3vw 9vw 3vw 9vw;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 0vw 0vw 10vw 0vw;
+}
+.final h3{
+    background-image: url(../src/jogo/mobile/background-final.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 15vw 15vw 15vw 15vw;
+     font-family: "Caesar Dressing";
+     color: #F8D794;
+     font-size: 1.5rem;
 }
 
 footer {
