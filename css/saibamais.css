@@ -252,7 +252,15 @@ section.etapas p{
     gap: 12px;
     width: 100%;
 }
+.link a:first-child img {
+    width: 13px;
+    height: 13px;
+}
 
+.link a:last-child img {
+    width: 24px;
+    height: 24px;
+}
 .link a {
     display: flex;
     align-items: center;
