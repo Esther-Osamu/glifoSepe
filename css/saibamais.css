@@ -5,6 +5,7 @@ html {
     /* títulos 
     font-family: 'caesar dressing' 
     */
+    background-color: #914A38;
 }
 
 
@@ -227,9 +228,49 @@ section.membros ul li.card-sofia p{
 /*section-etapas*/
 
 section.etapas{
-    background: url(../src/saibamais/background-etapasd.png);
-    background-repeat: no-repeat;
+    background: url(../src/saibamais/background-etapasd.png) no-repeat;
+    position: relative;
+    z-index: 2;
+    background-size: 100% 100%;
+    margin-top: -50px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    overflow: visible;
 }
+section.etapas p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #5F3A1F;
+    font-family: "caesar dressing";
+    padding: 50px 40px 10px;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.link a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link img {
+    width: 24px;
+    height: 24px;
+    max-width: 24px;
+    object-fit: contain;
+}
+
 
 /*footer*/
 
