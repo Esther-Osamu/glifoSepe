@@ -30,6 +30,60 @@ header nav ul li a.marc {
 header nav ul li a:hover{
     color: #5F3A1F;
 }
+section.inicio{
+    text-align: center;
+    padding: 15vw;
+    background: linear-gradient(#F8D794,#b47a57,#914A38);
+}
+section.inicio h1{
+    font-family: 'caesar dressing';
+    font-size: 2rem;
+    color: #6b2801;
+}
+section.banner{
+    text-align: center;
+    padding: 10vw;
+    background-image: url("../src/alfabeto/imagem4.png");
+    background-size: cover;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    background-color: #F8D794;
+}
+section.banner p{
+    color: #5F3A1F;
+}
+section.bnt{
+    text-align: center;
+    background-color: #BB6B3D;
+    padding: 5vw;
+}
+section.bnt h1{
+    color: #564626;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1vw 1vw 3vw 1vw;
+}
+.bnt p{
+    color: #F8D794;
+    font-size: 0.8rem;
+}
+.bnt img{
+    width: 50%;
+    padding: 5vw;
+}
+section.titdois{
+    text-align: center;
+    background-color: #F8D794;
+    padding: 10vw;
+}
+.titdois h1{
+   font-family: 'caesar dressing';
+   font-size: 2rem;
+   color: #6b2801;
+   padding: 5vw;
+}
+
+
 
 
 footer {
