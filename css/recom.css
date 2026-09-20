@@ -116,6 +116,14 @@ section.locais ul li img {
     max-width: 250px;
 }
 
+section.livros {
+    margin: 25vw 0 0 0;
+    padding: 2vw 10vw;
+    color: #3F6B76;
+    text-align: center;
+}
+
+
 footer {
     background-color: #C9CBC0;
     padding: 5vw;
