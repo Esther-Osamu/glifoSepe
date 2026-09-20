@@ -125,19 +125,22 @@ section.vetor div.vetor p{
 }
 
 /* === Section.Jogos === */
-.jogos h2{
+.jogos h2 {
     font-size: 2rem;
     text-align: center;
     font-family: "Caesar Dressing";
-    color:#F8D794;
-    margin:10vw 0vw 10vw 0vw;
+    color: #F8D794;
+    margin: 10vw 0vw 10vw 0vw;
 }
+<<<<<<< HEAD
 .jogos ul li{
   background: 
     url(../src/jogo/papiro-vertical.png) left top no-repeat,
     #f0f0f0; /* Cor de fundo no final */
     background-size: 400px 200px, 50% auto;
 }
+=======
+>>>>>>> 3a2c5c40ef9c6fecd50c8e5f5a28b5362f796369
 
 .jogos img {
     width: 50%;
@@ -148,7 +151,11 @@ section.vetor div.vetor p{
 }
 
 .jogos h3 {
+<<<<<<< HEAD
     font-size: 1.5rem;
+=======
+    font-size: 1.2rem;
+>>>>>>> 3a2c5c40ef9c6fecd50c8e5f5a28b5362f796369
     margin: 2vw 0vw 2vw 0vw;
 }
 
@@ -156,15 +163,25 @@ section.vetor div.vetor p{
     background-color: #C99565;
     padding: 5vw 3vw 7vw 3vw;
     color: #5F3A1F;
+<<<<<<< HEAD
     font-size: 1.1rem;
     font-weight: 600;
 }
+=======
+    font-size: 0.9rem;
+}
+
+>>>>>>> 3a2c5c40ef9c6fecd50c8e5f5a28b5362f796369
 .jogos ul li.caes {
     margin: 7vw 0vw 7vw 0vw;
     background-color: #3F6B76;
     padding: 5vw 3vw 7vw 3vw;
+<<<<<<< HEAD
     font-size: 1.1rem;
     font-weight: 600;
+=======
+    font-size: 0.9rem;
+>>>>>>> 3a2c5c40ef9c6fecd50c8e5f5a28b5362f796369
     color: #F8D794;
 }
 
@@ -224,6 +241,46 @@ footer {
 footer img {
     max-width: 25px;
     max-height: 25px;
+}
+
+.jogos ul li.mehen {
+    background-color: #F8D794;
+    color: #5F3A1F;
+    padding: 5vw 3vw 7vw 3vw;
+    font-size: 0.9rem;
+    margin: 7vw 0vw 7vw 0vw;
+}
+
+/* === section.final=== */
+.final h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Caesar Dressing";
+    color:#F8D794 ;
+    margin: 3vw 0vw 3vw 0vw;
+}
+.final p{
+    color: #C9CBC0;
+    font-size: 0.9rem;
+    padding: 0 15% 0 15%;
+    margin: 3vw 0vw 7vw 0vw;
+}
+.final a{
+    background-color: #3F6B76;
+    color: #F8D794;
+    padding: 3vw 9vw 3vw 9vw;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 0vw 0vw 10vw 0vw;
+}
+.final h3{
+    background-image: url(../src/jogo/mobile/background-final.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 15vw 15vw 15vw 15vw;
+     font-family: "Caesar Dressing";
+     color: #F8D794;
+     font-size: 1.5rem;
 }
 
 footer {
