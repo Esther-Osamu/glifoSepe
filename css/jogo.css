@@ -30,96 +30,110 @@ header nav ul li a.marc {
     color: #5F3A1F;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
     color: #5F3A1F;
 }
+
 /*=== SECTION.BNR ===*/
-section.bnr{
+section.bnr {
     text-align: center;
 }
-section.bnr h2{
+
+section.bnr h2 {
     font-size: 2rem;
     text-align: center;
     font-family: "Caesar Dressing";
-    color:#F8D794;
-    margin:7vw 0vw 0vw 0vw;
+    color: #F8D794;
+    margin: 7vw 0vw 0vw 0vw;
 }
+
 /* === SECTION.VETOR === */
-.vetor div.geral{
+.vetor div.geral {
     display: flex;
     gap: 10px;
     margin: 7vw 7vw 2vw 7vw;
     border-radius: 15px;
     background-color: #F8D794;
 }
-section.vetor p.principal{
+
+section.vetor p.principal {
     background-image: url(../src/jogo/mobile/background-banner.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100% 100%;
     padding: 25vw 7vw 15vw 7vw;
-     color: #914A38;
-     text-align: center;
+    color: #914A38;
+    text-align: center;
 
 }
-section.vetor p span{
-   font-size: 1.9rem;
+
+section.vetor p span {
+    font-size: 1.9rem;
 }
-section.vetor div{
+
+section.vetor div {
     margin: 0 0 5vw 0;
 }
 
 .carrossel {
-  position: relative;
-  max-width: 300px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
+    position: relative;
+    max-width: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .slides {
-  width: 100%;
+    width: 100%;
 }
 
 .slide {
-  display: none; /* Esconde todas as imagens por padrão */
-  width: 100%;
-  border-radius: 10px;
+    display: none;
+    /* Esconde todas as imagens por padrão */
+    width: 100%;
+    border-radius: 10px;
 }
 
 .slide.ativo {
-  display: block; /* Mostra apenas a imagem com a classe 'ativo' */
+    display: block;
+    /* Mostra apenas a imagem com a classe 'ativo' */
 }
 
 button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 10;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
 }
 
-.anterior { left: 10px ;
-            color: #914A38;}
-.proximo { right: 10px; 
-          color: #914A38;}
+.anterior {
+    left: 10px;
+    color: #914A38;
+}
 
-section.vetor div.slides img{
+.proximo {
+    right: 10px;
+    color: #914A38;
+}
+
+section.vetor div.slides img {
     text-align: center;
     padding: 5vw;
-    
+
 }
-section.vetor div.vetor p{
+
+section.vetor div.vetor p {
     font-size: 1.7rem;
-    text-align:  right;
+    text-align: right;
     padding: 0 8% 0 8%;
     font-family: "Caesar Dressing";
     margin-top: 5vw;
-    color:#3F6B76;
+    color: #3F6B76;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
 }
@@ -132,15 +146,14 @@ section.vetor div.vetor p{
     color: #F8D794;
     margin: 10vw 0vw 10vw 0vw;
 }
-<<<<<<< HEAD
-.jogos ul li{
-  background: 
-    url(../src/jogo/papiro-vertical.png) left top no-repeat,
-    #f0f0f0; /* Cor de fundo no final */
+
+.jogos ul li {
+    background:
+        url(../src/jogo/papiro-vertical.png) left top no-repeat,
+        #f0f0f0;
+    /* Cor de fundo no final */
     background-size: 400px 200px, 50% auto;
 }
-=======
->>>>>>> 3a2c5c40ef9c6fecd50c8e5f5a28b5362f796369
 
 .jogos img {
     width: 50%;
@@ -151,11 +164,8 @@ section.vetor div.vetor p{
 }
 
 .jogos h3 {
-<<<<<<< HEAD
     font-size: 1.5rem;
-=======
     font-size: 1.2rem;
->>>>>>> 3a2c5c40ef9c6fecd50c8e5f5a28b5362f796369
     margin: 2vw 0vw 2vw 0vw;
 }
 
@@ -163,25 +173,22 @@ section.vetor div.vetor p{
     background-color: #C99565;
     padding: 5vw 3vw 7vw 3vw;
     color: #5F3A1F;
-<<<<<<< HEAD
     font-size: 1.1rem;
     font-weight: 600;
 }
-=======
-    font-size: 0.9rem;
+
+.jogos ul li.senet {
+    background-color: #C99565;
+    padding: 5vw 3vw 7vw 3vw;
+    color: #5F3A1F;
+    font-size: 1.1rem;
 }
 
->>>>>>> 3a2c5c40ef9c6fecd50c8e5f5a28b5362f796369
 .jogos ul li.caes {
     margin: 7vw 0vw 7vw 0vw;
     background-color: #3F6B76;
     padding: 5vw 3vw 7vw 3vw;
-<<<<<<< HEAD
     font-size: 1.1rem;
-    font-weight: 600;
-=======
-    font-size: 0.9rem;
->>>>>>> 3a2c5c40ef9c6fecd50c8e5f5a28b5362f796369
     color: #F8D794;
 }
 
@@ -190,29 +197,57 @@ section.vetor div.vetor p{
     padding: 0 20% 0 20%;
     margin: 3vw 0 3vw 0;
 }
+
 .jogos ul li.mehen {
     background-color: #F8D794;
     color: #5F3A1F;
     padding: 5vw 3vw 7vw 3vw;
-     font-size: 1.1rem;
+    font-size: 1.1rem;
+    margin: 7vw 0vw 7vw 0vw;
+}
+
+.jogos ul li.caes {
+    margin: 7vw 0vw 7vw 0vw;
+    background-color: #3F6B76;
+    padding: 5vw 3vw 7vw 3vw;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #F8D794;
+}
+
+.jogos ul li p {
+    text-align: center;
+    padding: 0 20% 0 20%;
+    margin: 3vw 0 3vw 0;
+}
+
+.jogos ul li.mehen {
+    background-color: #F8D794;
+    color: #5F3A1F;
+    padding: 5vw 3vw 7vw 3vw;
+    font-size: 1.1rem;
     font-weight: 600;
     margin: 7vw 0vw 7vw 0vw;
 }
+
 /* === section.final=== */
 .final h2 {
     font-size: 1.5rem;
     text-align: center;
     font-family: "Caesar Dressing";
-    color:#F8D794 ;
+    color: #F8D794;
     margin: 3vw 0vw 3vw 0vw;
 }
-.final p{
+
+.final p {
     color: #C9CBC0;
     font-size: 0.9rem;
     padding: 0 15% 0 15%;
     margin: 3vw 0vw 7vw 0vw;
 }
-.final a{
+
+.final a {
     background-color: #3F6B76;
     color: #F8D794;
     padding: 3vw 9vw 3vw 9vw;
@@ -220,15 +255,17 @@ section.vetor div.vetor p{
     display: inline-block;
     margin: 0vw 0vw 10vw 0vw;
 }
-.final h3{
+
+.final h3 {
     background-image: url(../src/jogo/mobile/background-final.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 15vw 15vw 15vw 15vw;
-     font-family: "Caesar Dressing";
-     color: #F8D794;
-     font-size: 1.5rem;
+    font-family: "Caesar Dressing";
+    color: #F8D794;
+    font-size: 1.5rem;
 }
+
 footer {
     background-color: #C9CBC0;
     padding: 5vw;
@@ -238,6 +275,7 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
+
 footer img {
     max-width: 25px;
     max-height: 25px;
@@ -256,16 +294,18 @@ footer img {
     font-size: 1.5rem;
     text-align: center;
     font-family: "Caesar Dressing";
-    color:#F8D794 ;
+    color: #F8D794;
     margin: 3vw 0vw 3vw 0vw;
 }
-.final p{
+
+.final p {
     color: #C9CBC0;
     font-size: 0.9rem;
     padding: 0 15% 0 15%;
     margin: 3vw 0vw 7vw 0vw;
 }
-.final a{
+
+.final a {
     background-color: #3F6B76;
     color: #F8D794;
     padding: 3vw 9vw 3vw 9vw;
@@ -273,14 +313,15 @@ footer img {
     display: inline-block;
     margin: 0vw 0vw 10vw 0vw;
 }
-.final h3{
+
+.final h3 {
     background-image: url(../src/jogo/mobile/background-final.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 15vw 15vw 15vw 15vw;
-     font-family: "Caesar Dressing";
-     color: #F8D794;
-     font-size: 1.5rem;
+    font-family: "Caesar Dressing";
+    color: #F8D794;
+    font-size: 1.5rem;
 }
 
 footer {
@@ -297,6 +338,12 @@ footer img {
     max-width: 25px;
     max-height: 25px;
 }
+
+footer {
+    padding: 2vw 4vw;
+    line-height: 3vw;
+}
+
 
 @media only screen and (min-width: 600px) {
     header nav {
@@ -314,8 +361,78 @@ footer img {
     header nav img {
         max-width: 115px;
     }
+
+    /*=== SECTION.BNR ===*/
+    .bnr img {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        /* Remove o espaço em branco na base de elementos inline */
+        height: auto;
+        /* Mantém a proporção da imagem sem distorcer */
+    }
+
+    .bnr h2 {
+        font-size: 5rem !important;
+    }
+
+    /*=== SECTION.VETOR ===*/
+    .vetor p.principal {
+        font-size: 2.7rem !important;
+        padding: 0 20% 0 20%;
+    }
+
+    .vetor p.principal span {
+        font-size: 4rem;
+    }
+
+    div.vetor p {
+        font-size: 4rem !important;
+        margin-left: 5vw;
+    }
+
+    /*=== SECTION.JOGOS === */
+    .jogos h2 {
+        font-size: 5rem !important;
+    }
+
+    .jogos ul li {
+        display: flex;
+    }
+
+    .jogos ul li img {
+        margin-right: 7vw;
+    }
+
+    .jogos h3 {
+        font-size: 2.5rem;
+    }
+
+    .jogos p {
+        font-size: 2rem;
+    }
+
+    /*=== SECTION.FINAL ===*/
+    .final h2 {
+        font-size: 5rem !important;
+    }
+
+    .final p {
+        font-size: 2.5rem;
+    }
+
+    .final a {
+        font-size: 2rem;
+        padding: 2vw 6vw 2vw 6vw;
+    }
+
+    .final h3 {
+        font-size: 5rem !important;
+    }
+
     footer {
         padding: 2vw 4vw;
         line-height: 3vw;
     }
-} 
+}
+
