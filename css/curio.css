@@ -32,6 +32,51 @@ header nav ul li a:hover{
     color: #5F3A1F;
 }
 
+/*== BANNER ==*/
+
+.banner{
+    text-align: center;
+    background: url(../src/curiosidades/fundos/fundo-banner.png) center/cover no-repeat;
+    padding: 18vw;
+    background-color: #96462e;
+    padding-bottom: 24vw;
+    z-index: 1;
+
+
+}
+
+.banner h2{
+    font-size: 3rem;
+    font-family: 'caesar dressing';
+    color: #F8D794;
+    margin-bottom: 20px;
+}
+
+.banner p{
+    font-size: 1rem;
+    color:#C9CBC0;
+}
+
+.fescritas {
+    background: url(../src/curiosidades/fundos/banner-fescritas.png);
+    background-repeat: no-repeat;
+    background-position: center -150px;
+    background-size: 100% 100%;
+
+    position: relative;
+    z-index: 2;
+    margin-top: -190px;
+    text-align: center;
+}
+
+.fescritas h2{
+    padding-top: 45vw;
+    font-family: 'caesar dressing';
+    color: #5F3A1F ;
+    font-size: 2rem;
+}
+
+
 
 footer {
     background-color: #C9CBC0;
