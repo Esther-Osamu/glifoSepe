@@ -60,7 +60,7 @@ header nav ul li a:hover{
 .fescritas {
     background: url(../src/curiosidades/fundos/banner-fescritas.png);
     background-repeat: no-repeat;
-    background-position: center -150px;
+    background-position: center -170px;
     background-size: 100% 100%;
 
     position: relative;
@@ -75,6 +75,27 @@ header nav ul li a:hover{
     color: #5F3A1F ;
     font-size: 2rem;
 }
+
+.fescritas p{
+   color: #914A38;
+   font-size: 1rem;
+   padding-top: 4vw;
+}
+
+
+.fescritas ul p{
+   color:#C9CBC0 ;
+}
+
+
+.cards{
+   list-style: none;
+}
+
+
+.cards li{
+}
+
 
 
 
