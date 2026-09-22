@@ -161,6 +161,56 @@ section.livros > p a {
     font-family: 'caesar dressing';
 }
 
+section.filmes {
+    text-align: center;
+    padding: 5vw 10vw;
+    background-image: url(../src/recomendacoes/backgroundBege.png);
+    background-repeat: no-repeat;
+    background-position: center -125vw;
+}
+
+section.filmes h2 {
+    font-family: 'caesar dressing';
+    font-size: 1.5rem;
+    color: #5F3A1F;
+    padding: 17vw 0 7vw 0;
+}
+
+section.filmes ul li iframe {
+    max-width: 300px;
+    border-radius: 13px;
+}
+
+section.filmes ul li div.detalhes-filmes {
+    display: flex;
+    justify-content: space-between;
+    padding: 8vw 4vw;
+}
+
+section.filmes ul li div.detalhes-filmes div.ano {
+    text-align: right;
+}
+
+section.filmes ul li div.detalhes-filmes h3 {
+    color: #5F3A1F;
+    font-size: 1.5rem;
+}
+
+section.filmes ul li div.detalhes-filmes p {
+    color: #C9CBC0;
+}
+
+section.filmes ul li div.detalhes-filmes p.avaliacao {
+    color: #5F3A1F;
+}
+
+section.filmes ul li > p {
+    color: #C9CBC0;
+    text-align: left;
+    padding: 0 4vw;
+    font-weight: bold;
+}
+
 footer {
     background-color: #C9CBC0;
     padding: 5vw;
