@@ -152,6 +152,15 @@ section.livros ul li p a {
     text-decoration:underline;
 }
 
+section.livros > p a {
+    background-color: #3F6B76;
+    padding: 3vw 6vw;
+    border-radius: 13px;
+    display: inline-block;
+    color: #C9CBC0;
+    font-family: 'caesar dressing';
+}
+
 footer {
     background-color: #C9CBC0;
     padding: 5vw;
