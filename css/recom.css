@@ -263,6 +263,12 @@ section.contato form textarea {
     margin: 3vw;
 }
 
+section.contato form textarea::placeholder {
+    color: #C9CBC0 ;
+    opacity:45%;
+
+}
+
 section.contato button.limpar {
     background-color: #C9CBC0;
     padding: 2vw 4vw;
