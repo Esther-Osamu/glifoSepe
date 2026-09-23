@@ -166,7 +166,7 @@ section.filmes {
     padding: 5vw 10vw;
     background-image: url(../src/recomendacoes/backgroundBege.png);
     background-repeat: no-repeat;
-    background-position: center -125vw;
+    background-position: center -110vw;
 }
 
 section.filmes h2 {
@@ -174,6 +174,10 @@ section.filmes h2 {
     font-size: 1.5rem;
     color: #5F3A1F;
     padding: 17vw 0 7vw 0;
+}
+
+section.filmes ul li {
+    padding: 16vw 0 0 0;
 }
 
 section.filmes ul li iframe {

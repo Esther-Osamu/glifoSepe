@@ -31,33 +31,28 @@ header nav ul li a:hover{
     color: #5F3A1F;
 }
 section.inicio{
-    text-align: center;
-    padding: 15vw;
-    background: linear-gradient(#F8D794,#b47a57,#914A38);
+    padding: 5vw 10vw;
+    background: linear-gradient(#3f6b76,#F8D794);
 }
-section.inicio h1{
+section.inicio h2{
+    text-align: left;
     font-family: 'caesar dressing';
     font-size: 2rem;
-    color: #6b2801;
+    color: #C9CBC0;
+    padding: 4vw;
 }
-section.banner{
-    text-align: center;
-    padding: 10vw;
-    background-image: url("../src/alfabeto/imagem4.png");
-    background-size: cover;
-    padding-left: 15vw;
-    padding-right: 15vw;
-    background-color: #F8D794;
-}
-section.banner p{
-    color: #5F3A1F;
+section.inicio p{
+    text-align: left;
+    padding: 4vw;
+    color: #5f2c0e;
 }
 section.bnt{
     text-align: center;
     background-color: #BB6B3D;
     padding: 5vw;
+    background-image: url;
 }
-section.bnt h1{
+section.bnt h2{
     color: #564626;
     font-size: 2rem;
     font-weight: 600;
@@ -74,27 +69,61 @@ section.bnt h1{
 section.titdois{
     text-align: center;
     background-color: #F8D794;
+    background: linear-gradient(#F8D794,#94d7e7,#3f6b76);
     padding: 10vw;
+
 }
 .titdois h1{
    font-family: 'caesar dressing';
    font-size: 2rem;
    color: #6b2801;
    padding: 5vw;
+   color: #422c1e;
+}  
+section.titdois li {
+  text-align: center;
+  background-color: #3f6b76;
+  border-radius: 10vw;
+  border: 4px solid #6dadbd;
+  margin: 5vw;
+  padding: 4vw;
 }
+section.titdois h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #f8d794;
 
+}
+section.titdois p {
+  margin-left: 15vw;
+  margin-right: 15vw;
+  font-size: 0.9rem;
+  padding: 2vw;
+  color: #d8b368;
+}
+section.titdois img {
+  width: 40%;
+}
+section.imagens {
+  text-align: center;
+  background-color: #bb6b3d;
+  padding: 5vw;
 
-
-section.inicio{
+}
+section.imagens img{
+    width: 40%;
+}
+section.imagens h1 {
+  font-family: "caesar dressing";
+  font-size: 2rem;
+  color: #e7ce9c;
+  padding: 5vw;
+}
+section.text{
     text-align: center;
-    background: linear-gradient(#F8D794,#B47A57,#914A38);
-    padding: 15vw;
-
-}
-section.inicio h1{
-    font-family: 'caesar dressing';
-    font-size: 2rem;
-    color: #6b2801;
+    padding: 5vw;
+    font-size: 0.9rem;
+    color: #64361a;
 }
 section.banner{
     text-align: center;
@@ -105,9 +134,6 @@ section.banner{
 }
 section.banner p{
     color: #5F3A1F
-
-}
-section.banner{
     background-image: url("../src/alfabeto/imagem4.png");
     background-size: cover;
     padding-left: 15vw;
@@ -129,7 +155,23 @@ section.bnt p{
     color: #F8D794;
     font-size: 0.8rem;
 }
-
+section.final{
+    padding: 7vw;
+    text-align: center;
+    background-size: cover;
+    padding-left: 15vw;
+    padding-right: 19vw;
+    background-image: url(../src/jogo/mobile/background-final.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 50vw 15vw 15vw 15vw;
+    color: #F8D794;
+    font-size: 1.5rem;
+}
+section.final p{
+    color: #F8D794;
+    font-weight: 900;
+}
 
 footer {
     background-color: #C9CBC0;
@@ -161,6 +203,21 @@ footer img {
 
     header nav img {
         max-width: 115px;
+    }
+
+        section.inicio h2{
+        font-size: 6vw;
+    }
+    section.inicio p{
+        font-size: 2vw;
+    }
+    section.bnt{
+        text-align: left;
+        display: flex;
+        gap:20px;
+    }
+    section.bnt h2{
+        font-size: 60vw;
     }
 
     footer {
