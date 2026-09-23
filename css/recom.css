@@ -215,6 +215,49 @@ section.filmes ul li > p {
     font-weight: bold;
 }
 
+section.contato {
+    background-color: #914A38;
+    padding: 5vw 10vw;
+    text-align: center;
+}
+
+section.contato h2 {
+    font-family: 'caesar dressing';
+    font-size: 1.5rem;
+    color: #F8D794;
+}
+
+section.contato p {
+    color: #C9CBC0;
+    padding: 7vw 0 7vw 0;
+}
+
+section.contato label {
+    display: block;
+    background-color: #C9CBC0;
+    border-radius: 13px;
+    padding: 4vw 8vw 4vw 0;
+    margin: 3vw;
+}
+
+section.contato button.limpar {
+    background-color: #C9CBC0;
+    padding: 2vw 4vw;
+    border-radius: 13px;
+    font-family: 'caesar dressing';
+    color: #5F3A1F;
+}
+
+section.contato button {
+    background-color: #3F6B76;
+    padding: 2vw 4vw;
+    font-family: 'caesar dressing';
+    border-radius: 13px;
+    display: inline-block;
+    color: #C9CBC0;
+}
+
+
 footer {
     background-color: #C9CBC0;
     padding: 5vw;
