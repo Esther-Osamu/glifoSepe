@@ -227,16 +227,39 @@ section.contato h2 {
     color: #F8D794;
 }
 
-section.contato p {
+section.contato  p {
     color: #C9CBC0;
-    padding: 7vw 0 7vw 0;
+    padding: 2vw 0 0 0;
+}
+
+
+section.contato form > p {
+    color: #F8D794;
+}
+
+section.contato form input::placeholder {
+    color: #C9CBC0 ;
+    opacity:45%;
 }
 
 section.contato label {
     display: block;
-    background-color: #C9CBC0;
+    padding: 3vw;
+}
+
+section.contato input {
+    background-color: #5F3A1F;
+    border: 2px solid;
+    padding: 4vw 8vw;
     border-radius: 13px;
-    padding: 4vw 8vw 4vw 0;
+}
+
+section.contato form textarea {
+    background-color: #5F3A1F;
+    border-radius: 13px;
+    border: 2px solid;
+    padding: 4vw 8vw;
+    max-width: 240px;
     margin: 3vw;
 }
 
@@ -246,6 +269,7 @@ section.contato button.limpar {
     border-radius: 13px;
     font-family: 'caesar dressing';
     color: #5F3A1F;
+    margin: 2vw;
 }
 
 section.contato button {

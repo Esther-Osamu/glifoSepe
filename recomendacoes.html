@@ -227,15 +227,18 @@
                 Fique à vontade para dar uma sugestão de melhora, um feedeback ou até mesmo fazer algum relato. 
             </p>
             <form action="#">
-                <label for="">
-                    <input type="text" placeholder="Nome completo">
-                </label>
-                <label for="">
-                    <input type="email" placeholder="Email para contato">
-                </label>
-                <label for="">
-                    <input type="" placeholder="Assunto">
-                </label>
+                <p>
+                <label for="" >Nome</label>
+                    <input type="text" placeholder="Nome completo" required>
+                </p>
+                <p>
+                <label for="">Email</label>
+                    <input type="email" placeholder="Email para contato" required>
+                </p>
+                <p>
+                <label for="">Comentário</label>
+                    <textarea name="assunto" id="assunto" rows="6" cols="38" placeholder="Deixe seu comentário" required></textarea>
+                </p> 
                 <button type="reset" class="limpar">
                     limpar
                 </button>
