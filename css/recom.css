@@ -342,6 +342,49 @@ footer img {
         max-width: none;
     }
 
+    section.locais {
+        padding: 2vw 10vw;
+    }
+
+    section.locais h2 {
+        padding: 0%;
+        font-size: 3.5rem;
+        width: 55%;
+    }
+
+    section.locais ul {
+        display: flex;
+        justify-content: center;
+        gap: 18vw;
+    }
+
+    section.locais ul li h3 {
+        font-size: 3rem;
+        padding: 0 0 2vw 0;
+    }
+
+    section.locais ul li img {
+        max-width: 400px;
+    }
+
+    section.locais ul li p {
+        font-size: 1.5rem;
+        padding: 2vw 0 0 0;
+    }
+
+    section.locais ul li p a {
+        padding: 0%;
+    }
+
+    section.explore {
+        padding: 0%;
+        margin: -9vw;
+    }
+
+    section.explore p a {
+        padding: 1vw 2vw;
+    }
+
     footer {
         padding: 2vw 4vw;
         line-height: 3vw;
