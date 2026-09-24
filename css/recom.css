@@ -28,7 +28,7 @@ header nav ul li a.marc {
     color: #5F3A1F;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
     color: #5F3A1F;
 }
 
@@ -60,7 +60,7 @@ section.locais {
     background-image: url(../src/recomendacoes/backgroundMarrom.png);
     background-repeat: no-repeat;
     background-position: center -68px;
-     background-size: 100% 100%;
+    background-size: 100% 100%;
 }
 
 
@@ -95,7 +95,7 @@ section.locais ul li p a {
 
 section.explore {
     background-color: #914A38;
-    padding:10vw;
+    padding: 10vw;
     margin: -20vw;
     text-align: center;
 }
@@ -109,7 +109,7 @@ section.explore p a {
     border-radius: 7px;
     display: inline-block;
     margin: 0;
-    
+
 }
 
 section.locais ul li img {
@@ -149,10 +149,10 @@ section.livros ul li h3 {
 
 section.livros ul li p a {
     color: #3F6B76;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
-section.livros > p a {
+section.livros>p a {
     background-color: #3F6B76;
     padding: 3vw 6vw;
     border-radius: 13px;
@@ -208,7 +208,7 @@ section.filmes ul li div.detalhes-filmes p.avaliacao {
     color: #5F3A1F;
 }
 
-section.filmes ul li > p {
+section.filmes ul li>p {
     color: #C9CBC0;
     text-align: left;
     padding: 0 4vw;
@@ -227,19 +227,19 @@ section.contato h2 {
     color: #F8D794;
 }
 
-section.contato  p {
+section.contato p {
     color: #C9CBC0;
     padding: 2vw 0 0 0;
 }
 
 
-section.contato form > p {
+section.contato form>p {
     color: #F8D794;
 }
 
 section.contato form input::placeholder {
-    color: #C9CBC0 ;
-    opacity:45%;
+    color: #C9CBC0;
+    opacity: 45%;
 }
 
 section.contato label {
@@ -264,8 +264,8 @@ section.contato form textarea {
 }
 
 section.contato form textarea::placeholder {
-    color: #C9CBC0 ;
-    opacity:45%;
+    color: #C9CBC0;
+    opacity: 45%;
 
 }
 
@@ -322,7 +322,7 @@ footer img {
 
     section.banner {
         display: flex;
-        flex-direction:row-reverse;
+        flex-direction: row-reverse;
         align-items: center;
         text-align: left;
         justify-content: flex-end;
@@ -385,8 +385,55 @@ footer img {
         padding: 1vw 2vw;
     }
 
+    section.livros {
+        padding: 0%;
+        margin: 17vw 0 0 0;
+
+    }
+
+    section.livros h2 {
+        font-size: 3.5rem;
+        padding: 0%;
+    }
+
+    section.livros ul {
+        display: flex;
+        justify-content: center;
+        padding: 3vw 0 0 0;
+        gap: 10px;
+    }
+
+    section.livros ul li {
+        padding: 2vw;
+    } 
+    
+    section.livros p a {
+        padding: 1vw 2vw;
+        margin: 2vw;
+    }
+
+    section.filmes {
+        background-image: url(../src/recomendacoes/back-desktop.png);
+        background-repeat: no-repeat;
+        background-position: center -325px;
+        background-size: 100% 100%;
+        margin-top: -8vw;
+    }
+
+    section.filmes h2 {
+        font-size: 3.5rem;
+        padding: 8vw 8vw 0 8vw ;
+    }
+
+    section.filmes ul{
+        display: flex;
+        justify-content: center;
+        padding: 0%;
+    }
+
+
     footer {
         padding: 2vw 4vw;
         line-height: 3vw;
     }
-} 
+}
