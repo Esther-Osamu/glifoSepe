@@ -164,9 +164,11 @@ section.livros>p a {
 section.filmes {
     text-align: center;
     padding: 5vw 10vw;
-    background-image: url(../src/recomendacoes/backgroundBege.png);
+    background: url(../src/recomendacoes/backgroundBege.png);
     background-repeat: no-repeat;
     background-position: center -110vw;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
 }
 
 section.filmes h2 {
@@ -202,6 +204,7 @@ section.filmes ul li div.detalhes-filmes h3 {
 
 section.filmes ul li div.detalhes-filmes p {
     color: #C9CBC0;
+    font-weight: bold;
 }
 
 section.filmes ul li div.detalhes-filmes p.avaliacao {
@@ -211,7 +214,7 @@ section.filmes ul li div.detalhes-filmes p.avaliacao {
 section.filmes ul li>p {
     color: #C9CBC0;
     text-align: left;
-    padding: 0 4vw;
+    padding: 4vw 4vw;
     font-weight: bold;
 }
 
@@ -285,6 +288,10 @@ section.contato button {
     border-radius: 13px;
     display: inline-block;
     color: #C9CBC0;
+}
+
+section.contato img {
+    display: none;
 }
 
 
@@ -413,11 +420,11 @@ footer img {
     }
 
     section.filmes {
-        background-image: url(../src/recomendacoes/back-desktop.png);
+        background: url(../src/recomendacoes/back-desktop.png), #5F3A1F;
         background-repeat: no-repeat;
-        background-position: center -325px;
+        background-position: center -115px;
         background-size: 100% 100%;
-        margin-top: -8vw;
+        margin-top: -8vw 0 -16vw 0;
     }
 
     section.filmes h2 {
@@ -431,6 +438,79 @@ footer img {
         padding: 0%;
     }
 
+    section.filmes ul li {
+    padding:2vw;
+    }
+
+    section.filmes ul li > p {
+        padding: 0.4vw 4vw 5vw 4vw;
+    }
+
+    section.filmes ul li iframe {
+        max-width: 450px;
+    }
+
+    section.filmes ul li div.detalhes-filmes {
+        padding: 3vw 4vw;
+    }
+
+    section.contato {
+        display: flex;
+        justify-content: center;
+        gap: 12vw;
+    }
+
+    section.contato form {
+        text-align: left;
+    }
+
+    section.contato h2 {
+        font-size: 3.5rem;
+    }
+
+    section.contato p {
+        font-size: 1.5rem;
+    }
+
+    section.contato form label {
+        text-align: left;
+        margin: -2vw;
+    }
+
+    section.contato form input {
+        padding: 0.6vw 18vw 0.6vw 1vw;
+    }
+
+    section.contato form input::placeholder {
+        font-size: 1rem;
+    }
+
+    section.contato form textarea {
+        max-width: 80%;
+        margin: 0;
+        padding: 0.6vw 20vw 5vw 1vw;
+    }
+
+    section.contato form textarea::placeholder {
+        font-size: 1rem;
+    }
+
+    section.contato form button {
+        padding: 0.5vw 2vw;
+        font-size: 1.2rem;
+    }
+
+    section.contato form button.limpar {
+        padding: 0.5vw 2vw;
+        margin: 2vw 1vw 0 0;
+
+    }
+
+    section.contato img {
+        display: block;
+        margin-top: 10vw;
+        max-width: 300px;
+    }
 
     footer {
         padding: 2vw 4vw;
