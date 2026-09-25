@@ -5,6 +5,7 @@ html {
     /* títulos 
     font-family: 'caesar dressing' 
     */
+    background-color: #914A38;
 }
 
 
@@ -420,5 +421,68 @@ footer img {
         padding: 2vw 4vw;
         line-height: 3vw;
     }
+
+    /* == ROSETA == */
+
+.roseta {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    text-align: left;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+
+.roseta h2{ 
+    grid-area: titulo; order: unset; 
+    grid-area: titulo; order: unset; 
+}
+  
+.roseta div.texto-principal { 
+    grid-area: texto; order: unset; 
+}
+
+.blocorec { 
+    grid-area: recomenda; order: unset; 
+}
+  
+.direita { 
+    grid-area: foto; 
+    order: unset;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+.roseta {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-areas: 
+      "titulo    foto"
+      "texto     foto"
+      "recomenda foto";
+    text-align: left;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+
+.roseta div.texto-principal { 
+    grid-area: texto; order: unset; 
+}
+.roseta div.blocorec { 
+    grid-area: recomenda; order: unset; 
+}
+  
+.roseta .direita { 
+    grid-area: foto; 
+    order: unset;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
 
 } 
