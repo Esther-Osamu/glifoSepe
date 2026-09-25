@@ -5,64 +5,152 @@ html {
     /* títulos 
     font-family: 'caesar dressing' 
     */
+    background-color: #914a38;
 }
 
 
 /* === HEADER === */
 
 header {
-    background-color: #C9CBC0;
-    text-align: center;
+  background-color: #c9cbc0;
+  text-align: center;
 }
 
 header nav ul {
-    padding: 1vw 10vw;
+  padding: 1vw 10vw;
 }
 
 header nav ul li {
-    padding: 1.2vw;
+  padding: 1.2vw;
 }
-
 
 header nav ul li a.marc {
-    color: #5F3A1F;
+  color: #5f3a1f;
 }
 
-header nav ul li a:hover{
-    color: #5F3A1F;
+header nav ul li a:hover {
+  color: #5f3a1f;
 }
 
-section.botao {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background-color: #C9CBC0;
-    margin: 4vw 15vw;
-    padding: 3vw;
-    border-radius: 13px;
+.inicio {
+  background: linear-gradient(#3f6b76, #81745d, #c99565);
+ padding: 0 0 40vw 0;
+ margin-top: 0;
+
 }
 
+.inicio div {
+  font-family: Bellefair;
+  color: #c9cbc0;
+}
+
+.inicio img {
+    margin-top: -85vw;
+}
+
+.inicio ul li img {
+  display: none;
+}
+
+.inicio h2 {
+  font-size: 2.5rem;
+  padding: 2vw 0 17vw 0;
+  font-family: "caesar dressing";
+  color: #c9cbc0;
+  text-align: center;
+}
+
+.inicio p {
+  padding: 7vw;
+}
+
+.txt1 {
+  background:
+    url(../src/inicio/Group\ 104.png),
+    url(../src/inicio/ondas.png);
+;
+  background-size: 500vw, 100vw;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center 170px;
+  margin-top: -400px;
+  text-align: center;
+  padding: 14vw 0 27vw 0;
 
 
-section.botao img {
-    max-width: 20px;
-    filter: grayscale();
+
+}
+.outro{
+    margin-top: 50vw;
+}
+
+.txt1 h2 {
+  font-family: Bellefair;
+  color: #c9cbc0;
+  text-align: center;
+  padding: 5vw 2vw 9vw 2vw;
+  font-size: 1.7rem;
+
+}
+
+.txt1 p {
+  color: #f8d794;
+  text-align: center;
+  padding-left: 9vw;
+  padding-right: 9vw;
+
+}
+
+.txt2 {
+  background-color: #c99565;
+  padding: 14vw 0 27vw 0;
+}
+
+.txt2 h2 {
+  font-family: Caesar Dressing;
+  color: #5f3a1f;
+  text-align: center;
+  padding: 7vw 2vw 3vw 2vw;
+}
+
+.txt2 p {
+  font-family: Bellefair;
+  text-align: center;
+  color: #5f3a1f;
+  padding: 2vw 6vw 7vw 6vw;
+}
+
+.botao {
+  background-color: #c99565;
+}
+.botao a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #c9cbc0;
+  margin: 4vw 15vw;
+  padding: 3vw;
+  border-radius: 13px;
+}
+
+.botao img {
+  max-width: 20px;
+  filter: grayscale();
 }
 
 footer {
-    background-color: #C9CBC0;
-    padding: 5vw;
-    line-height: 5vw;
-    font-size: 0.8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #c9cbc0;
+  padding: 5vw;
+  line-height: 5vw;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 footer img {
-    max-width: 25px;
-    max-height: 25px;
-    
+  max-width: 25px;
+  max-height: 25px;
 }
 
 @media only screen and (min-width: 600px) {

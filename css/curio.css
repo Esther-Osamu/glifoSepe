@@ -57,20 +57,23 @@ header nav ul li a:hover{
     color:#C9CBC0;
 }
 
+/* == FESCRITAS == */
+
 .fescritas {
-    background: url(../src/curiosidades/fundos/banner-fescritas.png);
+    background: url(../src/curiosidades/fundos/fescritas-mobile.png);
     background-repeat: no-repeat;
-    background-position: center -170px;
+    background-position: center 70px;
     background-size: 100% 100%;
 
     position: relative;
     z-index: 2;
-    margin-top: -190px;
+    margin-top: -300px;
     text-align: center;
+    padding-bottom: 2vw;
 }
 
 .fescritas h2{
-    padding-top: 45vw;
+    padding-top: 80vw;
     font-family: 'caesar dressing';
     color: #5F3A1F ;
     font-size: 2rem;
@@ -80,6 +83,7 @@ header nav ul li a:hover{
    color: #914A38;
    font-size: 1rem;
    padding-top: 4vw;
+   padding-bottom: 9vw;
 }
 
 
@@ -94,7 +98,289 @@ header nav ul li a:hover{
 
 
 .cards li{
+    width: 280px;
+    margin: 0 auto 50px;
+    position: relative;
 }
+
+.cards img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+
+    display: block;
+    margin: 0 auto -80px;
+    
+    position: relative;
+    z-index: 2;
+}
+
+.cards .conteudo{
+    background-color: #3F6B76;
+    padding: 70px 10px 25px;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.cards li .conteudo p{
+    max-width: 90px;
+    margin: 0 auto;
+}
+
+.conteudo{
+    width: 170px;
+    box-sizing: border-box;
+    margin: -35px auto 0;
+    padding: 70px 25px 25px;
+
+    border-radius: 0 0 10px 10px ;
+}
+
+/* == ROSETA == */
+
+.roseta{
+    text-align: center;
+    position: relative;
+}
+
+.roseta h2{
+    padding: 7vw;
+    padding-bottom: 4vw;
+    font-size: 2rem;
+    font-family: 'caesar dressing' ;
+    color: #C99565;
+}
+
+.roseta p{
+    color: #C9CBC0;
+    margin: 40px;
+}
+
+.roseta {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 120px;
+}
+
+.roseta h2 { 
+    order: 1; 
+}
+.texto-principal { 
+    order: 2; 
+    z-index: 2;
+}
+.direita { 
+    order: 3; margin: 20px 0;  
+}
+.blocorec { 
+    order: 4;
+    gap: 15px;
+    padding: 15px 20px;
+    position: relative; 
+    z-index: 2;  
+    display: flex;
+    align-items: center;       
+    justify-content: center;                             
+    margin-top: 390px;          
+    width: 100%;
+    max-width: 500px;       
+}
+
+.textobloco {
+    display: flex;
+    flex-direction: column;    
+    align-items: flex-start;   
+    text-align: left;  
+}
+
+.roseta div.direita img{
+    max-width: 330px;
+    position: absolute;
+    z-index: 1;
+    top: 360px;
+    right: 0;
+    width: 100%;
+    pointer-events: none;
+    right: 60%;
+    transform: translateX(50%);
+    margin-right: 0; 
+    top: 70px; 
+}
+
+.roseta .blocorec p{
+    color: #F8D794;
+    margin: 0;                 
+    margin-bottom: 8px;       
+    font-size: 0.95rem;        
+    line-height: 1.4;    
+    
+}
+
+.roseta .blocorec a{
+    color: #F8D794;
+    text-decoration: underline;
+
+}
+
+
+
+/* == PODER MÁGICO ==*/
+
+.podermagico{
+    text-align: center;
+    margin-top: 20px;
+    padding: 12vw;
+    background: url(../src/curiosidades/fundos/podermagico-mobile.png);
+
+}
+
+.podermagico h2{
+    color: #C9CBC0;
+    font-size: 2rem;
+    font-family: 'caesar dressing';
+    padding-bottom: 9vw;
+
+}
+
+.podermagico img{
+    width: 250px;
+}
+.podermagico p{
+    color: #C9CBC0;
+    padding: 8vw 3vw 5vw 3vw ;
+}
+
+/* == GRAVURAS ==*/
+
+
+.gravuras{
+    padding: 9vw;
+    text-align: center;
+    position: relative;
+    z-index: -1;
+}
+.gravuras img{
+    width: 300px;
+}
+
+.gravuras p{
+    text-align: left;
+    padding-left: 15vw;
+    padding-right: 17vw;
+    padding-bottom: 8vw;
+    color: #C9CBC0;
+
+}
+
+.gravuras h3{
+    text-align: left;
+   padding-left: 15vw;
+   padding-right: 14vw;
+   font-size: 1.5rem;
+   color: #F8D794;
+   padding-bottom: 4vw;
+    
+}
+
+.gravuras span{
+    color: #F8D794;
+}
+
+/* == BALANCA == */
+
+.balanca {
+    text-align: center;
+    background: url(../src/curiosidades/fundos/balanca-mobile.png) no-repeat;
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin-top: -120px; 
+    padding: 410px 20px 40px 20px;
+    background-size: 100% auto;
+    background-position: center top;
+}
+
+.balanca p.agora{
+    color: #5F3A1F;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 8vw;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 8vw;
+}
+
+.balanca a{
+    color: #F8D794;
+    background-color: #5F3A1F;
+    padding: 3vw 12vw;
+    border-radius: 20px;
+
+}
+
+
+.balanca h2 {
+    font-family: 'caesar dressing';
+    color: #5F3A1F;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+
+}
+
+.balanca p.texto-balanca {
+    color: #010101;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 5px 0;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.coluna-imagem img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    justify-content: center;
+    display: flex;
+    margin-right: 20px;
+}
+
+
+
+
+/* == REDIRECIONAR == */
+
+.redirecionar{
+    text-align: center;
+    padding: 6vw;
+    padding-bottom: 9vw;
+    padding-top: 9vw;
+}
+.redirecionar a{
+    color: #5F3A1F;
+    background-color: #C9CBC0;
+    border-radius: 20px;
+    padding: 5vw 9vw 5vw 9vw;
+   
+}
+
+.redirecionar a img{
+    width: 19px;
+
+}
+
+
 
 
 
