@@ -332,18 +332,13 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: left;
 }
 
 footer img {
     max-width: 25px;
     max-height: 25px;
 }
-
-footer {
-    padding: 2vw 4vw;
-    line-height: 3vw;
-}
-
 
 @media only screen and (min-width: 600px) {
     header nav {

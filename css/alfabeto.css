@@ -8,6 +8,7 @@ html {
 }
 
 
+
 /* === HEADER === */
 
 header {
@@ -27,156 +28,136 @@ header nav ul li a.marc {
     color: #5F3A1F;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
     color: #5F3A1F;
 }
-section.inicio{
-    padding: 5vw 10vw;
-    background: linear-gradient(#3f6b76,#F8D794);
-}
-section.inicio h2{
-    text-align: left;
-    font-family: 'caesar dressing';
-    font-size: 2rem;
-    color: #C9CBC0;
-    padding: 4vw;
-}
-section.inicio p{
-    text-align: left;
-    padding: 4vw;
-    color: #5f2c0e;
-}
-section.bnt{
-    text-align: center;
-    background-color: #BB6B3D;
-    padding: 5vw;
-    background-image: url;
-}
-section.bnt h2{
-    color: #564626;
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 1vw 1vw 3vw 1vw;
-}
-.bnt p{
-    color: #F8D794;
-    font-size: 0.8rem;
-}
-.bnt img{
-    width: 50%;
-    padding: 5vw;
-}
-section.titdois{
-    text-align: center;
-    background-color: #F8D794;
-    background: linear-gradient(#F8D794,#94d7e7,#3f6b76);
-    padding: 10vw;
+
+
+.inicio {
+  background: linear-gradient(#3f6b76, #81745d, #c99565);
+ padding: 0 0 40vw 0;
+ margin-top: 0;
 
 }
-.titdois h1{
-   font-family: 'caesar dressing';
-   font-size: 2rem;
-   color: #6b2801;
-   padding: 5vw;
-   color: #422c1e;
-}  
-section.titdois li {
-  text-align: center;
-  background-color: #3f6b76;
-  border-radius: 10vw;
-  border: 4px solid #6dadbd;
-  margin: 5vw;
-  padding: 4vw;
-}
-section.titdois h2 {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #f8d794;
 
+.inicio div {
+  font-family: Bellefair;
+  color: #c9cbc0;
 }
-section.titdois p {
-  margin-left: 15vw;
-  margin-right: 15vw;
-  font-size: 0.9rem;
-  padding: 2vw;
-  color: #d8b368;
-}
-section.titdois img {
-  width: 40%;
-}
-section.imagens {
-  text-align: center;
-  background-color: #bb6b3d;
-  padding: 5vw;
 
+.inicio img {
+    margin-top: -85vw;
+    margin-left: 10vw;
 }
-section.imagens img{
-    width: 40%;
+
+.inicio ul li img {
+  display: none;
 }
-section.imagens h1 {
+
+.inicio h2 {
+  font-size: 6.7rem;
+  padding: 2vw 0 -7vw 0;
   font-family: "caesar dressing";
-  font-size: 2rem;
-  color: #e7ce9c;
-  padding: 5vw;
-}
-section.text{
-    text-align: center;
-    padding: 5vw;
-    font-size: 0.9rem;
-    color: #64361a;
-}
-section.banner{
-    text-align: center;
-    padding: 10vw;
-    background-color: #F8D794;
-    filter: drop-shadow(0 8px 6px rgba(0,0,0,0.25));
-    padding: 15vw;
-}
-
-section.bnt{
-    text-align: center;
-    background-color: #BB6B3D;
-    padding: 5vw;
+  color: #c9cbc0;
+  text-align: center;
 
 }
-section.bnt h1{
-    color: #564626;
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 1vw 1vw 3vw 1vw;
+
+.inicio p {
+  padding: 7vw;
 }
-section.bnt p{
-    color: #F8D794;
-    font-size: 0.8rem;
+
+.txt1 {
+  background:
+    url(../src/inicio/Group\ 104.png),
+    url(../src/inicio/ondas.png);
+;
+  background-size: 500vw, 100vw;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center 170px;
+  margin-top: -400px;
+  text-align: center;
+  padding: 14vw 0 27vw 0;
+
+
+
 }
-section.final{
-    padding: 7vw;
-    text-align: center;
-    background-size: cover;
-    padding-left: 15vw;
-    padding-right: 19vw;
-    background-image: url(../src/jogo/mobile/background-final.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 50vw 15vw 15vw 15vw;
-    color: #F8D794;
-    font-size: 1.5rem;
+.outro{
+    margin-top: 50vw;
 }
-section.final p{
-    color: #F8D794;
-    font-weight: 900;
+
+.txt1 h2 {
+  font-family: Bellefair;
+  color: #c9cbc0;
+  text-align: center;
+  padding: 5vw 10vw 10vw 10vw;
+    font-size: 4.7rem;
+
+}
+
+.txt1 p {
+  color: #f8d794;
+  text-align: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+    font-size: 3rem;
+
+}
+
+.txt2 {
+  background-color: #c99565;
+  padding: 14vw 0 27vw 0;
+}
+
+.txt2 h2 {
+  font-family: Caesar Dressing;
+  color: #5f3a1f;
+  text-align: center;
+  padding: 7vw 2vw 3vw 2vw;
+  font-size: 4.3rem;
+}
+
+.txt2 p {
+  font-family: Bellefair;
+  text-align: center;
+  color: #5f3a1f;
+  padding: 5vw 10vw 5vw 10vw;
+  font-size: 3rem;
+}
+
+.txt2 img{
+  padding: 5vw 10vw 5vw 10vw;
+  margin-left: 13vw;
+}
+
+.botao {
+  background-color: #c99565;
+}
+.botao a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #c9cbc0;
+  margin: 4vw 15vw;
+  padding: 3vw;
+  border-radius: 13px;
+}
+
+.botao img {
+  max-width: 20px;
+  filter: grayscale();
 }
 
 footer {
-    background-color: #C9CBC0;
-    padding: 5vw;
-    line-height: 5vw;
-    font-size: 0.8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #c9cbc0;
+  padding: 5vw;
+  line-height: 5vw;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
 footer img {
     max-width: 25px;
     max-height: 25px;
