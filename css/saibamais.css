@@ -312,14 +312,123 @@ footer img {
     header nav img {
         max-width: 115px;
     }
-    section.banner{
-        display: flex;
-    }
-    section.banner h2{
-        font-size: 3rem;
-    }
-    footer {
-        padding: 2vw 4vw;
-        line-height: 3vw;
-    }
+
+    section.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    background: url("../src/saibamais/background.png"), linear-gradient(#F8D794), #F8D794;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 4vw 10vw 8vw 7vw;
+}
+
+section.banner .text {
+    width: 45%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+section.banner .text h2 {
+    font-size: 4.5rem;
+    margin: 0;
+    font-size: 4.5rem;
+    line-height: 1;
+    margin: 0;
+    text-align: left;
+}
+section.banner .text h2 span{
+    margin-left: 100px;
+}
+
+section.banner .text img {
+    width: 60%;
+}
+section.banner .img {
+    width: 45%;
+}
+
+section.banner .img img {
+    width: 100%;
+    height: auto;
+}
+section.projeto{
+    padding: 15px;
+}
+section.projeto p{
+    font-size: 1rem;
+    padding: 30px 70px 30px 70px;
+    width: 80%;
+}
+section.projeto img{
+    max-width: 20%;
+}
+section.membros{
+    width: 100%;
+    text-align: center;
+}
+
+section.membros p.paragrafo{
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+section.membros ul {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+section.membros ul li {
+    display: grid;
+    grid-template-columns: 180px 100px 150px 350px 1fr;
+    align-items: center;
+
+    width: 100%;
+    box-sizing: border-box;
+}
+
+section.membros .foto {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+section.membros li h2 {
+    margin: 0;
+}
+
+section.membros li > img:nth-of-type(2) {
+    width: 120px;
+    height: auto;
+}
+
+section.membros li > p {
+    max-width: 300px;
+    margin: 0;
+}
+
+section.membros .github-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+section.membros .github-icon {
+    width: 25px;
+    height: 25px;
+}
+footer {
+    padding: 2vw 4vw;
+    line-height: 3vw;
+}
 } 
