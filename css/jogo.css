@@ -47,6 +47,7 @@ section.bnr h2 {
     margin: 7vw 0vw 0vw 0vw;
 }
 
+
 /* === SECTION.VETOR === */
 .vetor div.geral {
     display: flex;
@@ -67,65 +68,7 @@ section.vetor p.principal {
 
 }
 
-section.vetor p span {
-    font-size: 1.9rem;
-}
 
-section.vetor div {
-    margin: 0 0 5vw 0;
-}
-
-.carrossel {
-    position: relative;
-    max-width: 300px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-}
-
-.slides {
-    width: 100%;
-}
-
-.slide {
-    display: none;
-    /* Esconde todas as imagens por padrão */
-    width: 100%;
-    border-radius: 10px;
-}
-
-.slide.ativo {
-    display: block;
-    /* Mostra apenas a imagem com a classe 'ativo' */
-}
-
-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.anterior {
-    left: 10px;
-    color: #914A38;
-}
-
-.proximo {
-    right: 10px;
-    color: #914A38;
-}
-
-section.vetor div.slides img {
-    text-align: center;
-    padding: 5vw;
-
-}
 
 section.vetor div.vetor p {
     font-size: 1.7rem;
@@ -152,7 +95,7 @@ section.vetor div.vetor p {
         url(../src/jogo/papiro-vertical.png) left top no-repeat,
         #f0f0f0;
     /* Cor de fundo no final */
-    background-size: 400px 200px, 50% auto;
+    background-size: 350px 150px, 50% auto;
 }
 
 .jogos img {
@@ -174,14 +117,8 @@ section.vetor div.vetor p {
     padding: 5vw 3vw 7vw 3vw;
     color: #5F3A1F;
     font-size: 1.1rem;
-    font-weight: 600;
-}
-
-.jogos ul li.senet {
-    background-color: #C99565;
-    padding: 5vw 3vw 7vw 3vw;
-    color: #5F3A1F;
-    font-size: 1.1rem;
+    width:100% ;
+   
 }
 
 .jogos ul li.caes {
@@ -190,13 +127,9 @@ section.vetor div.vetor p {
     padding: 5vw 3vw 7vw 3vw;
     font-size: 1.1rem;
     color: #F8D794;
+     width:100% ;
 }
 
-.jogos ul li p {
-    text-align: center;
-    padding: 0 20% 0 20%;
-    margin: 3vw 0 3vw 0;
-}
 
 .jogos ul li.mehen {
     background-color: #F8D794;
@@ -204,31 +137,13 @@ section.vetor div.vetor p {
     padding: 5vw 3vw 7vw 3vw;
     font-size: 1.1rem;
     margin: 7vw 0vw 7vw 0vw;
-}
-
-.jogos ul li.caes {
-    margin: 7vw 0vw 7vw 0vw;
-    background-color: #3F6B76;
-    padding: 5vw 3vw 7vw 3vw;
-    font-size: 1.1rem;
-    font-weight: 600;
-    font-size: 0.9rem;
-    color: #F8D794;
+     width:100% ;
 }
 
 .jogos ul li p {
     text-align: center;
     padding: 0 20% 0 20%;
     margin: 3vw 0 3vw 0;
-}
-
-.jogos ul li.mehen {
-    background-color: #F8D794;
-    color: #5F3A1F;
-    padding: 5vw 3vw 7vw 3vw;
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin: 7vw 0vw 7vw 0vw;
 }
 
 /* === section.final=== */
@@ -340,6 +255,172 @@ footer img {
     max-height: 25px;
 }
 
+
+
+
+                                    /*=== JOGO2 === */
+
+ /*=== SECTION.BANR===*/
+ .banr {
+    background: url(../src/jogo/jogo2/jogo2/bnr.png);
+    background-repeat: no-repeat;
+    background-size: auto 60vw;
+    padding: 20vw 40vw 20vw 40vw;
+     text-align: center; 
+ }
+ .banr h2{
+    font-size: 2rem ;
+    font-family: "Caesar Dressing";
+    color: #F8D794;
+ }
+
+ /*=== SECTION.INSTRUCOES ===*/
+ .instrucoes{
+    background: #C99565;
+    text-align: center;
+ }
+ .instrucoes div.instrucoes{
+    background: #3F6B76;
+    margin: 10vw 5vw 10vw;
+    padding: 5vw 7vw 1vw 7vw;
+    border-radius: 15px;
+    margin-top: 5vw;
+ }
+ .instrucoes h2{
+    font-size: 2rem ;
+    font-family: "Caesar Dressing";
+    color: #F8D794;
+    margin: 3vw 0 6vw 0;
+ }
+ .instrucoes ul li{
+    border-left: #F8D794 2px solid;
+    margin: 5vw 0  5vw  0;
+    text-align: left;
+    margin-left: 2vw;
+    padding-left: 3vw;
+ }
+ .instrucoes ul li h3{
+    font-size: 1.1rem;
+    color:#F8D794;
+ }
+ .instrucoes ul li p{
+    color: #F8D794;
+    width: 80%;
+    font-size: 1rem;
+ }
+ .instrucoes img{
+    width: 30%;
+    margin-top: 3vw;
+    margin-right: 80vw;
+ }
+
+ /*=== SECTION.OJOGO ===*/
+
+ .ojogo{
+    background: #F8D794;
+padding: 7vw 0 10vw 0;
+ }
+ .ojogo h2{
+    color: #914A38;
+    font-family: "Caesar Dressing";
+    font-size: 2.5rem;
+    text-shadow: 4px 4px 6px rgba(29, 29, 29, 0.5);
+    padding: 5vw 0vw 5vw 0vw;
+ }
+ .ojogo img{
+width: 40%;
+margin: 2vw 0 6vw 0vw;
+ }
+ .ojogo h4{
+    color: #5F3A1F;
+    font-size: 1.1rem;
+    margin: 7vw 0vw 7vw 0vw;
+ }
+ .ojogo h3{
+    background-color: #5F3A1F;
+    color: #F8D794;
+    padding: 2vw 4vw 2vw 4vw;
+    border-radius: 15vw;
+    margin: 0vw 15vw 0vw 15vw;
+ }
+.ojogo input{
+    border: #5F3A1F 2px solid ;
+    border-radius: 15px;
+    
+}
+
+/*=== SECTION.ALFABETO ===*/
+.alfa{
+    background: #F8D794;
+    margin-top: 0;
+}
+.alfa h2{
+    font-size: 1.7rem ;
+    font-family: "Caesar Dressing";
+    color: #914A38; 
+    text-shadow: 4px 4px 6px rgba(29, 29, 29, 0.5);
+    padding-top: 27vw;
+}
+.alfa ul li.escutar{
+    background: url(../src/inicio/ondas.png);
+    background-repeat: no-repeat;
+    background-size: auto 460px;
+    background-position: top -60%;
+    z-index: 2;
+}
+.alfa ul li.lis{
+    background-color: #914A38;
+    margin: 0;
+}
+.alfa ul li{
+    padding: 1vw 0vw 1vw 0vw;
+}
+.alfa ul li.agua{
+    margin: 0;
+    background-color: #914A38;
+}
+.alfa ul li h4{
+    padding: 2vw 0vw 4vw 0vw;
+    color: #F8D794;
+    font-size: 1.5rem;
+}
+
+.alfa ul li img {
+    background: #5F3A1F;
+    padding: 5vw 7vw 5vw 7vw;
+    width: 30%;
+    margin-top: 30vw;
+}
+.alfa div.geral{
+    background-color: #914A38;
+    z-index: 1;
+}
+.alfa a.tentar{
+    background-color: #3F6B76;
+    padding: 3vw 4vw 3vw 4vw;
+    border-radius: 10vw;
+    color: #F8D794;
+    margin-left: 7vw;
+    display: inline-block;
+    margin-top: 10vw;
+    font-size: 0.67rem;
+    margin-right: 9vw;
+}
+.alfa a.conferir{
+    background-color: #914A38;
+    color: #F8D794;
+   padding: 2vw 4vw 2vw 4vw;
+   border-radius: 10vw;
+   font-size: 0.8rem;
+   margin: 0 10vw 0 0;
+}
+.alfa img.balanca{
+    width: 16%;
+    margin-right: 85vw;
+    margin-top: 10vw;
+}
+
+
 @media only screen and (min-width: 600px) {
     header nav {
         display: flex;
@@ -424,6 +505,65 @@ footer img {
     .final h3 {
         font-size: 5rem !important;
     }
+
+
+                                /*=== JOGO2 ===*/
+    .banr{
+        background-image: url(../src/jogo/jogo2/jogo2/bnr.png);
+        background-size: auto 57vw;
+    }
+    .banr h2{
+        font-size: 5.5rem;
+    }
+    .instrucoes h2{
+        font-size: 5rem;
+    }
+    .instrucoes ul{
+        display: flex;
+    }
+    .instrucoes h3{
+        font-size: 2rem !important;
+    }
+    .instrucoes p{
+        font-size: 1.7rem !important;
+        margin-top: 3vw;
+    }
+    .instrucoes img{
+        width: 10%;
+    }
+    .ojogo h2{
+        font-size: 5.5rem;
+    }
+    .ojogo img{
+        width: 30%;
+    }
+    .ojogo h4{
+        font-size: 2rem;
+    }
+    .ojogo h3{
+        font-size: 2.1rem;
+       margin: 0vw 30vw 0vw 30vw;
+    }
+    .ojogo input{
+        padding: 2vw 7vw 2vw 7vw;
+        border-radius: 20vw;
+    }
+    .alfa h2{
+        font-size: 4rem;
+        position:absolute;
+        top:256vw;
+        left:40vw;
+    }
+    .alfa ul li.escutar{
+        background: url(../src/inicio/ondas.png);
+        background-repeat: no-repeat;
+        background-position: top 10vw;
+        background-size: auto 170% ;
+    }
+    .alfa div.c2{
+        display: flex;
+    }
+
 
     footer {
         padding: 2vw 4vw;
