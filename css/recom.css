@@ -28,7 +28,7 @@ header nav ul li a.marc {
     color: #5F3A1F;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
     color: #5F3A1F;
 }
 
@@ -58,14 +58,22 @@ section.banner img {
 section.locais {
     text-align: center;
     background-image: url(../src/recomendacoes/backgroundMarrom.png);
-        background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center -68px;
+    background-size: 100% 100%;
 }
+
 
 section.locais h2 {
     font-size: 1.5rem;
     font-family: 'caesar dressing';
     color: #5F3A1F;
-    padding: 8vw;
+    padding: 10vw;
+    text-align: left;
+}
+
+section.locais ul {
+    padding: 12vw;
 }
 
 section.locais ul li h3 {
@@ -85,19 +93,207 @@ section.locais ul li p a {
     text-decoration: underline;
 }
 
-section.locais > p a {
+section.explore {
+    background-color: #914A38;
+    padding: 10vw;
+    margin: -20vw;
+    text-align: center;
+}
+
+section.explore p a {
+    text-align: center;
     background-color: #F8D794;
     padding: 2vw 4vw;
     font-family: 'caesar dressing';
     color: #914A38;
     border-radius: 7px;
     display: inline-block;
-    margin: 3vw;
+    margin: 0;
+
 }
 
 section.locais ul li img {
     max-width: 250px;
 }
+
+section.livros {
+    margin: 25vw 0 0 0;
+    padding: 2vw 10vw;
+    text-align: center;
+}
+
+section.livros h2 {
+    font-size: 1.5rem;
+    font-family: 'caesar dressing';
+    color: #3F6B76;
+    padding: 5vw 0 5vw 0;
+}
+
+section.livros ul {
+    padding: 3vw;
+}
+
+section.livros ul li {
+    padding: 4vw;
+}
+
+section.livros ul li img {
+    max-width: 200px;
+}
+
+section.livros ul li h3 {
+    font-size: 1.5rem;
+    color: #914A38;
+    padding: 2vw;
+}
+
+section.livros ul li p a {
+    color: #3F6B76;
+    text-decoration: underline;
+}
+
+section.livros>p a {
+    background-color: #3F6B76;
+    padding: 3vw 6vw;
+    border-radius: 13px;
+    display: inline-block;
+    color: #C9CBC0;
+    font-family: 'caesar dressing';
+}
+
+section.filmes {
+    text-align: center;
+    padding: 5vw 10vw;
+    background: url(../src/recomendacoes/backgroundBege.png);
+    background-repeat: no-repeat;
+    background-position: center -110vw;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+
+section.filmes h2 {
+    font-family: 'caesar dressing';
+    font-size: 1.5rem;
+    color: #5F3A1F;
+    padding: 17vw 0 7vw 0;
+}
+
+section.filmes ul li {
+    padding: 16vw 0 0 0;
+}
+
+section.filmes ul li iframe {
+    max-width: 300px;
+    border-radius: 13px;
+}
+
+section.filmes ul li div.detalhes-filmes {
+    display: flex;
+    justify-content: space-between;
+    padding: 8vw 4vw;
+}
+
+section.filmes ul li div.detalhes-filmes div.ano {
+    text-align: right;
+}
+
+section.filmes ul li div.detalhes-filmes h3 {
+    color: #5F3A1F;
+    font-size: 1.5rem;
+}
+
+section.filmes ul li div.detalhes-filmes p {
+    color: #C9CBC0;
+    font-weight: bold;
+}
+
+section.filmes ul li div.detalhes-filmes p.avaliacao {
+    color: #5F3A1F;
+}
+
+section.filmes ul li>p {
+    color: #C9CBC0;
+    text-align: left;
+    padding: 4vw 4vw;
+    font-weight: bold;
+}
+
+section.contato {
+    background-color: #914A38;
+    padding: 5vw 10vw;
+    text-align: center;
+}
+
+section.contato h2 {
+    font-family: 'caesar dressing';
+    font-size: 1.5rem;
+    color: #F8D794;
+}
+
+section.contato p {
+    color: #C9CBC0;
+    padding: 2vw 0 0 0;
+}
+
+
+section.contato form>p {
+    color: #F8D794;
+}
+
+section.contato form input::placeholder {
+    color: #C9CBC0;
+    opacity: 45%;
+}
+
+section.contato label {
+    display: block;
+    padding: 3vw;
+}
+
+section.contato input {
+    background-color: #5F3A1F;
+    border: 2px solid;
+    padding: 4vw 8vw;
+    border-radius: 13px;
+}
+
+section.contato form textarea {
+    background-color: #5F3A1F;
+    border-radius: 13px;
+    border: 2px solid;
+    padding: 4vw 8vw;
+    max-width: 240px;
+    margin: 3vw;
+}
+
+section.contato form textarea::placeholder {
+    color: #C9CBC0;
+    opacity: 45%;
+
+}
+
+section.contato button.limpar {
+    background-color: #C9CBC0;
+    padding: 2vw 4vw;
+    border-radius: 13px;
+    font-family: 'caesar dressing';
+    color: #5F3A1F;
+    margin: 2vw;
+}
+
+section.contato button {
+    background-color: #3F6B76;
+    padding: 2vw 4vw;
+    font-family: 'caesar dressing';
+    border-radius: 13px;
+    display: inline-block;
+    color: #C9CBC0;
+}
+
+section.contato img {
+    display: none;
+}
+
 
 footer {
     background-color: #C9CBC0;
@@ -133,7 +329,7 @@ footer img {
 
     section.banner {
         display: flex;
-        flex-direction:row-reverse;
+        flex-direction: row-reverse;
         align-items: center;
         text-align: left;
         justify-content: flex-end;
@@ -153,8 +349,171 @@ footer img {
         max-width: none;
     }
 
+    section.locais {
+        padding: 2vw 10vw;
+    }
+
+    section.locais h2 {
+        padding: 0%;
+        font-size: 3.5rem;
+        width: 55%;
+    }
+
+    section.locais ul {
+        display: flex;
+        justify-content: center;
+        gap: 18vw;
+    }
+
+    section.locais ul li h3 {
+        font-size: 3rem;
+        padding: 0 0 2vw 0;
+    }
+
+    section.locais ul li img {
+        max-width: 400px;
+    }
+
+    section.locais ul li p {
+        font-size: 1.5rem;
+        padding: 2vw 0 0 0;
+    }
+
+    section.locais ul li p a {
+        padding: 0%;
+    }
+
+    section.explore {
+        padding: 0%;
+        margin: -9vw;
+    }
+
+    section.explore p a {
+        padding: 1vw 2vw;
+    }
+
+    section.livros {
+        padding: 0%;
+        margin: 17vw 0 0 0;
+
+    }
+
+    section.livros h2 {
+        font-size: 3.5rem;
+        padding: 0%;
+    }
+
+    section.livros ul {
+        display: flex;
+        justify-content: center;
+        padding: 3vw 0 0 0;
+        gap: 10px;
+    }
+
+    section.livros ul li {
+        padding: 2vw;
+    } 
+    
+    section.livros p a {
+        padding: 1vw 2vw;
+        margin: 2vw;
+    }
+
+    section.filmes {
+        background: url(../src/recomendacoes/back-desktop.png), #5F3A1F;
+        background-repeat: no-repeat;
+        background-position: center -115px;
+        background-size: 100% 100%;
+        margin-top: -8vw 0 -16vw 0;
+    }
+
+    section.filmes h2 {
+        font-size: 3.5rem;
+        padding: 8vw 8vw 0 8vw ;
+    }
+
+    section.filmes ul{
+        display: flex;
+        justify-content: center;
+        padding: 0%;
+    }
+
+    section.filmes ul li {
+    padding:2vw;
+    }
+
+    section.filmes ul li > p {
+        padding: 0.4vw 4vw 5vw 4vw;
+    }
+
+    section.filmes ul li iframe {
+        max-width: 450px;
+    }
+
+    section.filmes ul li div.detalhes-filmes {
+        padding: 3vw 4vw;
+    }
+
+    section.contato {
+        display: flex;
+        justify-content: center;
+        gap: 12vw;
+    }
+
+    section.contato form {
+        text-align: left;
+    }
+
+    section.contato h2 {
+        font-size: 3.5rem;
+    }
+
+    section.contato p {
+        font-size: 1.5rem;
+    }
+
+    section.contato form label {
+        text-align: left;
+        margin: -2vw;
+    }
+
+    section.contato form input {
+        padding: 0.6vw 18vw 0.6vw 1vw;
+    }
+
+    section.contato form input::placeholder {
+        font-size: 1rem;
+    }
+
+    section.contato form textarea {
+        max-width: 80%;
+        margin: 0;
+        padding: 0.6vw 20vw 5vw 1vw;
+    }
+
+    section.contato form textarea::placeholder {
+        font-size: 1rem;
+    }
+
+    section.contato form button {
+        padding: 0.5vw 2vw;
+        font-size: 1.2rem;
+    }
+
+    section.contato form button.limpar {
+        padding: 0.5vw 2vw;
+        margin: 2vw 1vw 0 0;
+
+    }
+
+    section.contato img {
+        display: block;
+        margin-top: 10vw;
+        max-width: 300px;
+    }
+
     footer {
         padding: 2vw 4vw;
         line-height: 3vw;
     }
-} 
+}
