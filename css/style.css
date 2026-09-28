@@ -85,6 +85,16 @@ section.banner img {
     z-index: 0;
 }
 
+section.banner img.mobile-banner {
+  margin-top: -75vw;
+  padding: 0%;
+  z-index: 0;
+}
+
+section.banner img.desktop-banner {
+    display: none;
+}
+
 section.trajetoria {
     background: url(../src/inicio/ankh-papiro.png)no-repeat, url(../src/inicio/ondas.png);
     background-position: center 25vw, center 100%;
@@ -153,13 +163,15 @@ footer img {
         max-width: 115px;
     }
 
+
     .banner img.mobile-banner {
         display: none;
     }
 
     .banner img.desktop-banner {
-        display: block;
+        display: block !important;
         width: 100%;
+        margin-top: 0%;
     }
 
     section.banner div p {
@@ -195,7 +207,7 @@ footer img {
     }
 
     section.trajetoria {
-        background-position: center -100%, center 0;
+        background-position: center -180%, center 0;
         background-size: cover;
     }
 
