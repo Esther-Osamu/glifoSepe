@@ -1,17 +1,18 @@
 /* === CSS GERAL === */
 
-html, body {
+html,
+body {
     font-family: 'bellefair';
     /* títulos 
     font-family: 'caesar dressing' 
     */
     background-color: #C99565;
-       width: 100%;
+    width: 100%;
     max-width: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-     scrollbar-width: none;
+    scrollbar-width: none;
 }
 
 html::-webkit-scrollbar,
@@ -28,8 +29,8 @@ header {
 }
 
 header nav {
-  z-index: 2;
-  position: relative;
+    z-index: 2;
+    position: relative;
 }
 
 header nav ul {
@@ -84,7 +85,7 @@ section.banner img {
     z-index: 0;
 }
 
-section.trajetoria { 
+section.trajetoria {
     background: url(../src/inicio/ankh-papiro.png)no-repeat, url(../src/inicio/ondas.png);
     background-position: center 25vw, center 100%;
     background-size: cover;
@@ -152,10 +153,74 @@ footer img {
         max-width: 115px;
     }
 
-        footer {
+    .banner img.mobile-banner {
+        display: none;
+    }
+
+    .banner img.desktop-banner {
+        display: block;
+        width: 100%;
+    }
+
+    section.banner div p {
+        font-size: 4rem;
+        padding: 7vw 15vw 0 15vw;
+        margin: 0 0 -3vw 0;
+    }
+
+    section.banner h2 {
+        font-size: 9rem;
+        margin-top: 5vw;
+        padding-right: 42vw;
+    }
+
+    section.trajetoria h2 {
+        font-size: 4rem;
+        padding-left: 27vw;
+        margin: -7vw 10vw 0 0;
+    }
+
+    .trajetoria p {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-left: 13vw;
+        margin-right: 13vw;
+    }
+
+    section.trajetoria p {
+        padding: 2vw 23vw 2vw 23vw;
+        position: relative;
+        top: -200px;
+
+    }
+
+    section.trajetoria {
+        background-position: center -100%, center 0;
+        background-size: cover;
+    }
+
+    section.nome {
+        padding: 8vw 17vw 4vw 17vw;
+    }
+
+    .nome p {
+        font-size: 2rem;
+        padding: 8vw 4vw 8vw 4vw;
+    }
+
+    section.nome div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.nome h2 {
+        font-size: 3rem;
+    }
+
+    footer {
         padding: 2vw 4vw;
         line-height: 3vw;
     }
 
 }
-
