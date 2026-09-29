@@ -472,12 +472,13 @@ footer img {
 
 .fescritas h2 {
     padding-top: 0;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 .fescritas > div > div:first-child p {
     padding-top: 1vw;
     padding-bottom: 0;
+    font-size: 1.5rem;
 }
 
 .fescritas > div > div:last-child {
@@ -531,7 +532,7 @@ footer img {
 
 .fescritas .cards li .conteudo p {
     max-width: 160px;
-
+    font-size: 1.2rem;
     margin: 0 auto;
 }
 
@@ -548,7 +549,7 @@ footer img {
 
         column-gap: 4vw;
 
-        padding: 7vw 12vw;
+        padding: 5vw 10vw;
         min-height: 650px;
 
         text-align: left;
@@ -560,7 +561,7 @@ footer img {
         z-index: 2;
 
         padding: 0;
-        margin: 0 0 2vw;
+        margin-top: 2vw;
 
         font-size: 3.5rem;
         text-align: left;
@@ -607,6 +608,7 @@ footer img {
         width: 1500px;
         max-width: 255%;
         height: auto;
+        padding: 0;
     }
 
 
