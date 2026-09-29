@@ -1,156 +1,149 @@
-/*  === CSS GERAL ===  */
+/* === CSS GERAL === */
 
-html {
+html,
+body {
     font-family: 'bellefair';
     /* títulos 
     font-family: 'caesar dressing' 
     */
-    background-color: #914a38;
+    background-color: #C99565;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
 }
 
 
 /* === HEADER === */
 
 header {
-  background-color: #c9cbc0;
-  text-align: center;
+    background-color: #C9CBC0;
+    text-align: center;
+}
+
+header nav {
+    z-index: 2;
+    position: relative;
 }
 
 header nav ul {
-  padding: 1vw 10vw;
+    padding: 1vw 10vw;
 }
 
 header nav ul li {
-  padding: 1.2vw;
+    padding: 1.2vw;
 }
 
 header nav ul li a.marc {
-  color: #5f3a1f;
+    color: #5F3A1F;
 }
 
 header nav ul li a:hover {
-  color: #5f3a1f;
+    color: #5F3A1F;
 }
 
-.inicio {
-  background: linear-gradient(#3f6b76, #81745d, #c99565);
- padding: 0 0 40vw 0;
- margin-top: 0;
-
+section.banner {
+    background: linear-gradient(#3F6B76, #C99565);
 }
 
-.inicio div {
-  font-family: Bellefair;
-  color: #c9cbc0;
+section.banner p {
+    color: #C9CBC0;
+    padding: 15vw 10vw 0 10vw;
+    z-index: 1;
+    font-weight: bold;
+    transform: rotate(-15deg);
+    font-size: 1.05rem;
 }
 
-.inicio img {
-    margin-top: -85vw;
+section.banner p.direita {
+    transform: rotate(15deg);
 }
 
-.inicio ul li img {
-  display: none;
+section.banner h2 {
+    color: #C9CBC0;
+    font-family: 'caesar dressing';
+    font-size: 3rem;
+    text-align: center;
+    padding: 0 0 4vw 0;
 }
 
-.inicio h2 {
-  font-size: 2.5rem;
-  padding: 2vw 0 17vw 0;
-  font-family: "caesar dressing";
-  color: #c9cbc0;
-  text-align: center;
+section.banner div {
+    display: flex;
+    justify-content: space-between;
 }
 
-.inicio p {
-  padding: 7vw;
+section.banner img {
+    margin-top: -75vw;
+    padding: 0%;
+    z-index: 0;
 }
 
-.txt1 {
-  background:
-    url(../src/inicio/Group\ 104.png),
-    url(../src/inicio/ondas.png);
-;
-  background-size: 500vw, 100vw;
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center 170px;
-  margin-top: -400px;
-  text-align: center;
-  padding: 14vw 0 27vw 0;
-
-
-
-}
-.outro{
-    margin-top: 50vw;
+section.banner img.mobile-banner {
+  margin-top: -75vw;
+  padding: 0%;
+  z-index: 0;
 }
 
-.txt1 h2 {
-  font-family: Bellefair;
-  color: #c9cbc0;
-  text-align: center;
-  padding: 5vw 2vw 9vw 2vw;
-  font-size: 1.7rem;
-
+section.banner img.desktop-banner {
+    display: none;
 }
 
-.txt1 p {
-  color: #f8d794;
-  text-align: center;
-  padding-left: 9vw;
-  padding-right: 9vw;
-
+section.trajetoria {
+    background: url(../src/inicio/ankh-papiro.png)no-repeat, url(../src/inicio/ondas.png);
+    background-position: center 25vw, center 100%;
+    background-size: cover;
 }
 
-.txt2 {
-  background-color: #c99565;
-  padding: 14vw 0 27vw 0;
+section.trajetoria h2 {
+    color: #5F3A1F;
+    font-size: 1.5rem;
+    padding: 5vw 10vw 20vw 10vw;
+    text-align: center;
 }
 
-.txt2 h2 {
-  font-family: Caesar Dressing;
-  color: #5f3a1f;
-  text-align: center;
-  padding: 7vw 2vw 3vw 2vw;
+section.trajetoria p {
+    text-align: center;
+    padding: 9vw 10vw;
+    color: #F8D794;
 }
 
-.txt2 p {
-  font-family: Bellefair;
-  text-align: center;
-  color: #5f3a1f;
-  padding: 2vw 6vw 7vw 6vw;
+section.nome {
+    padding: 10vw 10vw;
+    text-align: center;
 }
 
-.botao {
-  background-color: #c99565;
-}
-.botao a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background-color: #c9cbc0;
-  margin: 4vw 15vw;
-  padding: 3vw;
-  border-radius: 13px;
+section.nome p {
+    color: #5F3A1F;
+    padding: 11vw 6vw;
+    font-weight: bold;
 }
 
-.botao img {
-  max-width: 20px;
-  filter: grayscale();
+section.nome h2 {
+    font-family: 'caesar dressing';
+    font-size: 1.5rem;
+    color: #5F3A1F;
 }
 
 footer {
-  background-color: #c9cbc0;
-  padding: 5vw;
-  line-height: 5vw;
-  font-size: 0.8rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    background-color: #C9CBC0;
+    padding: 5vw;
+    line-height: 5vw;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer img {
-  max-width: 25px;
-  max-height: 25px;
+    max-width: 25px;
+    max-height: 25px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -170,8 +163,76 @@ footer img {
         max-width: 115px;
     }
 
+
+    .banner img.mobile-banner {
+        display: none;
+    }
+
+    .banner img.desktop-banner {
+        display: block !important;
+        width: 100%;
+        margin-top: 0%;
+    }
+
+    section.banner div p {
+        font-size: 4rem;
+        padding: 7vw 15vw 0 15vw;
+        margin: 0 0 -3vw 0;
+    }
+
+    section.banner h2 {
+        font-size: 9rem;
+        margin-top: 5vw;
+        padding-right: 42vw;
+    }
+
+    section.trajetoria h2 {
+        font-size: 4rem;
+        padding-left: 27vw;
+        margin: -7vw 10vw 0 0;
+    }
+
+    .trajetoria p {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-left: 13vw;
+        margin-right: 13vw;
+    }
+
+    section.trajetoria p {
+        padding: 2vw 23vw 2vw 23vw;
+        position: relative;
+        top: -200px;
+
+    }
+
+    section.trajetoria {
+        background-position: center -180%, center 0;
+        background-size: cover;
+    }
+
+    section.nome {
+        padding: 8vw 17vw 4vw 17vw;
+    }
+
+    .nome p {
+        font-size: 2rem;
+        padding: 8vw 4vw 8vw 4vw;
+    }
+
+    section.nome div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.nome h2 {
+        font-size: 3rem;
+    }
+
     footer {
         padding: 2vw 4vw;
         line-height: 3vw;
     }
-} 
+
+}

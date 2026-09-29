@@ -5,6 +5,7 @@ html {
     /* títulos 
     font-family: 'caesar dressing' 
     */
+    background-color: #F8D794;
 }
 
 
@@ -35,22 +36,27 @@ section.inicio{
     background: linear-gradient(#3f6b76,#F8D794);
 }
 section.inicio h2{
-    text-align: left;
+    text-align: center;
     font-family: 'caesar dressing';
     font-size: 2rem;
     color: #C9CBC0;
     padding: 4vw;
+    padding-bottom: 10vw;
 }
 section.inicio p{
-    text-align: left;
+    background-color: #3f6b76;
+    text-align: center;
+    color: #F8D794;
+    padding: 5vw;
+    border-radius: 10px;
+    border: 4px solid #6dadbd;
+    margin: 5vw;
     padding: 4vw;
-    color: #5f2c0e;
 }
 section.bnt{
     text-align: center;
     background-color: #BB6B3D;
     padding: 5vw;
-    background-image: url;
 }
 section.bnt h2{
     color: #564626;
@@ -73,7 +79,7 @@ section.titdois{
     padding: 10vw;
 
 }
-.titdois h1{
+.titdois h2{
    font-family: 'caesar dressing';
    font-size: 2rem;
    color: #6b2801;
@@ -132,7 +138,6 @@ section.banner{
     filter: drop-shadow(0 8px 6px rgba(0,0,0,0.25));
     padding: 15vw;
 }
-
 section.bnt{
     text-align: center;
     background-color: #BB6B3D;
@@ -209,9 +214,21 @@ footer img {
         text-align: left;
         display: flex;
         gap:20px;
+        padding: 9vw 4vw 0 4vw;
     }
     section.bnt h2{
-        font-size: 60vw;
+    
+        font-size: 4vw;
+    }
+    .bnt div p{
+        font-size: 1.2vw;
+    }
+    .bnt div img{
+        width:  120%;
+    }
+    .titdois div h2{
+      font-size: 12rem;
+
     }
 
     footer {
