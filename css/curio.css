@@ -42,8 +42,6 @@ header nav ul li a:hover{
     background-color: #96462e;
     padding-bottom: 24vw;
     z-index: 1;
-
-
 }
 
 .banner h2{
@@ -123,6 +121,7 @@ header nav ul li a:hover{
     border-radius: 0 0 10px 10px;
     position: relative;
     z-index: 1;
+
 }
 
 .cards li .conteudo p{
@@ -135,6 +134,7 @@ header nav ul li a:hover{
     box-sizing: border-box;
     margin: -35px auto 0;
     padding: 70px 25px 25px;
+    border: 2px solid #5F3A1F;
 
     border-radius: 0 0 10px 10px ;
 }
@@ -166,6 +166,7 @@ header nav ul li a:hover{
   text-align: center;
   padding: 20px;
   padding-bottom: 120px;
+
 }
 
 .roseta h2 { 
@@ -228,6 +229,10 @@ header nav ul li a:hover{
 
 }
 
+.roseta img.img-desktop{
+    display: none;
+}
+
 
 
 /* == PODER MÁGICO ==*/
@@ -236,7 +241,8 @@ header nav ul li a:hover{
     text-align: center;
     margin-top: 20px;
     padding: 12vw;
-    background: url(../src/curiosidades/fundos/podermagico-mobile.png);
+    background: url(../src/curiosidades/fundos/podermagico-mobile.png); height: auto;
+    
 
 }
 
@@ -260,6 +266,7 @@ header nav ul li a:hover{
 
 
 .gravuras{
+   
     padding: 9vw;
     text-align: center;
     position: relative;
@@ -297,6 +304,7 @@ header nav ul li a:hover{
 .balanca {
     text-align: center;
     background: url(../src/curiosidades/fundos/balanca-mobile.png) no-repeat;
+    background-position: top center;
     background-size: cover;
     background-position: center top;
     display: flex;
@@ -307,6 +315,7 @@ header nav ul li a:hover{
     padding: 410px 20px 40px 20px;
     background-size: 100% auto;
     background-position: center top;
+    overflow: hidden;
 }
 
 .balanca p.agora{
@@ -357,33 +366,10 @@ header nav ul li a:hover{
     margin-right: 20px;
 }
 
-
-
-
-/* == REDIRECIONAR == */
-
-.redirecionar{
-    text-align: center;
-    padding: 6vw;
-    padding-bottom: 9vw;
-    padding-top: 9vw;
+.balanca div.texto-inferior{
+    background-color: #F8D794;
+    margin: 5vw;
 }
-.redirecionar a{
-    color: #5F3A1F;
-    background-color: #C9CBC0;
-    border-radius: 20px;
-    padding: 5vw 9vw 5vw 9vw;
-   
-}
-
-.redirecionar a img{
-    width: 19px;
-
-}
-
-
-
-
 
 
 footer {
@@ -422,67 +408,328 @@ footer img {
         line-height: 3vw;
     }
 
+    /*== BANNER ==*/
+
+
+.banner{
+    background: url(../src/curiosidades/fundos/background-desktop-junção.png) no-repeat;
+    background-size: 100%;
+}
+
+.banner h2{
+    font-size: 8rem;
+    text-align: left;
+}    
+
+.banner p{
+    font-size: 3rem;
+    text-align: left;
+    padding-right: 13vw;
+  
+}
+
+/*== FESCRITAS ==*/
+
+
+.fescritas {
+    background-color: #F8D794;
+    margin-top: -120px;
+    padding: 0 5vw 6vw;
+
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+}
+
+.fescritas h2 {
+    padding-top: 10vw;
+    font-size: 3.5rem;
+}
+
+.fescritas > div > div:first-child p {
+    padding-top: 1vw;
+    padding-bottom: 3vw;
+}
+
+
+.fescritas > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4vw;
+}
+
+
+.fescritas > div > div:first-child {
+     width: 35%;
+     text-align: center;
+}
+
+.fescritas h2 {
+    padding-top: 0;
+    font-size: 2.5rem;
+}
+
+.fescritas > div > div:first-child p {
+    padding-top: 1vw;
+    padding-bottom: 0;
+}
+
+.fescritas > div > div:last-child {
+    width: 65%;
+}
+
+
+
+/* == CARDS == */
+
+.fescritas .cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 8vw;
+
+    padding: 0;
+    margin: 0;
+    padding-top: 5vw;
+}
+
+.fescritas .cards li {
+    width: 155px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.fescritas .cards img {
+    width: 165px;
+    height: 165px;
+
+    object-fit: cover;
+
+    margin: 0 auto -65px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.fescritas .cards .conteudo {
+    width: 155px;
+    min-height: 250px;
+
+    padding: 80px 20px 25px;
+
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.fescritas .cards li .conteudo p {
+    max-width: 160px;
+
+    margin: 0 auto;
+}
+
+
     /* == ROSETA == */
 
 .roseta {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "titulo imagem"
+            "texto imagem"
+            "recomendacao imagem";
+
+        column-gap: 4vw;
+
+        padding: 7vw 12vw;
+        min-height: 650px;
+
+        text-align: left;
+        align-items: center;
+    }
+
+    .roseta h2 {
+        grid-area: titulo;
+        z-index: 2;
+
+        padding: 0;
+        margin: 0 0 2vw;
+
+        font-size: 3.5rem;
+        text-align: left;
+    }
+
+
+    /* == TEXTO PRINCIPAL == */
+
+    .roseta .texto-principal {
+        grid-area: texto;
+
+        width: 100%;
+    }
+
+    .roseta .texto-principal p {
+        font-size: 1.3rem;
+        line-height: 1.5;
+
+        margin: 0 0 2vw;
+    }
+
+
+    .roseta .direita {
+        grid-area: imagem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0;
+        transform: translateX(-1065px);
+        z-index: 1;
+    }
+
+    .roseta .direita .img-mobile {
+        display: none;
+    }
+
+    .roseta .direita .img-desktop {
+        display: block;
+
+        position: static;
+
+        width: 1500px;
+        max-width: 255%;
+        height: auto;
+    }
+
+
+    /* == RECOMENDAÇÃO == */
+
+    .roseta .blocorec {
+        grid-area: recomendacao;
+
+        display: flex;
+        align-items: center;
+
+        width: 100%;
+        max-width: 500px;
+
+        margin: 2vw 0 0;
+        padding: 1vw;
+
+        gap: 1.5vw;
+    }
+
+    .roseta .imgbloco img {
+        width: 110px;
+        height: auto;
+    }
+
+    .roseta .textobloco {
+        text-align: left;
+    }
+
+    .roseta .textobloco p {
+        font-size: 1rem;
+        margin: 0 0 1vw;
+    }
+
+/* == PODER MÀGICO == */
+
+
+
+.podermagico h2{
     text-align: left;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-
-.roseta h2{ 
-    grid-area: titulo; order: unset; 
-    grid-area: titulo; order: unset; 
-}
-  
-.roseta div.texto-principal { 
-    grid-area: texto; order: unset; 
+    font-size: 3rem;
+    padding-right: 40vw;
+    padding-top: 2vw;
 }
 
-.blocorec { 
-    grid-area: recomenda; order: unset; 
-}
-  
-.direita { 
-    grid-area: foto; 
-    order: unset;
+.podermagico div{
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-  }
+    padding-bottom: 3vw;
+    gap: 6vw;
+    padding-left: 2vw;
+}
+
+.podermagico div img{
+    width: 250px;
+    height: auto;
+    max-width: none;
+    object-fit: contain;
+
+   
+}
+
+.podermagico div.p{
   
-.roseta {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-areas: 
-      "titulo    foto"
-      "texto     foto"
-      "recomenda foto";
+    font-size: 1.5rem;
     text-align: left;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
 
+}
 
-.roseta div.texto-principal { 
-    grid-area: texto; order: unset; 
+/* == GRAVURAS == */
+
+.gravuras{
+    background:  url(../src/curiosidades/fundos/back-3.png) no-repeat;
 }
-.roseta div.blocorec { 
-    grid-area: recomenda; order: unset; 
-}
-  
-.roseta .direita { 
-    grid-area: foto; 
-    order: unset;
+.gravuras ul{
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
+    justify-content: center;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.gravuras ul li{
+    text-align: center;
 
 
-} 
+}
+
+.gravuras h3{
+    padding: 0;
+    padding-left: 11vw;
+    padding-right: 0;
+    padding-bottom: 2vw;
+    margin: 0 0 12px 0;
+}
+
+
+.gravuras p{
+    padding-bottom: 0;
+    padding-left: 11vw;
+    padding-right: 10vw;
+    text-align: left;
+    line-height: 1.5;
+
+}
+
+/* === BALANÇA === */
+
+.balanca h2{
+    font-size: 3.5rem;
+    padding-top: 12vw;
+}
+
+.balanca {
+        background: url(../src/curiosidades/fundos/balanca.png) no-repeat;
+        background-size: 100%;
+}
+
+.balanca a{
+    padding: 2vw;
+}
+
+.balanca p.agora{
+    padding: 4vw 0 4vw 0;
+}
+
+}
