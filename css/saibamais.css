@@ -1,434 +1,763 @@
-/*  === CSS GERAL ===  */
+/* === CSS GERAL === */
 
 html {
-    font-family: 'Bellefair';
-    /* títulos 
-    font-family: 'caesar dressing' 
-    */
-    background-color: #914A38;
+ font-family: 'Bellefair';
+ /* títulos 
+ font-family: 'caesar dressing' 
+ */
+ background-color: #914A38;
 }
 
 
 /* === HEADER === */
 
 header {
-    background-color: #C9CBC0;
-    text-align: center;
+ background-color: #C9CBC0;
+ text-align: center;
 }
 
 header nav ul {
-    padding: 1vw 10vw;
+ padding: 1vw 10vw;
 }
 
 header nav ul li {
-    padding: 1.2vw;
+ padding: 1.2vw;
 }
 
 
 header nav ul li a.marc {
-    color: #5F3A1F;
+ color: #5F3A1F;
 }
 
 header nav ul li a:hover{
-    color: #5F3A1F;
+ color: #5F3A1F;
 }
 
-/*section-banner*/
+/*SECTION BANNER*/
 
 section.banner{
-    text-align: center;
-    background: url(../src/saibamais/background-banner.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center top;
-}
-section.banner h2{
-    font-family: "Caesar Dressing";
-    font-size: 2rem;
-    color: #F8D794;
-}
-section.banner div.text img{
-    max-width: 40%;
-}
-section.banner div.img img{
-    max-width: 60%;
+ text-align: center;
+ background: url(../src/saibamais/background-banner.png);
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+ background-position: center top;
 }
 
-/*section-projeto*/
+section.banner h2{
+ font-family: "Caesar Dressing";
+ font-size: 2rem;
+ color: #F8D794;
+}
+
+section.banner div.text img{
+ max-width: 40%;
+}
+
+section.banner div.img img{
+ max-width: 60%;
+}
+
+/*SECTION PROJETO*/
 
 section.projeto {
-  background-color: #F8D794;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 25px 20px 0; 
-  width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 0%;
+ background-color: #F8D794;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px 25px 20px 0; 
+ width: 100%;
+ box-sizing: border-box;
+ margin-bottom: 0%;
 }
 
 section.projeto img {
-  width: 38%;        
-  max-width: 180px;   
-  height: auto;
-  display: block;
-  margin: 0;
+ width: 38%; 
+ max-width: 180px; 
+ height: auto;
+ display: block;
+ margin: 0;
 }
 
 section.projeto p {
-  width: 60%;        
-  font-size: 0.9rem; 
-  line-height: 1.35;  
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  margin-top:0% ;
-  margin-bottom: 0%;
-  color: #5F3A1F;
-  font-weight: normal; 
-  -webkit-text-stroke: 0.1px #5F3A1F; 
-  text-shadow: 0 0 0.5px #5F3A1F;
+ width: 60%; 
+ font-size: 0.9rem; 
+ line-height: 1.35; 
+ text-align: center;
+ margin: 0;
+ padding: 0;
+ margin-top:0% ;
+ margin-bottom: 0%;
+ color: #5F3A1F;
+ font-weight: normal; 
+ -webkit-text-stroke: 0.1px #5F3A1F; 
+ text-shadow: 0 0 0.5px #5F3A1F;
 }
 
-/*section-membros*/
+/*SECTION MEMBROS*/
 
 section.membros p.paragrafo{
-    background-color: #3F6B76;
-    color: #C9CBC0;
-    font-size: 1.5rem;
-    font-family: "Caesar Dressing";
-    text-align: center;
-    padding: 20px;
+ background-color: #3F6B76;
+ color: #C9CBC0;
+ font-size: 1.5rem;
+ font-family: "Caesar Dressing";
+ text-align: center;
+ padding: 20px;
 }
+
 section.membros ul{
-    text-align: center;
-    background-color: #914A38;
-    color: #F8D794;
+ text-align: center;
+ background-color: #914A38;
+ color: #F8D794;
 }
+
 section.membros ul li.card-ananda img.foto{
-    max-width: 40%;
-    margin: 20px 0 0 0;
+ max-width: 40%;
+ margin: 20px 0 0 0;
 }
+
 section.membros ul li.card-ananda h2{
-    font-size: 1.5rem;
-    font-family: "Caesar dressing";
+ font-size: 1.5rem;
+ font-family: "Caesar dressing";
 }
+
 section.membros ul li.card-ananda img{
-    max-width: 30%;
+ max-width: 30%;
 }
+
 section.membros ul li.card-ananda p{
-    font-size: 0.9rem;
-    padding: 0 50px 0 50px;
-    max-width: 250px;
-    margin: 0 auto;
+ font-size: 0.9rem;
+ padding: 0 50px 0 50px;
+ max-width: 250px;
+ margin: 0 auto;
 }
+
 section.membros ul li.card-esther img.foto{
-    max-width: 40%;
-    margin: 20px 0 0 0;
+ max-width: 40%;
+ margin: 20px 0 0 0;
 }
+
 section.membros ul li.card-esther h2{
-    font-size: 1.5rem;
-    font-family: "Caesar dressing";
+ font-size: 1.5rem;
+ font-family: "Caesar dressing";
 }
+
 section.membros ul li.card-esther img{
-    max-width: 30%;
+ max-width: 30%;
 }
+
 section.membros ul li.card-esther p{
-    font-size: 0.9rem;
-    padding: 0 50px 0 50px;
-    max-width: 250px;
-    margin: 0 auto;
+ font-size: 0.9rem;
+ padding: 0 50px 0 50px;
+ max-width: 250px;
+ margin: 0 auto;
 }
+
 section.membros ul li.card-isabelle img.foto{
-    max-width: 40%;
-    margin: 20px 0 0 0;
+ max-width: 40%;
+ margin: 20px 0 0 0;
 }
+
 section.membros ul li.card-isabelle h2{
-    font-size: 1.5rem;
-    font-family: "Caesar dressing";
+ font-size: 1.5rem;
+ font-family: "Caesar dressing";
 }
+
 section.membros ul li.card-isabelle img{
-    max-width: 30%;
+ max-width: 30%;
 }
+
 section.membros ul li.card-isabelle p{
-    font-size: 0.9rem;
-    padding: 0 50px 0 50px;
-    max-width: 250px;
-    margin: 0 auto;
+ font-size: 0.9rem;
+ padding: 0 50px 0 50px;
+ max-width: 250px;
+ margin: 0 auto;
 }
+
 section.membros ul li.card-mariella img.foto{
-    max-width: 40%;
-    margin: 20px 0 0 0;
+ max-width: 40%;
+ margin: 20px 0 0 0;
 }
+
 section.membros ul li.card-mariella h2{
-    font-size: 1.5rem;
-    font-family: "Caesar dressing";
+ font-size: 1.5rem;
+ font-family: "Caesar dressing";
 }
+
 section.membros ul li.card-mariella img{
-    max-width: 30%;
+ max-width: 30%;
 }
+
 section.membros ul li.card-mariella p{
-    font-size: 0.9rem;
-    padding: 0 50px 0 50px;
-    max-width: 250px;
-    margin: 0 auto;
+ font-size: 0.9rem;
+ padding: 0 50px 0 50px;
+ max-width: 250px;
+ margin: 0 auto;
 }
+
 section.membros ul li.card-rebecca img.foto{
-    max-width: 40%;
-    margin: 20px 0 0 0;
+ max-width: 40%;
+ margin: 20px 0 0 0;
 }
+
 section.membros ul li.card-rebecca h2{
-    font-size: 1.5rem;
-    font-family: "Caesar dressing";
+ font-size: 1.5rem;
+ font-family: "Caesar dressing";
 }
+
 section.membros ul li.card-rebecca img{
-    max-width: 30%;
+ max-width: 30%;
 }
+
 section.membros ul li.card-rebecca p{
-    font-size: 0.9rem;
-    padding: 0 50px 0 50px;
-    max-width: 250px;
-    margin: 0 auto;
+ font-size: 0.9rem;
+ padding: 0 50px 0 50px;
+ max-width: 250px;
+ margin: 0 auto;
 }
+
 section.membros ul li.card-sofia img.foto{
-    max-width: 40%;
-    margin: 20px 0 0 0;
+ max-width: 40%;
+ margin: 20px 0 0 0;
 }
+
 section.membros ul li.card-sofia h2{
-    font-size: 1.5rem;
-    font-family: "Caesar dressing";
+ font-size: 1.5rem;
+ font-family: "Caesar dressing";
 }
+
 section.membros ul li.card-sofia img{
-    max-width: 20%;
-    margin: 0%;
+ max-width: 20%;
+ margin: 0%;
 }
+
 section.membros ul li.card-sofia p{
-    font-size: 0.9rem;
-    padding: 0 50px 0 50px;
-    max-width: 250px;
-    margin: 0 auto;
+ font-size: 0.9rem;
+ padding: 0 50px 0 50px;
+ max-width: 250px;
+ margin: 0 auto;
 }
 
 .github-link {
-  display: flex;
-  flex-direction: row; 
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  text-decoration: none;
-  color: inherit;
-  margin: 10px 0 10px 0;
+ display: flex;
+ flex-direction: row; 
+ align-items: center;
+ justify-content: center;
+ gap: 8px;
+ text-decoration: none;
+ color: inherit;
+ margin: 10px 0 10px 0;
 }
 
 .github-icon {
-  width: 20px; 
-  height: 20px;
+ width: 20px; 
+ height: 20px;
 }
 
-/*section-etapas*/
+/*SECTION ETAPAS*/
 
 section.etapas{
-    background: url(../src/saibamais/background-etapasd.png) no-repeat;
-    position: relative;
-    z-index: 2;
-    background-size: 100% 100%;
-    margin-top: -50px;
-    padding-top: 50px;
-    padding-bottom: 40px;
-    overflow: visible;
+ background: url(../src/saibamais/background-etapasd.png) no-repeat;
+ position: relative;
+ z-index: 2;
+ background-size: 100% 100%;
+ margin-top: -50px;
+ padding-top: 50px;
+ padding-bottom: 40px;
+ overflow: visible;
 }
+
 section.etapas p{
-    font-size: 1.5rem;
-    text-align: center;
-    color: #5F3A1F;
-    font-family: "caesar dressing";
-    padding: 50px 40px 10px;
+ font-size: 1.5rem;
+ text-align: center;
+ color: #5F3A1F;
+ font-family: "caesar dressing";
+ padding: 50px 40px 10px;
 }
 
 .link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 12px;
+ width: 100%;
 }
+
 .link a:first-child img {
-    width: 13px;
-    height: 13px;
+ width: 13px;
+ height: 13px;
 }
 
 .link a:last-child img {
-    width: 24px;
-    height: 24px;
+ width: 24px;
+ height: 24px;
 }
+
 .link a {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    text-decoration: none;
-    color: inherit;
-    width: max-content;
-    margin-left: auto;
-    margin-right: auto;
+ display: flex;
+ align-items: center;
+ gap: 12px;
+ text-decoration: none;
+ color: inherit;
+ width: max-content;
+ margin-left: auto;
+ margin-right: auto;
 }
 
 .link img {
-    width: 24px;
-    height: 24px;
-    max-width: 24px;
-    object-fit: contain;
+ width: 24px;
+ height: 24px;
+ max-width: 24px;
+ object-fit: contain;
 }
 
 
-/*footer*/
+/*FOOTER*/
 
 footer {
-    background-color: #C9CBC0;
-    padding: 5vw;
-    line-height: 5vw;
-    font-size: 0.8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+ background-color: #C9CBC0;
+ padding: 5vw;
+ line-height: 5vw;
+ font-size: 0.8rem;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
 }
 
 footer img {
-    max-width: 25px;
-    max-height: 25px;
+ max-width: 25px;
+ max-height: 25px;
 }
+
+/*DESKTOP*/
+
 @media only screen and (min-width: 600px) {
-    header nav {
-        display: flex;
-        justify-content: space-between;
-        padding: 2vw 4vw;
-    }
 
-    header nav ul {
-        display: flex;
-        padding: 0%;
-        align-items: center;
-    }
+/* HEADER */
 
-    header nav img {
-        max-width: 115px;
-    }
+header nav {
+ display: flex;
+ justify-content: space-between;
+ padding: 2vw 4vw;
+}
 
-    section.banner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    box-sizing: border-box;
-    background: url("../src/saibamais/background.png"), linear-gradient(#F8D794), #F8D794;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 4vw 10vw 8vw 7vw;
+header nav ul {
+ display: flex;
+ padding: 0%;
+ align-items: center;
+}
+
+header nav img {
+ max-width: 115px;
+}
+
+/* SECTION BANNER */
+
+section.banner {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ width: 100%;
+ box-sizing: border-box;
+ background: url("../src/saibamais/background.png"), linear-gradient(#F8D794), #F8D794;
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+ background-position: center;
+ padding: 3vw 12vw 4vw 12vw;
 }
 
 section.banner .text {
-    width: 45%;
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+ width: 45%;
+ width: 45%;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
 }
 
 section.banner .text h2 {
-    font-size: 4.5rem;
-    margin: 0;
-    font-size: 4.5rem;
-    line-height: 1;
-    margin: 0;
-    text-align: left;
+ font-size: 4.5rem;
+ margin: 0;
+ font-size: 4.5rem;
+ line-height: 1;
+ margin: 0;
+ text-align: left;
 }
+
 section.banner .text h2 span{
-    margin-left: 100px;
+ margin-left: 8vw;
 }
 
 section.banner .text img {
-    width: 60%;
+ width: 60%;
 }
+
 section.banner .img {
-    width: 45%;
+ width: 45%;
 }
 
 section.banner .img img {
-    width: 100%;
-    height: auto;
+ width: 100%;
+ height: auto;
 }
+
+ /* SECTION PROJETO */
+
 section.projeto{
-    padding: 15px;
+ padding: 15px;
 }
+
 section.projeto p{
-    font-size: 1rem;
-    padding: 30px 70px 30px 70px;
-    width: 80%;
+ font-size: 2.5rem;
+ padding: 30px 70px 30px 70px;
+ width: 80%;
 }
+
 section.projeto img{
-    max-width: 20%;
-}
-section.membros{
-    width: 100%;
-    text-align: center;
+ max-width: 20%;
 }
 
-section.membros p.paragrafo{
-    font-size: 2.5rem;
-    margin-bottom: 50px;
+/* SECTION MEMBROS */
+
+section.membros {
+  width: 100%;
+  text-align: center;
 }
+
+section.membros p.paragrafo {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
 section.membros ul {
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
-
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 section.membros ul li {
-    display: grid;
-    grid-template-columns: 180px 100px 150px 350px 1fr;
-    align-items: center;
-
-    width: 100%;
-    box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+  width: 820px;
+  max-width: 90%;
+  margin: 0 auto;
+  column-gap: 30px;
+  row-gap: 12px;
+  box-sizing: border-box;
 }
 
-section.membros .foto {
-    width: 160px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 50%;
+section.membros ul li.card-ananda img.foto {
+  grid-column: 1;
+  grid-row: 1 / 4;
+  width: 180px;
+  height: 180px;
+  max-width: 100%;
+  object-fit: cover;
+  justify-self: center;
+  margin: 0;
 }
 
-section.membros li h2 {
-    margin: 0;
+section.membros ul li.card-ananda h2 {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 2.2rem;
+  font-family: "Caesar Dressing";
+  margin: 0;
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
 }
 
-section.membros li > img:nth-of-type(2) {
-    width: 120px;
-    height: auto;
+section.membros ul li.card-ananda img:not(.foto):not(.github-icon) {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: start;
+  margin-left: 170px;
+  max-height: 35px;
+  width: auto;
 }
 
-section.membros li > p {
-    max-width: 300px;
-    margin: 0;
+section.membros ul li.card-ananda p {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  max-width: 480px;
 }
 
-section.membros .github-link {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+/*CARD ESTHER*/
+
+section.membros ul li.card-esther img.foto {
+  grid-column: 1;
+  grid-row: 1 / 4;
+  width: 180px;
+  height: 180px;
+  max-width: 100%;
+  object-fit: cover;
+  justify-self: center;
+  margin: 0;
 }
 
-section.membros .github-icon {
-    width: 25px;
-    height: 25px;
+section.membros ul li.card-esther h2 {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 2.2rem;
+  font-family: "Caesar Dressing";
+  margin: 0;
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
 }
+
+section.membros ul li.card-esther img:not(.foto):not(.github-icon) {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: start;
+  margin-left: 170px;
+  max-height: 35px;
+  width: auto;
+}
+
+section.membros ul li.card-esther p {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  max-width: 480px;
+}
+
+/*CARD ISABELLE*/
+
+section.membros ul li.card-isabelle img.foto {
+  grid-column: 1;
+  grid-row: 1 / 4;
+  width: 180px;
+  height: 180px;
+  max-width: 100%;
+  object-fit: cover;
+  justify-self: center;
+  margin: 0;
+}
+
+section.membros ul li.card-isabelle h2 {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 2.2rem;
+  font-family: "Caesar Dressing";
+  margin: 0;
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+}
+
+section.membros ul li.card-isabelle img:not(.foto):not(.github-icon) {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: start;
+  margin-left: 170px;
+  max-height: 35px;
+  width: auto;
+}
+
+section.membros ul li.card-isabelle p {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  max-width: 480px;
+}
+
+/*CARD MARIELLA*/
+
+section.membros ul li.card-mariella img.foto {
+  grid-column: 1;
+  grid-row: 1 / 4;
+  width: 180px;
+  height: 180px;
+  max-width: 100%;
+  object-fit: cover;
+  justify-self: center;
+  margin: 0;
+}
+
+section.membros ul li.card-mariella h2 {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 2.2rem;
+  font-family: "Caesar Dressing";
+  margin: 0;
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+}
+
+section.membros ul li.card-mariella img:not(.foto):not(.github-icon) {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: start;
+  margin-left: 170px;
+  max-height: 35px;
+  width: auto;
+}
+
+section.membros ul li.card-mariella p {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  max-width: 480px;
+}
+
+/*CARD REBECCA*/
+
+section.membros ul li.card-rebecca img.foto {
+  grid-column: 1;
+  grid-row: 1 / 4;
+  width: 180px;
+  height: 180px;
+  max-width: 100%;
+  object-fit: cover;
+  justify-self: center;
+  margin: 0;
+}
+
+section.membros ul li.card-rebecca h2 {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 2.2rem;
+  font-family: "Caesar Dressing";
+  margin: 0;
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+}
+
+section.membros ul li.card-rebecca img:not(.foto):not(.github-icon) {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: start;
+  margin-left: 170px;
+  max-height: 35px;
+  width: auto;
+}
+
+section.membros ul li.card-rebecca p {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  max-width: 480px;
+}
+
+/*CARD SOFIA*/
+
+section.membros ul li.card-sofia img.foto {
+  grid-column: 1;
+  grid-row: 1 / 4;
+  width: 180px;
+  height: 180px;
+  max-width: 100%;
+  object-fit: cover;
+  justify-self: center;
+  margin: 0;
+}
+
+section.membros ul li.card-sofia h2 {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 2.2rem;
+  font-family: "Caesar Dressing";
+  margin: 0;
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+}
+
+section.membros ul li.card-sofia img:not(.foto):not(.github-icon) {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: start;
+  margin-left: 170px;
+  max-height: 35px;
+  width: auto;
+}
+
+section.membros ul li.card-sofia p {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  max-width: 480px;
+}
+
+/*LINKS*/
+ 
+section.membros ul li .github-link {
+  grid-column: 2;
+  grid-row: 3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  width: max-content;
+}
+
+section.membros ul li .github-icon {
+  width: 22px;
+  height: 22px;
+  max-width: none;
+  object-fit: contain;
+}
+/* SEÇÃO ETAPAS */
+
+section.etapas{
+ padding: 5vw;
+}
+
+section.etapas p{
+ font-size: 2.5rem;
+ margin: 3vw 0 1vw 0;
+}
+
+section.etapas a span{
+ font-size: 1.5rem;
+ margin: 0.3vw;
+}
+
+section.etapas a img{
+ max-width: 20%;
+}
+
+/* FOOTER */
+
 footer {
-    padding: 2vw 4vw;
-    line-height: 3vw;
+ padding: 2vw 4vw;
+ line-height: 2vw;
 }
-} 
+
+ 
+ } 

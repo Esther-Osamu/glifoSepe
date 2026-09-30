@@ -1,0 +1,12 @@
+@keyframes descida {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animacao {
+  animation: descida 1.5s normal;
+}

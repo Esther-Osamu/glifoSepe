@@ -6,6 +6,7 @@
     <title>Saiba Mais</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/saibamais.css">
+    <link rel="stylesheet" href="css/animacao-saibamais.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Caesar+Dressing&display=swap" rel="stylesheet">
@@ -44,10 +45,8 @@
       <section class="banner">
         <div class="text">
           <h2>
-          Nossa 
-          <span>
-            equipe
-          </span>
+          Nossa <br> 
+          <span>equipe</span>
           </h2>
           <img src="src/saibamais/hieroglifos/nossa-equipe.png" alt="nossa-equipe">
         </div>
@@ -71,7 +70,7 @@
           Glifo
         </p>
         <ul>
-          <li class="card-ananda">
+          <li class="card-ananda" name="mente">
             <img src="src/saibamais/ANANDA.png" class="foto" alt="ananda">
             <h2>
               Ananda
@@ -87,7 +86,7 @@
               </span>
             </a>
           </li>
-          <li class="card-esther">
+          <li class="card-esther" name="mente">
             <img src="src/saibamais/ESTHER.png" class="foto" alt="esther">
             <h2>
               Esther
@@ -103,7 +102,7 @@
               </span>
             </a>
           </li>
-          <li class="card-isabelle">
+          <li class="card-isabelle" name="mente">
             <img src="src/saibamais/ISABELLE.png" class="foto" alt="isabelle">
             <h2>
               Isabelle
@@ -119,7 +118,7 @@
             </span>
             </a>
           </li>
-          <li class="card-mariella">
+          <li class="card-mariella" name="mente">
             <img src="src/saibamais/MARIELLA.png" class="foto" alt="mariella">
             <h2>
               Mariella
@@ -135,7 +134,7 @@
             </span>
             </a>
           </li>
-           <li class="card-rebecca">
+           <li class="card-rebecca" name="mente">
             <img src="src/saibamais/REBECCA.png" class="foto" alt="rebecca">
             <h2>
               Rebecca
@@ -151,7 +150,7 @@
             </span>
             </a>
           </li>
-           <li class="card-sofia">
+           <li class="card-sofia" name="mente">
             <img src="src/saibamais/SOFIA.png" class="foto" alt="sofia">
             <h2>
               Sofia
@@ -173,8 +172,7 @@
         <div class="etapas">
         <p>
         Acompanhe todas as etapas de
-        desenvolvimento desse site 
-        no nosso Instagram:
+        desenvolvimento desse site:
         </p>
         </div>
         <div class="link">
@@ -190,6 +188,12 @@
              Confira nosso repositório!!
           </span>
         </a>
+         <a href="https://github.com/Esther-Osamu/glifoSepe">
+          <img src="src/saibamais/figma-logo-preta.png" alt="logo-figma">
+          <span>
+             Referências, wireframes e layouts
+          </span>
+        </a>
         </div>
       </section>
     </main>
@@ -199,8 +203,46 @@
             Desenvolvido por  alunas do 1 info 1 <br>
             Data: xx/xx/xxxx
         </p>
-        <a href="https://www.instagram.com/glifosepe"><img src="src/inicio/insta-logo.png" alt="ícone instagram"></a>
+        <a href="https://www.instagram.com/glifosepe">
+          <img src="src/inicio/insta-logo.png" alt="ícone instagram">
+        </a>
     </footer>
+    <script>
+      document.addEventListener("scroll", (e) => {
+        let altura_scroll = document.documentElement.scrollTop;
+        console.log(altura_scroll)
+        if (altura_scroll >= 460) {
+          mentes = document.getElementsByName("mente");
+
+          mentes[0].classList.add('animacao')
+
+          if (altura_scroll >= 860) {
+            mentes[1].classList.add('animacao')
+          }
+          if (altura_scroll >= 1200) {
+            mentes[2].classList.add('animacao')
+          }
+          if (altura_scroll >= 1560) {
+            mentes[3].classList.add('animacao')
+          }
+          if (altura_scroll >= 1860) {
+            mentes[4].classList.add('animacao')
+          }
+          if (altura_scroll >= 2160) {
+            mentes[5].classList.add('animacao')
+          }
+
+        }
+        if (altura_scroll < 460) {
+          mentes = document.getElementsByName("mente");
+
+          for (mente of mentes) {
+            mente.classList.remove('animacao')
+          }
+        }
+      });
+    </script>
 
 </body>
 </html>
+
