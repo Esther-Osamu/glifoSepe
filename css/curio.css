@@ -758,7 +758,7 @@ footer img {
 
 .balanca h2{
     font-size: 4rem;
-    padding-top: 20vw;
+    padding-top: 30vw;
     padding: 20 0 20vw 0;
 }
 
@@ -770,6 +770,7 @@ footer img {
 
 section.balanca div.moralidade {
     display: flex;
+    justify-content: center;
 }
 
 .balanca p {
@@ -779,21 +780,23 @@ section.balanca div.moralidade {
 
 .balanca p.texto-esquerda {
     text-align: left;
-    padding-left: 20vw;
-    width: 40%;
+    margin: -3vw 0 0 15vw;
+    width: 75%;
 }
 
-.balanca p.texto-direita {
+.balanca div.moralidade p.texto-direita {
     text-align: right;
-    padding-right: 20vw;
-    width: 50%;
+    width: 95%;
+    margin-top: 3vw;
+    margin-right: 15vw;
 }
 
 .balanca img {
     max-width: 500px;
-    padding-left: 4vw;
     margin-top: -3vw;
     filter: brightness(20%);
+    margin-left: 0;
+    margin-right: 1vw;
 }
 
 .balanca a{
@@ -802,8 +805,12 @@ section.balanca div.moralidade {
 }
 
 .balanca p.agora{
-    padding: 0 0 4vw 0;
+    padding: 4vw 0 4vw 0;
     font-size: 2rem;
+}
+
+.balanca div.chegou {
+    margin-bottom: 6vw;
 }
 
 }
