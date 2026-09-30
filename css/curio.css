@@ -295,6 +295,8 @@ header nav ul li a:hover{
     
 }
 
+   
+
 .gravuras span{
     color: #F8D794;
 }
@@ -318,6 +320,15 @@ header nav ul li a:hover{
     overflow: hidden;
 }
 
+.balanca div.moralidade p.texto-esquerda {
+    padding: 7vw;
+}
+
+.balanca div.moralidade p.texto-direita {
+    margin-top: -15vw;
+    padding: 0 7vw;
+}
+
 .balanca p.agora{
     color: #5F3A1F;
     padding-left: 15vw;
@@ -336,12 +347,17 @@ header nav ul li a:hover{
 
 }
 
+.balanca div.chegou {
+    background-color: #F8D794;
+    margin: 0 -6vw -3vw -6vw;
+}
 
 .balanca h2 {
     font-family: 'caesar dressing';
     color: #5F3A1F;
     font-size: 2.2rem;
     margin-bottom: 15px;
+    margin-top: -12vw;
 
 }
 
@@ -356,14 +372,16 @@ header nav ul li a:hover{
 
 }
 
-.coluna-imagem img {
-    max-width: 250px;
+.balanca img {
+    max-width: 300px;
     width: 100%;
     height: auto;
-    margin: 10px 0;
+    margin-top:-10vw;
     justify-content: center;
     display: flex;
     margin-right: 20px;
+    margin-left: 13vw;
+    filter: brightness(25%);
 }
 
 .balanca div.texto-inferior{
@@ -649,21 +667,21 @@ footer img {
 
 .podermagico h2{
     text-align: left;
-    font-size: 3rem;
-    padding-right: 40vw;
-    padding-top: 2vw;
+    font-size: 3.5rem;
+    padding-right: 35vw;
+    margin-top: -5vw;
 }
 
 .podermagico div{
     display: flex;
     align-items: center;
-    padding-bottom: 3vw;
+    padding-bottom:0;
     gap: 6vw;
     padding-left: 2vw;
 }
 
 .podermagico div img{
-    width: 250px;
+    width: 325px;
     height: auto;
     max-width: none;
     object-fit: contain;
@@ -673,7 +691,7 @@ footer img {
 
 .podermagico div.p{
   
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: left;
 
 }
@@ -696,42 +714,96 @@ footer img {
 
 }
 
+.gravuras img {
+    width: 500px;
+}
+
 .gravuras h3{
     padding: 0;
     padding-left: 11vw;
     padding-right: 0;
     padding-bottom: 2vw;
     margin: 0 0 12px 0;
+    font-size: 2.5rem;
 }
 
 
 .gravuras p{
     padding-bottom: 0;
-    padding-left: 11vw;
-    padding-right: 10vw;
+    padding-left: 1vw;
+    padding-right: 6vw;
     text-align: left;
     line-height: 1.5;
+    font-size: 1.3rem;
+}
 
+.gravuras p.leitura {
+    padding: 5vw;
+    padding-top: 0;
+}
+
+.gravuras p.mensagem {
+    padding-left: 12vw;
+}
+
+.gravuras h3.tit-um {
+    padding-left: 5vw;
+}
+
+.gravuras h3.tit-dois {
+    padding-left: 12vw;
 }
 
 /* === BALANÇA === */
 
 .balanca h2{
-    font-size: 3.5rem;
-    padding-top: 12vw;
+    font-size: 4rem;
+    padding-top: 20vw;
+    padding: 20 0 20vw 0;
 }
 
 .balanca {
         background: url(../src/curiosidades/fundos/balanca.png) no-repeat;
         background-size: 100%;
+        margin-top: -25vw;
+}
+
+section.balanca div.moralidade {
+    display: flex;
+}
+
+.balanca p {
+    font-size: 2rem;
+    padding: 5vw 0 0 0;
+}
+
+.balanca p.texto-esquerda {
+    text-align: left;
+    padding-left: 20vw;
+    width: 40%;
+}
+
+.balanca p.texto-direita {
+    text-align: right;
+    padding-right: 20vw;
+    width: 50%;
+}
+
+.balanca img {
+    max-width: 500px;
+    padding-left: 4vw;
+    margin-top: -3vw;
+    filter: brightness(20%);
 }
 
 .balanca a{
-    padding: 2vw;
+    padding: 1vw 2vw;
+    font-size: 1.5rem;
 }
 
 .balanca p.agora{
-    padding: 4vw 0 4vw 0;
+    padding: 0 0 4vw 0;
+    font-size: 2rem;
 }
 
 }
