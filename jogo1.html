@@ -1,126 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogos</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/jogo.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Caesar+Dressing&display=swap" rel="stylesheet">
-</head>
-<body>
-        <header>
-      <nav>
-        <h1>
-            <a href="index.html">
-                 <img src="src/inicio/logo.png" alt="logo" />
-            </a>
-        </h1>
-        <ul>
-          <li>
-            <a href="index.html">Início</a>
-          </li>
-          <li>
-            <a href="curiosidades.html">Curiosidades</a>
-          </li>
-          <li>
-            <a href="alfabeto.html">Alfabeto</a>
-          </li>
-          <li>
-            <a href="jogo1.html" class="marc">Jogos</a>
-          </li>
-          <li>
-            <a href="recomendacoes.html">Recomendações</a>
-          </li>
-          <li>
-            <a href="saibamais.html">Saiba mais</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-       <main>
-      <section class="bnr">
-        <img src="src/jogo/bnr.png" alt="bnr" class="img-bnr"/>
-        <h2>KEMET: JOGOS</h2>
-        </section>
-        <section class="vetor">
-        <p class="principal">
-          <span>
-          O</span>s jogos faziam parte do cotidiano dos antigos egípcios,
-          principalmente os jogos de tabuleiro. Eles eram praticados por pessoas
-          de diferentes classes sociais e aparecem representados em pinturas,
-          túmulos e objetos arqueológicos. Entre os principais jogos estavam o
-          Senet, o Mehen e o jogo dos Cães e Chacais.
-         
-        </p>
-       <div class="geral">
-        <div class="img/carrosel">
-          <button class="anterior" onclick="mudarSlide(-1)">&#10094;</button>
-          </div>
-          <div class="slides">
-          <img src="src/jogo/elipse1.png"  class="slide ativo" alt="slide1" />
-          <img src="src/jogo/elipse2.png" class="slide" alt="slide2" />
-          <img src="src/jogo/Ellipse3.png" class="slide" alt="slide3" /> 
-            <button class="proximo" onclick="mudarSlide(1)">&#10095;</button>
-        </div>
-        <div class="vetor">
-         <p>Esses são alguns os mais famosos jogos jogados na atiguidade!</p>
-        </div>
-       </div>
-      </section>
-      <section class="jogos">
-        <h2>Jogos famosos</h2>
-        <ul>
-          <li class="senet">
-            <h3>Senet</h3>
-            <p>
-              Um dos jogos mais populares do Egito Antigo. Era jogado em um
-              tabuleiro com 30 casas, e os jogadores movimentavam suas peças
-              pelo percurso. Com o tempo, passou a ser associado à jornada para
-              a vida após a morte
-            </p>
-             <img src="src/jogo/senet.png" alt="senet" />
-          </li>
-          <li class="caes">
-            <h3>Caẽs e Chacais</h3>
-            <p>
-              Jogo do Médio Império, disputado por dois jogadores. O tabuleiro
-              possuía 58 buracos e peças com cabeças de cães e chacais. Era
-              provavelmente uma espécie de corrida, na qual cada jogador tentava
-              levar suas peças até o final.
-            </p>
-            <img src="src/jogo/caesechacais.png" alt="caes" />
-          </li>
-          <li class="mehen">
-            <h3>Mehen</h3>
-            <p>
-              Conhecido como Jogo da Serpente, possuía um tabuleiro circular em
-              forma de serpente enrolada. O jogo é muito antigo e estava
-              relacionado simbolicamente ao deus-serpente Mehen, que protegia o
-              deus solar Rá durante sua jornada noturna.
-            </p>
-            <img src="src/jogo/mehen.png" alt="mehen" />
 
-          </li>
-        </ul>
-      </section>
-      <section class="final">
-        <h2>Venha jogar nosso <br>jogo!!!</h2>
-        <p>Ao clicar em jogar você será direcionado para próxima página com instruções para o jogo.</p>
-        <a href="jogo2.html">Jogar</a>
-        <h3> Obrigada pela atenção!</h3>
-      </section>
-    </main>
-    <footer>
-        <p>
-            © Todos os direitos reservados <br>
-            Desenvolvido por  alunas do 1 info 1 <br>
-            Data: xx/xx/xxxx
-        </p>
-        <a href="https://www.instagram.com/glifosepe"><img src="src/inicio/insta-logo.png" alt="ícone instagram"></a>
-    </footer>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogos</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/jogo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Caesar+Dressing&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>
+        <a href="index.html">
+          <img src="src/inicio/logo.png" alt="logo" />
+        </a>
+      </h1>
+      <ul>
+        <li>
+          <a href="index.html">Início</a>
+        </li>
+        <li>
+          <a href="curiosidades.html">Curiosidades</a>
+        </li>
+        <li>
+          <a href="alfabeto.html">Alfabeto</a>
+        </li>
+        <li>
+          <a href="jogo1.html" class="marc">Jogos</a>
+        </li>
+        <li>
+          <a href="recomendacoes.html">Recomendações</a>
+        </li>
+        <li>
+          <a href="saibamais.html">Saiba mais</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="bnr">
+      <img src="src/jogo/bnr.png" alt="bnr" class="img-bnr" />
+      <h2>KEMET: JOGOS</h2>
+    </section>
+    <section class="vetor">
+      <p class="principal">
+        <span>
+          O</span>s jogos faziam parte do cotidiano dos antigos egípcios,
+        principalmente os jogos de tabuleiro. Eles eram praticados por pessoas
+        de diferentes classes sociais e aparecem representados em pinturas,
+        túmulos e objetos arqueológicos. Entre os principais jogos estavam o
+        Senet, o Mehen e o jogo dos Cães e Chacais.
+
+      </p>
+      <div class="geral">
+
+        <p class="anterior" onclick="anterior()">&lt;</p>
+
+        <div class="carrosel">
+
+          <ul class="galeria">
+
+            <li>
+              <div class="img">
+                <img src="src/jogo/jogo1.jpg" alt="Jogo egípcio">
+              </div>
+            </li>
+
+            <li>
+              <div class="img">
+                <img src="src/jogo/jogo2.jpg" alt="Jogo egípcio">
+              </div>
+            </li>
+
+            <li>
+              <div class="img">
+                <img src="src/jogo/jogo3.png" alt="Jogo egípcio">
+              </div>
+            </li>
+
+            <li>
+              <div class="img">
+                <img src="src/jogo/jogo4.jpg" alt="Jogo egípcio">
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <p class="proximo" onclick="proximo()">&gt;</p>
+
+        <div class="texto-carrossel">
+          <p>
+            Esses são alguns dos mais famosos jogos
+            jogados na antiguidade!
+          </p>
+        </div>
+
+      </div>
+
+
+      </div>
+      <script>
+        let posicaoGaleria = 0;
+
+        function proximo() {
+          const galeria = document.querySelector(".galeria");
+          const fotos = galeria.querySelectorAll("li").length;
+
+          if (posicaoGaleria <= -(fotos - 1) * 300) {
+            posicaoGaleria = 0;
+          } else {
+            posicaoGaleria -= 300;
+          }
+
+          galeria.style.left = posicaoGaleria + "px";
+        }
+
+        function anterior() {
+          const galeria = document.querySelector(".galeria");
+          const fotos = galeria.querySelectorAll("li").length;
+
+          if (posicaoGaleria >= 0) {
+            posicaoGaleria = -(fotos - 1) * 300;
+          } else {
+            posicaoGaleria += 300;
+          }
+
+          galeria.style.left = posicaoGaleria + "px";
+        }
+      </script>
+      </div>
+    </section>
+    <section class="jogos">
+      <h2>Jogos famosos</h2>
+      <ul>
+        <li class="senet">
+          <h3>Senet</h3>
+          <p>
+            Um dos jogos mais populares do Egito Antigo. Era jogado em um
+            tabuleiro com 30 casas, e os jogadores movimentavam suas peças
+            pelo percurso. Com o tempo, passou a ser associado à jornada para
+            a vida após a morte
+          </p>
+          <img src="src/jogo/senet.png" alt="senet" />
+        </li>
+        <li class="caes">
+          <h3>Caẽs e Chacais</h3>
+          <p>
+            Jogo do Médio Império, disputado por dois jogadores. O tabuleiro
+            possuía 58 buracos e peças com cabeças de cães e chacais. Era
+            provavelmente uma espécie de corrida, na qual cada jogador tentava
+            levar suas peças até o final.
+          </p>
+          <img src="src/jogo/caesechacais.png" alt="caes" />
+        </li>
+        <li class="mehen">
+          <h3>Mehen</h3>
+          <p>
+            Conhecido como Jogo da Serpente, possuía um tabuleiro circular em
+            forma de serpente enrolada. O jogo é muito antigo e estava
+            relacionado simbolicamente ao deus-serpente Mehen, que protegia o
+            deus solar Rá durante sua jornada noturna.
+          </p>
+          <img src="src/jogo/mehen.png" alt="mehen" />
+
+        </li>
+      </ul>
+    </section>
+    <section class="final">
+      <h2>Venha jogar nosso <br>jogo!!!</h2>
+      <p>Ao clicar em jogar você será direcionado para próxima página com instruções para o jogo.</p>
+      <a href="jogo2.html">Jogar</a>
+      <h3> Obrigada pela atenção!</h3>
+    </section>
+  </main>
+  <footer>
+    <p>
+      © Todos os direitos reservados <br>
+      Desenvolvido por alunas do 1 info 1 <br>
+      Data: xx/xx/xxxx
+    </p>
+    <a href="https://www.instagram.com/glifosepe"><img src="src/inicio/insta-logo.png" alt="ícone instagram"></a>
+  </footer>
 
 </body>
+
 </html>
