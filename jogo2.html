@@ -1,141 +1,518 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogos</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/jogo.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Caesar+Dressing&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Jogos</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/jogo.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Caesar+Dressing&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
-        <header>
-      <nav>
-        <h1>
-            <a href="index.html">
-                 <img src="src/inicio/logo.png" alt="logo" />
-            </a>
-        </h1>
-        <ul>
-          <li>
-            <a href="index.html">Início</a>
-          </li>
-          <li>
-            <a href="curiosidades.html">Curiosidades</a>
-          </li>
-          <li>
-            <a href="alfabeto.html">Alfabeto</a>
-          </li>
-          <li>
-            <a href="jogo1.html" class="marc">Jogos</a>
-          </li>
-          <li>
-            <a href="recomendacoes.html">Recomendações</a>
-          </li>
-          <li>
-            <a href="saibamais.html">Saiba mais</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <section class="banr">
-      <h2>KEMET: JOGOS</h2>
-    </section>
-    <section class="instrucoes">
-      <br>
-      <div class="instrucoes">
+
+  <!-- CABEÇALHO -->
+  <header>
+
+    <nav>
+
+      <h1>
+        <a href="index.html">
+          <img src="src/inicio/logo.png" alt="Logo Kemet">
+        </a>
+      </h1>
+
+      <ul>
+
+        <li>
+          <a href="index.html">Início</a>
+        </li>
+
+        <li>
+          <a href="curiosidades.html">Curiosidades</a>
+        </li>
+
+        <li>
+          <a href="alfabeto.html">Alfabeto</a>
+        </li>
+
+        <li>
+          <a href="jogo1.html" class="marc">Jogos</a>
+        </li>
+
+        <li>
+          <a href="recomendacoes.html">Recomendações</a>
+        </li>
+
+        <li>
+          <a href="saibamais.html">Saiba mais</a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+
+  <!-- BANNER -->
+  <section class="banr">
+
+    <h2>KEMET: JOGOS</h2>
+
+  </section>
+
+
+  <!-- INSTRUÇÕES -->
+  <section class="instrucoes">
+
+    <div>
+
       <h2>Instruções</h2>
+
       <ul>
+
         <li>
-          <h3>1.PASSO</h3>
-          <p>Leia a frase formada no local indicado.</p>
+          <h3>1. PASSO</h3>
+
+          <p>
+            Leia a frase formada no local indicado.
+          </p>
         </li>
+
         <li>
-          <h3>2.PASSO</h3>
-          <p>Vá ao alfabeto e clique nos símbolos escolhidos.</p>
+          <h3>2. PASSO</h3>
+
+          <p>
+            Vá ao alfabeto e clique nos símbolos escolhidos.
+          </p>
         </li>
+
         <li>
-          <h3>3.PASSO</h3>
-          <p>Clique em verificar e confira sua resposta. </p>
+          <h3>3. PASSO</h3>
+
+          <p>
+            Clique em verificar e confira sua resposta.
+          </p>
         </li>
+
       </ul>
-      <img src="src/jogo/jogo2/jogo2/balanca2.png" alt="balanca2">
-      </div>
-      <br>
-    </section>
-    <section class="ojogo">
-      <h2>JOGO</h2>
-      <img src="src/jogo/jogo2/jogo2/balanca 1.png" alt="balanca">
+
+      <img src="src/jogo/jogo2/jogo2/balanca2.png" alt="Balança">
+
+    </div>
+
+  </section>
+
+
+  <!-- JOGO -->
+  <section class="ojogo">
+
+    <h2>JOGO</h2>
+
+    <img src="src/jogo/jogo2/jogo2/balanca 1.png" alt="Balança">
+
+
+    <form onsubmit="return false;">
+
+      <!-- FRASE ATUAL -->
       <h4>Frase</h4>
-      <h3>“Escutar a água”</h3>
-      <h4>Digite a resposta:</h4>
-      <input type="text" required>
-    </section>
-    <section class="alfa">
-      <h2>Alfabeto</h2>
-      <ul>
-         <li class="escutar">
-          <img src="src/jogo/jogo2/jogo2/escutar.png" alt="escutar">
-          <h4>Escutar</h4>
-        </li>
-        
-            <div class="c2">
-       
-        <li class="agua">
-          <img src="src/jogo/jogo2/jogo2/agua.png" alt="agua">
-          <h4>Água</h4>
-        </li>
-        </div>
-        <li  class="lis">
-          <img src="src/jogo/jogo2/jogo2/casa.png" alt="casa">
-          <h4>Casa</h4>
-        </li>
-        <div class="c2"></div>
-        <li  class="lis">
-          <img src="src/jogo/jogo2/jogo2/sol.png" alt="sol">
-          <h4>Sol</h4>
-        </li>
-            <div class="outro"> 
-              <li  class="lis">
-                <img src="src/jogo/jogo2/jogo2/vida.png" alt="vida">
-                <h4>Vida</h4>
-              </li>  
-               </div>
-                <div class="c2">
-              <li  class="lis">
-           <img src="src/jogo/jogo2/jogo2/em.png" alt="em">
-          <h4>Em/Para</h4>
-              </li>
-        <li  class="lis">
-          <img src="src/jogo/jogo2/jogo2/paz.png" alt="paz">
-          <h4>Paz</h4>
-        </li>
-                </div>
-                    <div class="c2">
-        <li  class="lis">
-          <img src="src/jogo/jogo2/jogo2/caminho.png" alt="caminho">
-          <h4>Caminho</h4>
-        </li>
-        <li  class="lis">
-          <img src="src/jogo/jogo2/jogo2/bom.png" alt="bom">
-          <h4>Bom</h4>
-        </li>
-        </div>
-      </ul>
-      <a href="#" onclick="tentar" class="tentar">TENTAR NOVAMENTE</a>
-      <a href="#" onclick="conferir" class="conferir">CONFERIR</a>
-      <img src="src/jogo/jogo2/jogo2/balanca2.png" alt="balanca2" class="balanca">
-    </section>
-    <footer>
-        <p>
-            © Todos os direitos reservados <br>
-            Desenvolvido por  alunas do 1 info 1 <br>
-            Data: xx/xx/xxxx
-        </p>
-        <a href="https://www.instagram.com/glifosepe"><img src="src/inicio/insta-logo.png" alt="ícone instagram"></a>
-    </footer>
+
+      <h3 class="frase"></h3>
+
+
+      <!-- RESPOSTA -->
+      <h4>Resposta:</h4>
+
+      <input type="text" class="campoResposta" readonly>
+
+
+      <!-- BOTÕES -->
+      <div class="botoes">
+
+        <button type="button" class="tentar" onclick="tentarNovamente()">
+
+          TENTAR NOVAMENTE
+
+        </button>
+
+
+        <button type="button" class="conferir" onclick="verificar()">
+
+          CONFERIR
+
+        </button>
+
+      </div>
+
+    </form>
+
+  </section>
+
+
+  <!-- ALFABETO / PALAVRAS -->
+  <section class="alfa">
+
+    <h2>Alfabeto</h2>
+
+
+    <ul onclick="inserirResposta(event)">
+
+
+      <!-- ESCUTAR -->
+      <li class="escutar">
+        <div class="escutar">
+
+        <img src="src/jogo/jogo2/jogo2/escutar.png" alt="Escutar">
+
+        <p>Escutar</p>
+          </div>
+        <h4>𓂧</h4>
+
+      </li>
+
+
+      <!-- ÁGUA -->
+      <li class="agua">
+
+        <img src="src/jogo/jogo2/jogo2/agua.png" alt="Água">
+
+        <p>Água</p>
+
+        <h4>𓈗</h4>
+
+      </li>
+
+
+      <!-- CASA -->
+      <li class="casa">
+
+        <img src="src/jogo/jogo2/jogo2/casa.png" alt="Casa">
+
+        <p>Casa</p>
+
+        <h4>𓉐</h4>
+
+      </li>
+
+
+      <!-- SOL -->
+      <li class="sol">
+
+        <img src="src/jogo/jogo2/jogo2/sol.png" alt="Sol">
+
+        <p>Sol</p>
+
+        <h4>𓇳</h4>
+
+      </li>
+
+
+      <!-- VIDA -->
+      <li class="vida">
+
+        <img src="src/jogo/jogo2/jogo2/vida.png" alt="Vida">
+
+        <p>Vida</p>
+
+        <h4>𓋹</h4>
+
+      </li>
+
+
+      <!-- EM / PARA -->
+      <li class="em">
+
+        <img src="src/jogo/jogo2/jogo2/em.png" alt="Em ou para">
+
+        <p>Em/Para</p>
+
+        <h4>𓈖</h4>
+
+      </li>
+
+
+      <!-- PAZ -->
+      <li class="paz">
+
+        <img src="src/jogo/jogo2/jogo2/paz.png" alt="Paz">
+
+        <p>Paz</p>
+
+        <h4>𓊵</h4>
+
+      </li>
+
+
+      <!-- CAMINHO -->
+      <li class="caminho">
+
+        <img src="src/jogo/jogo2/jogo2/caminho.png" alt="Caminho">
+
+        <p>Caminho</p>
+
+        <h4>𓈐</h4>
+
+      </li>
+
+
+      <!-- BOM -->
+      <li class="bom">
+
+        <img src="src/jogo/jogo2/jogo2/bom.png" alt="Bom">
+
+        <p>Bom</p>
+
+        <h4>𓄤</h4>
+
+      </li>
+
+    </ul>
+
+  </section>
+
+
+  <!-- RODAPÉ -->
+  <footer>
+
+    <p>
+
+      © Todos os direitos reservados <br>
+
+      Desenvolvido por alunas do 1 info 1 <br>
+
+      Data: xx/xx/xxxx
+
+    </p>
+
+
+    <a href="https://www.instagram.com/glifosepe">
+
+      <img src="src/inicio/insta-logo.png" alt="Ícone Instagram">
+
+    </a>
+
+  </footer>
+
+
+
+  <!-- JAVASCRIPT -->
+  <script>
+
+    const frases = [
+
+      {
+        frase: "Escutar a água",
+        resposta: "𓂧𓈗"
+      },
+
+      {
+        frase: "A casa do Sol",
+        resposta: "𓉐𓇳"
+      },
+
+      {
+        frase: "Vida em paz",
+        resposta: "𓋹𓈖𓊵"
+      },
+
+      {
+        frase: "O bom caminho",
+        resposta: "𓄤𓈐"
+      }
+
+    ];
+
+
+    let indiceFrase = 0;
+
+    let jogoFinalizado = false;
+
+
+    const tituloFrase =
+      document.querySelector(".frase");
+
+    const campoResposta =
+      document.querySelector(".campoResposta");
+
+    const botaoConferir =
+      document.querySelector(".conferir");
+
+    const botaoTentar =
+      document.querySelector(".tentar");
+
+
+
+    function mostrarFrase() {
+
+      if (indiceFrase >= frases.length) {
+
+        finalizarJogo();
+
+        return;
+      }
+
+
+      tituloFrase.innerText =
+        frases[indiceFrase].frase;
+
+
+      campoResposta.value = "";
+
+
+      botaoConferir.disabled = false;
+
+      botaoTentar.disabled = false;
+
+    }
+
+
+    mostrarFrase();
+
+
+    function inserirResposta(event) {
+
+      // Se o jogo terminou, não permite mais respostas
+      if (jogoFinalizado) {
+        return;
+      }
+
+
+      // Descobre qual <li> foi clicado
+      const item =
+        event.target.closest("li");
+
+
+      // Se não clicou em um <li>, não faz nada
+      if (!item) {
+        return;
+      }
+
+
+      // Pega o símbolo dentro do <h4>
+      const simbolo =
+        item.querySelector("h4").innerText.trim();
+
+
+      // Se não encontrou símbolo, não faz nada
+      if (!simbolo) {
+        return;
+      }
+
+
+      // Adiciona o símbolo ao campo de resposta
+      campoResposta.value += simbolo;
+
+    }
+
+
+    function tentarNovamente() {
+
+      if (jogoFinalizado) {
+        return;
+      }
+
+
+      // Limpa a resposta
+      campoResposta.value = "";
+
+    }
+
+    function verificar() {
+
+      if (jogoFinalizado) {
+        return;
+      }
+
+
+      // Resposta que o jogador digitou/selecionou
+      const respostaJogador =
+        campoResposta.value.trim();
+
+
+      // Resposta correta da frase atual
+      const respostaCorreta =
+        frases[indiceFrase].resposta;
+
+
+      /*
+      Verifica se o campo está vazio
+      */
+
+      if (respostaJogador === "") {
+
+        alert("Escolha os símbolos para formar a resposta.");
+
+        return;
+      }
+
+
+      /*
+      Compara a resposta do jogador
+      com a resposta correta
+      */
+
+      if (respostaJogador === respostaCorreta) {
+
+        alert("Acertou!");
+
+
+        // Vai para a próxima frase
+        indiceFrase++;
+
+
+        // Mostra a próxima frase
+        if (indiceFrase < frases.length) {
+
+          mostrarFrase();
+
+        } else {
+
+          finalizarJogo();
+
+        }
+
+
+      } else {
+
+        alert("Resposta incorreta! Tente novamente.");
+
+      }
+
+    }
+
+    function finalizarJogo() {
+
+      jogoFinalizado = true;
+
+      tituloFrase.innerText =
+        "Parabéns! Você completou o jogo!";
+
+      campoResposta.value = "";
+
+      botaoConferir.disabled = true;
+      botaoTentar.disabled = true;
+
+      // Mensagem final
+      setTimeout(function () {
+
+        alert("Obrigado por jogar! Um bom dia!");
+
+      }, 500);
+
+    }
+
+
+  </script>
 
 </body>
+
 </html>

@@ -483,11 +483,14 @@ footer img {
 .instrucoes {
     background: #C99565;
     text-align: center;
+    margin: 0;
+    padding: 10vw ;
+    margin-top: -6vw;
 }
 
-.instrucoes div.instrucoes {
+.instrucoes div {
     background: #3F6B76;
-    margin: 10vw 5vw 10vw;
+    margin: 15vw 5vw 10vw;
     padding: 5vw 7vw 1vw 7vw;
     border-radius: 15px;
     margin-top: 5vw;
@@ -564,6 +567,27 @@ footer img {
     border-radius: 15px;
 
 }
+.ojogo button.tentar {
+    background-color: #3F6B76;
+    padding: 3vw 4vw 3vw 4vw;
+    border-radius: 10vw;
+    color: #F8D794;
+    margin-left: 7vw;
+    display: inline-block;
+    margin-top: 10vw;
+    font-size: 0.67rem;
+    margin-right: 9vw;
+}
+
+.ojogo button.conferir {
+    background-color: #914A38;
+    color: #F8D794;
+    padding: 2vw 4vw 2vw 4vw;
+    border-radius: 10vw;
+    font-size: 0.8rem;
+    margin: 0 10vw 0 0;
+}
+
 
 /*=== SECTION.ALFABETO ===*/
 .alfa {
@@ -578,25 +602,60 @@ footer img {
     text-shadow: 4px 4px 6px rgba(29, 29, 29, 0.5);
     padding-top: 27vw;
 }
-
+.alfa ul li.escutar div.escutar{
+    transform: translateY(50px);
+}
+.alfa ul li h4{
+margin-top: 12vw;
+}
 .alfa ul li.escutar {
     background: url(../src/inicio/ondas.png);
     background-repeat: no-repeat;
     background-size: auto 460px;
-    background-position: top -60%;
-    z-index: 2;
+    background-position: top -70%;
+    z-index: 2; 
+    transform: translateY(50px);
+   
+}
+.alfa ul li{
+    padding: 5vw 0vw 0.2vw 0vw;
 }
 
-.alfa ul li.lis {
+.alfa ul li.casa{
+    
     background-color: #914A38;
     margin: 0;
 }
-
+.alfa ul li.sol {
+    background-color: #914A38;
+    margin: 0;
+}
+.alfa ul li.vida {
+    background-color: #914A38;
+    margin: 0;
+}
+.alfa ul li.em {
+    background-color: #914A38;
+    margin: 0;
+}
+.alfa ul li.paz {
+    background-color: #914A38;
+    margin: 0;
+}
+.alfa ul li.caminho {
+    background-color: #914A38;
+    margin: 0;
+}
+.alfa ul li.bom {
+    background-color: #914A38;
+    margin: 0;
+}
 .alfa ul li {
     padding: 1vw 0vw 1vw 0vw;
 }
 
 .alfa ul li.agua {
+    padding-top: 8vw;
     margin: 0;
     background-color: #914A38;
 }
@@ -613,26 +672,36 @@ footer img {
     width: 30%;
     margin-top: 30vw;
 }
-
-.alfa a.tentar {
-    background-color: #3F6B76;
-    padding: 3vw 4vw 3vw 4vw;
-    border-radius: 10vw;
-    color: #F8D794;
-    margin-left: 7vw;
-    display: inline-block;
-    margin-top: 10vw;
-    font-size: 0.67rem;
-    margin-right: 9vw;
+.alfa ul li.agua h4{
+    margin-top: 0.7vw;
 }
 
-.alfa a.conferir {
-    background-color: #914A38;
-    color: #F8D794;
-    padding: 2vw 4vw 2vw 4vw;
-    border-radius: 10vw;
-    font-size: 0.8rem;
-    margin: 0 10vw 0 0;
+.alfa ul li.casa h4{
+    margin-top: 0.7vw;
+}
+
+.alfa ul li.sol h4{
+    margin-top: 0.7vw;
+}
+
+.alfa ul li.vida h4{
+    margin-top: 0.7vw;
+}
+
+.alfa ul li.caminho h4{
+    margin-top: 0.7vw;
+}
+
+.alfa ul li.bom h4{
+    margin-top: 0.7vw;
+}
+
+.alfa ul li.em h4{
+    margin-top: 0.7vw;
+}
+
+.alfa ul li.paz h4{
+    margin-top: 0.7vw;
 }
 
 .alfa img.balanca {
@@ -824,6 +893,11 @@ div.vetor p {
     .instrucoes img {
         width: 10%;
     }
+    .instrucoes {
+        background-color: #C99565;
+        padding: 2vw 2vw 20vw 2vw;
+        margin: 0;
+    }
 
     .ojogo {
         background: url(../src/jogo/1000000567.png) no-repeat;
@@ -863,6 +937,64 @@ div.vetor p {
         padding: 2vw 7vw 2vw 7vw;
         border-radius: 20vw;
     }
+
+        
+    .ojogo {
+        background: url(../src/jogo/1000000567.png) no-repeat;
+        /* 1. Ocupa toda a largura da janela */
+        width: 100vw;
+
+        /* 2. Remove limites de largura e margens */
+        max-width: none;
+        margin-left: calc(-50vw + 50%);
+        /* Garante que encosta nas bordas mesmo estando dentro de uma div centralizada */
+
+        /* 3. Estica a imagem de fundo na horizontal */
+        background-size: 140% 100%;
+        /* Força a imagem a ir de ponta a ponta na horizontal e vertical */
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+       /* =========================
+   BOTÕES
+========================= */
+
+    .ojogo button.tentar {
+        display: inline-block;
+
+        background-color: #3F6B76;
+
+        color: #F8D794;
+
+        padding: 17px 30px;
+
+        margin: 55px 10px 0 0;
+
+        border-radius: 50px;
+
+        font-size: 1.1rem;
+    }
+
+    .ojogo button.conferir {
+        display: inline-block;
+
+        background-color: #3F6B76;
+
+        color: #F8D794;
+
+        padding: 17px 30px;
+
+        margin: 7vw 10vw 0 10vw;
+
+        border-radius: 50px;
+
+        font-size: 1.1rem;
+    }
+    .ojogo button{
+        transform: translateY(-9vw);
+        transform: translateX(4.5vw);
+    }
+    
 
     /* =========================
    ALFABETO
@@ -976,42 +1108,37 @@ div.vetor p {
         background: none;
     }
 
+    .alfa ul li.escutar {
+    transform: none;
+    background: #914A38;
+    margin: 0;
+    padding: 1vw 0;
+}
 
-    /* =========================
-   BOTÕES
-========================= */
+.alfa ul li.escutar img {
+    margin-top: 0;
+}
 
-    .alfa a.tentar {
-        display: inline-block;
+.alfa ul li.escutar p {
+    display: inline-block;
+    margin: 0;
+   transform: translateY(-2.4vw);
+}
+.alfa ul li h4{
+    transform: translateY(-0.6vw);
+}
+.alfa ul li.escutar h4{
+    transform: translateY(2.3vw);
+}
+.alfa ul li.em h4{
+    transform: translateY(-1vw);
+}
+.alfa ul li.escutar h4 {
+    display: inline-block;
+    margin: 0;
+}
 
-        background-color: #3F6B76;
-
-        color: #F8D794;
-
-        padding: 17px 30px;
-
-        margin: 55px 10px 0 0;
-
-        border-radius: 50px;
-
-        font-size: 1.1rem;
-    }
-
-    .alfa a.conferir {
-        display: inline-block;
-
-        background-color: #3F6B76;
-
-        color: #F8D794;
-
-        padding: 17px 30px;
-
-        margin: 7vw 10vw 0 10vw;
-
-        border-radius: 50px;
-
-        font-size: 1.1rem;
-    }
+ 
  /*=== SECTION.FINAL ===*/
     .final h2 {
         font-size: 5rem !important;
