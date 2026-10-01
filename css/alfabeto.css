@@ -28,14 +28,16 @@ header nav ul li a.marc {
     color: #5F3A1F;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
     color: #5F3A1F;
 }
-section.inicio{
+
+section.inicio {
     padding: 5vw 10vw;
-    background: linear-gradient(#3f6b76,#F8D794);
+    background: linear-gradient(#3f6b76, #F8D794);
 }
-section.inicio h2{
+
+section.inicio h2 {
     text-align: center;
     font-family: 'caesar dressing';
     font-size: 2rem;
@@ -43,7 +45,8 @@ section.inicio h2{
     padding: 4vw;
     padding-bottom: 10vw;
 }
-section.inicio p{
+
+section.inicio p {
     background-color: #3f6b76;
     text-align: center;
     color: #F8D794;
@@ -53,108 +56,131 @@ section.inicio p{
     margin: 5vw;
     padding: 4vw;
 }
-section.bnt{
+
+section.bnt {
     text-align: center;
     background-color: #BB6B3D;
     padding: 5vw;
 }
-section.bnt h2{
+
+section.bnt h2 {
     color: #564626;
     font-size: 2rem;
     font-weight: 600;
     padding: 1vw 1vw 3vw 1vw;
 }
-.bnt p{
+
+.bnt p {
     color: #F8D794;
     font-size: 0.8rem;
 }
-.bnt img{
+
+.bnt img {
     width: 50%;
     padding: 5vw;
 }
-section.titdois{
+
+section.titdois {
     text-align: center;
     background-color: #F8D794;
-    background: linear-gradient(#F8D794,#94d7e7,#3f6b76);
+    background: linear-gradient(#F8D794, #94d7e7, #3f6b76);
     padding: 10vw;
 
 }
-.titdois h2{
-   font-family: 'caesar dressing';
-   font-size: 2rem;
-   color: #6b2801;
-   padding: 5vw;
-   color: #422c1e;
-}  
-section.titdois li {
-  text-align: center;
-  background-color: #3f6b76;
-  border-radius: 10vw;
-  border: 4px solid #6dadbd;
-  margin: 5vw;
-  padding: 4vw;
+
+.titdois h2 {
+    font-family: 'caesar dressing';
+    font-size: 2rem;
+    color: #6b2801;
+    padding: 5vw;
+    color: #422c1e;
 }
-section.titdois h2 {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #f8d794;
+
+section.titdois li {    
+    text-align: center;
+    background-color: #3f6b76;
+    border-radius: 10vw;
+    border: 4px solid #6dadbd;
+    margin: 5vw;
+    padding: 4vw;
+}
+
+
+section.titdois ul li div h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #f8d794;
 
 }
+
 section.titdois p {
-  margin-left: 15vw;
-  margin-right: 15vw;
-  font-size: 0.9rem;
-  padding: 2vw;
-  color: #d8b368;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    font-size: 1.5rem;
+    padding: 2vw;
+    color: #d8b368;
 }
-section.titdois img {
-  width: 40%;
-}
-section.imagens {
-  text-align: center;
-  background-color: #bb6b3d;
-  padding: 5vw;
 
-}
-section.imagens img{
+section.titdois img {
     width: 40%;
 }
-section.imagens h1 {
-  font-family: "caesar dressing";
-  font-size: 2rem;
-  color: #e7ce9c;
-  padding: 5vw;
+
+section.imagens {
+    text-align: center;
+    background-color: #bb6b3d;
+    padding: 5vw;
+
 }
-section.text{
+
+section.imagens img {
+    width: 85%;
+    padding: 2vw;
+}
+
+
+
+section.imagens h2 {
+    font-family: "caesar dressing";
+    font-size: 2rem;
+    color: #e7ce9c;
+    padding: 5vw;
+}
+
+section.text {
     text-align: center;
     padding: 5vw;
     font-size: 0.9rem;
     color: #64361a;
 }
-section.banner{
+
+section.banner {
     text-align: center;
     padding: 10vw;
     background-color: #F8D794;
-    filter: drop-shadow(0 8px 6px rgba(0,0,0,0.25));
+    filter: drop-shadow(0 8px 6px rgba(0, 0, 0, 0.25));
     padding: 15vw;
 }
-section.bnt{
+
+section.bnt {
     text-align: center;
     background-color: #BB6B3D;
     padding: 5vw;
 
 }
-section.bnt h1{
+
+section.bnt h1 {
     color: #564626;
     font-size: 2rem;
     font-weight: 600;
     padding: 1vw 1vw 3vw 1vw;
 }
-section.bnt p{
+
+section.bnt p {
     color: #F8D794;
     font-size: 0.8rem;
 }
-section.final{
+
+section.final {
     padding: 7vw;
     text-align: center;
     background-size: cover;
@@ -167,7 +193,8 @@ section.final{
     color: #F8D794;
     font-size: 1.5rem;
 }
-section.final p{
+
+section.final p {
     color: #F8D794;
     font-weight: 900;
 }
@@ -204,31 +231,66 @@ footer img {
         max-width: 115px;
     }
 
-        section.inicio h2{
+    section.inicio h2 {
         font-size: 6vw;
     }
-    section.inicio p{
+
+    section.inicio p {
         font-size: 2vw;
     }
-    section.bnt{
+
+    section.bnt {
         text-align: left;
         display: flex;
-        gap:20px;
+        gap: 20px;
         padding: 9vw 4vw 0 4vw;
     }
-    section.bnt h2{
-    
+
+    section.bnt h2 {
+
         font-size: 4vw;
     }
-    .bnt div p{
+
+    .bnt div p {
         font-size: 1.2vw;
     }
-    .bnt div img{
-        width:  120%;
-    }
-    .titdois div h2{
-      font-size: 12rem;
 
+    .bnt div img {
+        width: 120%;
+    }
+
+    .titdois div h2 {
+        font-size: 12rem;
+
+    }
+
+    section.titdois {
+        padding: 3vw;
+    }
+
+    section.titdois>h2 {
+        font-size: 4.5rem;
+    }
+
+    section.titdois li {
+        padding: 2vw;
+        margin: 10vw;
+    }
+
+    section.titdois h2 {
+        padding: 2vw;
+    }
+
+    section.imagens h2 {
+        font-size: 4rem;
+    }
+
+    section.final {
+        padding: 5vw;
+    }
+
+    section.final p {
+        padding-top: 2vw;
     }
 
     footer {
@@ -237,4 +299,4 @@ footer img {
     }
 
 
-} 
+}
