@@ -107,7 +107,7 @@ section.titdois li {
 
 
 section.titdois ul li div h2 {
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #f8d794;
 
@@ -279,6 +279,10 @@ footer img {
 
     section.titdois h2 {
         padding: 2vw;
+    }
+
+    section.titdois ul li div h2 {
+        font-size: 3.5rem;
     }
 
     section.imagens h2 {
