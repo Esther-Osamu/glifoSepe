@@ -349,15 +349,17 @@ header nav ul li a:hover{
 
 .balanca div.chegou {
     background-color: #F8D794;
-    margin: 0 -6vw -3vw -6vw;
+    margin: 0 -6vw -6vw -6vw;
+    position: relative;
+    z-index: 0;
 }
 
 .balanca h2 {
     font-family: 'caesar dressing';
     color: #5F3A1F;
     font-size: 2.2rem;
-    margin-bottom: 15px;
-    margin-top: -12vw;
+    margin-bottom: 5px;
+    margin-top:-43vw;
 
 }
 
@@ -380,7 +382,7 @@ header nav ul li a:hover{
     justify-content: center;
     display: flex;
     margin-right: 20px;
-    margin-left: 13vw;
+    margin-left: 2vw;
     filter: brightness(25%);
 }
 
@@ -809,8 +811,12 @@ section.balanca div.moralidade {
     font-size: 2rem;
 }
 
+.balanca h2 {
+    margin-top: -15vw;
+}
+
 .balanca div.chegou {
-    margin-bottom: 6vw;
+    margin: -3vw 0 0 0;
 }
 
 }
