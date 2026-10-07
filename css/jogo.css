@@ -82,16 +82,6 @@ section.vetor div.vetor p {
 
 /* === CARROSSEL === */
 
-/* =========================================
-   MOBILE
-   ========================================= */
-
-
-
-/* -------------------------------
-       SEÇÃO VETOR
-    -------------------------------- */
-
 .vetor {
     width: 100%;
     margin: 0;
@@ -123,9 +113,8 @@ section.vetor div.vetor p {
 
 }
 
-/* -------------------------------
-       CAIXA DO CARROSSEL
-    -------------------------------- */
+
+
 
 .vetor .geral {
     width: 90%;
@@ -148,9 +137,7 @@ section.vetor div.vetor p {
 }
 
 
-/* -------------------------------
-       CARROSSEL
-    -------------------------------- */
+/* CARROSSEL */
 
 .vetor .carrosel {
     width: 300px;
@@ -219,9 +206,7 @@ section.vetor div.vetor p {
 }
 
 
-/* -------------------------------
-       BOTÕES DO CARROSSEL
-    -------------------------------- */
+
 
 .vetor .geral>.anterior,
 .vetor .geral>.proximo {
@@ -242,10 +227,7 @@ section.vetor div.vetor p {
 }
 
 
-/* -------------------------------
-       TEXTO AO LADO DO CARROSSEL
-       vira texto ABAIXO
-    -------------------------------- */
+
 
 .vetor .geral .texto-carrossel {
     width: 100%;
@@ -276,9 +258,8 @@ section.vetor div.vetor p {
 }
 
 
-/* =========================================
-       JOGOS
-    ========================================= */
+
+/* ===JOGOS===*/
 
 
 /* === Section.Jogos === */
@@ -484,7 +465,7 @@ footer img {
     background: #C99565;
     text-align: center;
     margin: 0;
-    padding: 10vw ;
+    padding: 10vw;
     margin-top: -6vw;
 }
 
@@ -567,6 +548,7 @@ footer img {
     border-radius: 15px;
 
 }
+
 .ojogo button.tentar {
     background-color: #3F6B76;
     padding: 3vw 4vw 3vw 4vw;
@@ -602,54 +584,68 @@ footer img {
     text-shadow: 4px 4px 6px rgba(29, 29, 29, 0.5);
     padding-top: 27vw;
 }
-.alfa ul li.escutar div.escutar{
+
+.alfa ul li.escutar div.escutar {
     transform: translateY(50px);
 }
-.alfa ul li h4{
-margin-top: 12vw;
+
+.alfa ul li h4 {
+    margin-top: 12vw;
+    
 }
+
 .alfa ul li.escutar {
     background: url(../src/inicio/ondas.png);
     background-repeat: no-repeat;
     background-size: auto 460px;
     background-position: top -70%;
-    z-index: 2; 
+    z-index: 2;
     transform: translateY(50px);
-   
-}
-.alfa ul li{
-    padding: 5vw 0vw 0.2vw 0vw;
+
 }
 
-.alfa ul li.casa{
-    
+.alfa ul li {
+    padding: 5vw 0vw 0.2vw 0vw;
+    color: #F8D794;
+    border-radius: 8px;
+}
+
+.alfa ul li.casa {
+
     background-color: #914A38;
     margin: 0;
 }
+
 .alfa ul li.sol {
     background-color: #914A38;
     margin: 0;
 }
+
 .alfa ul li.vida {
     background-color: #914A38;
     margin: 0;
 }
+
 .alfa ul li.em {
     background-color: #914A38;
     margin: 0;
 }
+
 .alfa ul li.paz {
     background-color: #914A38;
     margin: 0;
 }
+
 .alfa ul li.caminho {
     background-color: #914A38;
     margin: 0;
 }
+
 .alfa ul li.bom {
     background-color: #914A38;
     margin: 0;
 }
+
 .alfa ul li {
     padding: 1vw 0vw 1vw 0vw;
 }
@@ -664,6 +660,7 @@ margin-top: 12vw;
     padding: 2vw 0vw 4vw 0vw;
     color: #F8D794;
     font-size: 1.5rem;
+    margin-left: 5vw;
 }
 
 .alfa ul li img {
@@ -671,36 +668,38 @@ margin-top: 12vw;
     padding: 5vw 7vw 5vw 7vw;
     width: 30%;
     margin-top: 30vw;
+    border-radius: 15px;
 }
-.alfa ul li.agua h4{
+
+.alfa ul li.agua h4 {
     margin-top: 0.7vw;
 }
 
-.alfa ul li.casa h4{
+.alfa ul li.casa h4 {
     margin-top: 0.7vw;
 }
 
-.alfa ul li.sol h4{
+.alfa ul li.sol h4 {
     margin-top: 0.7vw;
 }
 
-.alfa ul li.vida h4{
+.alfa ul li.vida h4 {
     margin-top: 0.7vw;
 }
 
-.alfa ul li.caminho h4{
+.alfa ul li.caminho h4 {
     margin-top: 0.7vw;
 }
 
-.alfa ul li.bom h4{
+.alfa ul li.bom h4 {
     margin-top: 0.7vw;
 }
 
-.alfa ul li.em h4{
+.alfa ul li.em h4 {
     margin-top: 0.7vw;
 }
 
-.alfa ul li.paz h4{
+.alfa ul li.paz h4 {
     margin-top: 0.7vw;
 }
 
@@ -708,6 +707,27 @@ margin-top: 12vw;
     width: 16%;
     margin-right: 85vw;
     margin-top: 10vw;
+}
+
+.alfa h4 {
+    font-family: "Noto Sans Egyptian Hieroglyphs", sans-serif;
+    font-size: 1.5rem;
+}
+
+.campoResposta {
+    font-family: "Noto Sans Egyptian Hieroglyphs", sans-serif;
+    font-size: 3rem;
+}
+.alfa ul li p{
+    font-size: 1.5rem;
+}
+.alfa ul li img {
+    transition: background 1s ease;
+ 
+}
+
+.alfa ul li img:hover {
+    background-color: #3F6B76 !important;
 }
 
 
@@ -742,106 +762,112 @@ margin-top: 12vw;
         font-size: 5rem !important;
     }
 
-   /* === SECTION VETOR E CARROSSEL === */
+    /* === SECTION VETOR E CARROSSEL === */
 
-/* Remove a formatação genérica que estava afetando todos os parágrafos */
-div.vetor p {
-    margin-left: 0 !important;
-}
+    /* Remove a formatação genérica que estava afetando todos os parágrafos */
+    div.vetor p {
+        margin-left: 0 !important;
+    }
 
-.vetor p.principal {
-    font-size: 2rem !important;
-    padding: 0 10%;
-    text-align: justify;
-}
+    .vetor p.principal {
+        font-size: 2rem !important;
+        padding: 0 10%;
+        text-align: justify;
+    }
 
-.vetor p.principal span {
-    font-size: 3.5rem;
-}
+    .vetor p.principal span {
+        font-size: 3.5rem;
+    }
 
-/* Container flex organizando tudo em linha */
-.vetor .geral {
-    display: flex;
-    flex-direction: row;        /* Coloca tudo lado a lado */
-    align-items: center;        /* Alinha verticalmente ao centro */
-    justify-content: space-between;
-    gap: 20px;
+    /* Container flex organizando tudo em linha */
+    .vetor .geral {
+        display: flex;
+        flex-direction: row;
+        /* Coloca tudo lado a lado */
+        align-items: center;
+        /* Alinha verticalmente ao centro */
+        justify-content: space-between;
+        gap: 20px;
 
-    margin: 4vw 7vw 2vw;
-    padding: 30px;
+        margin: 4vw 7vw 2vw;
+        padding: 30px;
 
-    border-radius: 15px;
-    background-color: #F8D794;
-}
+        border-radius: 15px;
+        background-color: #F8D794;
+    }
 
-/* Setas de navegação */
-.vetor .geral .anterior,
-.vetor .geral .proximo {
-    font-size: 3.5rem !important;
-    font-weight: bold;
-    color: #1f5061;
-    cursor: pointer;
-    user-select: none;
-    margin: 0 !important;
-}
+    /* Setas de navegação */
+    .vetor .geral .anterior,
+    .vetor .geral .proximo {
+        font-size: 3.5rem !important;
+        font-weight: bold;
+        color: #1f5061;
+        cursor: pointer;
+        user-select: none;
+        margin: 0 !important;
+    }
 
-/* Janela do carrossel */
-.vetor .carrosel {
-    position: relative;
-    width: 300px;
-    height: 200px;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    flex: 0 0 300px; /* Impede a imagem de encolher */
-}
+    /* Janela do carrossel */
+    .vetor .carrosel {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        flex: 0 0 300px;
+        /* Impede a imagem de encolher */
+    }
 
-/* Lista do carrossel */
-.vetor .carrosel ul.galeria {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: max-content;
-    height: 200px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    transition: left 0.3s ease-in-out;
-}
+    /* Lista do carrossel */
+    .vetor .carrosel ul.galeria {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: max-content;
+        height: 200px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        transition: left 0.3s ease-in-out;
+    }
 
-.vetor .carrosel ul.galeria li,
-.vetor .carrosel .img {
-    width: 300px;
-    height: 200px;
-    flex: 0 0 300px;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
+    .vetor .carrosel ul.galeria li,
+    .vetor .carrosel .img {
+        width: 300px;
+        height: 200px;
+        flex: 0 0 300px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
 
-.vetor .carrosel .img img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-}
+    .vetor .carrosel .img img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
 
-/* Container do texto e tamanho do texto aumentado */
-.vetor .texto-carrossel {
-    flex: 1; /* Faz o texto ocupar todo o espaço restante do card */
-}
+    /* Container do texto e tamanho do texto aumentado */
+    .vetor .texto-carrossel {
+        flex: 1;
+        /* Faz o texto ocupar todo o espaço restante do card */
+    }
 
-.vetor .texto-carrossel p {
-    font-size: 2.2rem !important; /* Aumenta o tamanho da fonte */
-    font-weight: bold;
-    color: #1f5061;
-    text-align: left;
-    margin: 0 !important;
-    line-height: 1.3;
-}
-   /*=== SECTION.JOGOS === */
+    .vetor .texto-carrossel p {
+        font-size: 2.2rem !important;
+        /* Aumenta o tamanho da fonte */
+        font-weight: bold;
+        color: #1f5061;
+        text-align: left;
+        margin: 0 !important;
+        line-height: 1.3;
+    }
+
+    /*=== SECTION.JOGOS === */
     .jogos h2 {
         font-size: 5rem !important;
     }
@@ -893,6 +919,7 @@ div.vetor p {
     .instrucoes img {
         width: 10%;
     }
+
     .instrucoes {
         background-color: #C99565;
         padding: 2vw 2vw 20vw 2vw;
@@ -938,7 +965,7 @@ div.vetor p {
         border-radius: 20vw;
     }
 
-        
+
     .ojogo {
         background: url(../src/jogo/1000000567.png) no-repeat;
         /* 1. Ocupa toda a largura da janela */
@@ -954,10 +981,11 @@ div.vetor p {
         /* Força a imagem a ir de ponta a ponta na horizontal e vertical */
         background-position: top center;
         background-repeat: no-repeat;
+        margin-top: 0;
+        padding: 10vw 5vw 20vw 5vw;
     }
-       /* =========================
-   BOTÕES
-========================= */
+
+    /* ===BOTÕES=== */
 
     .ojogo button.tentar {
         display: inline-block;
@@ -978,7 +1006,7 @@ div.vetor p {
     .ojogo button.conferir {
         display: inline-block;
 
-        background-color: #3F6B76;
+        background-color: #914A38;
 
         color: #F8D794;
 
@@ -990,15 +1018,18 @@ div.vetor p {
 
         font-size: 1.1rem;
     }
-    .ojogo button{
+
+    .ojogo button {
         transform: translateY(-9vw);
         transform: translateX(4.5vw);
     }
-    
 
-    /* =========================
-   ALFABETO
-========================= */
+    #imagemBalanca {
+        transition: opacity 0.4s ease;
+    }
+
+
+    /* ===ALFABETO=== */
 
     .alfa {
         background: #914A38;
@@ -1007,15 +1038,16 @@ div.vetor p {
         overflow: hidden;
 
         text-align: center;
+        align-items: center;
     }
 
     .alfa h2 {
         font-size: 6rem;
 
-        position: static;
+        position: relative;
 
         margin: 0 10vw 0 0;
-        padding: 70px 0 60px;
+        padding: 70px 0 80px 0vw;
 
         color: #F8D794;
 
@@ -1023,8 +1055,12 @@ div.vetor p {
 
         text-shadow: 4px 4px 6px rgba(29, 29, 29, 0.5);
     }
-
-
+    .alfa li.escutar div.escutar p {
+        position: relative;
+        top: -20px;
+        left: 2vw;
+    }
+  
     /* LISTA */
 
     .alfa ul {
@@ -1109,37 +1145,42 @@ div.vetor p {
     }
 
     .alfa ul li.escutar {
-    transform: none;
-    background: #914A38;
-    margin: 0;
-    padding: 1vw 0;
-}
+        transform: none;
+        background: #914A38;
+        margin: 0;
+        padding: 1vw 0;
+    }
 
-.alfa ul li.escutar img {
-    margin-top: 0;
-}
+    .alfa ul li.escutar img {
+        margin-top: 0;
+    }
 
-.alfa ul li.escutar p {
-    display: inline-block;
-    margin: 0;
-   transform: translateY(-2.4vw);
-}
-.alfa ul li h4{
-    transform: translateY(-0.6vw);
-}
-.alfa ul li.escutar h4{
-    transform: translateY(2.3vw);
-}
-.alfa ul li.em h4{
-    transform: translateY(-1vw);
-}
-.alfa ul li.escutar h4 {
-    display: inline-block;
-    margin: 0;
-}
+    .alfa ul li.escutar p {
+        display: inline-block;
+        margin: 0;
+        transform: translateY(-2.4vw);
+    }
 
- 
- /*=== SECTION.FINAL ===*/
+    .alfa ul li h4 {
+        transform: translateY(-0.6vw);
+    }
+
+    .alfa ul li.escutar h4 {
+        transform: translateY(2.3vw);
+    }
+
+    .alfa ul li.em h4 {
+        transform: translateY(-1vw);
+    }
+
+    .alfa ul li.escutar h4 {
+        display: inline-block;
+        margin: 0;
+    }
+    .alfa ul li.escutar h4{
+        margin-left: 2vw;
+    }
+    /*=== SECTION.FINAL ===*/
     .final h2 {
         font-size: 5rem !important;
     }
@@ -1158,9 +1199,7 @@ div.vetor p {
     }
 
 
-    /* =========================
-   BALANÇA
-========================= */
+    /* ===BALANÇA=== */
 
     .alfa img.balanca {
         display: block;

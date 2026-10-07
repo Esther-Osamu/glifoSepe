@@ -13,7 +13,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Caesar+Dressing&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bellefair&family=Caesar+Dressing&family=Noto+Sans+Egyptian+Hieroglyphs&display=swap"
+    rel="stylesheet">
 </head>
 
 
@@ -41,8 +43,7 @@
         </li>
 
         <li>
-          <a href="simbolos.html" >Símbolos</a>
-
+          <a href="simbolos.html">Símbolos</a>
         </li>
 
         <li>
@@ -119,7 +120,8 @@
 
     <h2>JOGO</h2>
 
-    <img src="src/jogo/jogo2/jogo2/balanca 1.png" alt="Balança">
+    <!-- ESTA É A BALANÇA QUE O JAVASCRIPT VAI ALTERAR -->
+    <img id="imagemBalanca" src="src/jogo/jogo2/jogo2/balanca 1.png" alt="Balança">
 
 
     <form onsubmit="return false;">
@@ -139,7 +141,7 @@
       <!-- BOTÕES -->
       <div class="botoes">
 
-        <button type="button" class="tentar" onclick="tentarNovamente()">
+        <button type="button" class="tentar" onclick="tentarNovamente">
 
           TENTAR NOVAMENTE
 
@@ -176,6 +178,7 @@
 
           <p>Escutar</p>
         </div>
+
         <h4>𓂧</h4>
 
       </li>
@@ -350,6 +353,9 @@
     const botaoTentar =
       document.querySelector(".tentar");
 
+    /* BALANÇA DO JOGO */
+    const imagemBalanca =
+      document.querySelector("#imagemBalanca");
 
 
     function mostrarFrase() {
@@ -427,6 +433,49 @@
 
     }
 
+
+    /* TROCA A IMAGEM DA BALANÇA */
+
+    function trocarBalanca(resultado) {
+
+      // Frase 1 e 3
+      if (indiceFrase === 0 || indiceFrase === 2) {
+
+        if (resultado === "acerto") {
+
+          imagemBalanca.src =
+            "src/jogo/jogo2/jogo2/balanca/balancapena2.png";
+
+        } else {
+
+          imagemBalanca.src =
+            "src/jogo/jogo2/jogo2/balanca/balancacoracao2.png";
+
+        }
+
+      }
+
+
+      // Frase 2 e 4
+      else if (indiceFrase === 1 || indiceFrase === 3) {
+
+        if (resultado === "acerto") {
+
+          imagemBalanca.src =
+            "src/jogo/jogo2/jogo2/balanca/balancapena3.png";
+
+        } else {
+
+          imagemBalanca.src =
+            "src/jogo/jogo2/jogo2/balanca/balancacoracao3.png";
+
+        }
+
+      }
+
+    }
+
+
     function verificar() {
 
       if (jogoFinalizado) {
@@ -461,9 +510,13 @@
       com a resposta correta
       */
 
+
       if (respostaJogador === respostaCorreta) {
 
         alert("Acertou!");
+
+        /* TROCA PARA A BALANÇA COM A PENA */
+        trocarBalanca("acerto");
 
 
         // Vai para a próxima frase
@@ -481,14 +534,17 @@
 
         }
 
-
       } else {
 
         alert("Resposta incorreta! Tente novamente.");
 
+        /* TROCA PARA A BALANÇA COM O CORAÇÃO */
+        trocarBalanca("erro");
+
       }
 
     }
+
 
     function finalizarJogo() {
 
