@@ -717,6 +717,7 @@ footer img {
 .campoResposta {
     font-family: "Noto Sans Egyptian Hieroglyphs", sans-serif;
     font-size: 1.1rem;
+    text-align: center;
 }
 .alfa ul li p{
     font-size: 1.5rem;
