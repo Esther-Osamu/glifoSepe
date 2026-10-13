@@ -5,9 +5,9 @@ Esse repositório será usado para o armazenamento e compartilhamento do process
 Data: 02/06/2026      
 Assunto: Escolha do tema , nome do site, coordenador(a), secretário(a) e divisão de tarefas.
 
-	Venho por meio desta ata registrar o que foi decidido. Para o tema foi decidido o seguinte, falaremos a respeito da invenção da escrita. 
+Venho por meio desta ata registrar o que foi decidido. Para o tema foi decidido o seguinte, falaremos a respeito da invenção da escrita. 
 Foi decidido que a coordenadora será a aluna Sofia Santos e a secretária será a aluna Esther Alves.
-	O nome escolhido para o site foi “Glifo”, pois refere-se aos sinais gravados ou pintados.
+O nome escolhido para o site foi “Glifo”, pois refere-se aos sinais gravados ou pintados.
 
 Responsabilidades: No momento, como o tema ainda não foi devidamente aprofundado, todos os membros da equipe estarão responsáveis pela pesquisa e coleta de dados. E para o github deixamos a aluna Esther responsável pela criação e compartilhamento do repositório. 
 
