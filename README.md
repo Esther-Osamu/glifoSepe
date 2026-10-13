@@ -128,11 +128,20 @@ Responsabilidades: Sofia fez o layout da página Inicial e Recomendações, Mari
 
 
 ---
- # **ATA 11**
+ # **ATA 10**
 Assunto: conselho de classe.
 Data: 8/09 e 15/09
 
 Devido ao cronograma do conselho de classe realizado nessas suas datas a tarde, não foi possível a realização das tarefas na aula designada de Projeto Integrador.
 
 ---
-# **ATA 12**
+# **ATA 11**
+Assunto: Reunião pós conselho.
+Data: 13/10/2026
+
+A equipe amou a proposta e pode aproveitar em vários aspectos as apresentações. A equipe notou a falta de conscientização das outras equipes que compartilharam a sala, pois o seu barulho atrapalhou os nossos ouvintes a compreender a apresentação. Um ponto positivo foi perceber a satisfação dos nossos ouvintes ao conhecer tanto a proposta quanto o site em geral ver que nossos ouvintes se interresaram no nosso trabalho valeu qualquer esforço, além disso a organização com respeito a responsividade ajudou o grupo a se organizar em meio a tantos ouvintes.
+
+Responsabilidades: Esther- ajustar o botão, e colocar as imagens do teclado um do lado do outro. Em geral trazer mais movimento em todas as páginas.
+Ausentes: Ananda Fusinato e Isabelle Padilha.
+
+---
