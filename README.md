@@ -145,3 +145,12 @@ Responsabilidades: Esther- ajustar o botão, e colocar as imagens do teclado um 
 Ausentes: Ananda Fusinato e Isabelle Padilha.
 
 ---
+
+
+# **ATA 12**
+Assunto: Ajustes
+Data: 20/10/2026
+
+Todos os membros da equipe estão trabalhando em ajustes para melhoria na compreenção das páginas.
+
+---
