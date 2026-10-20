@@ -136,7 +136,7 @@ Devido ao cronograma do conselho de classe realizado nessas suas datas a tarde, 
 
 ---
 # **ATA 11**
-Assunto: Reunião pós conselho.
+Assunto: Reunião pós painel.
 Data: 13/10/2026
 
 A equipe amou a proposta e pode aproveitar em vários aspectos as apresentações. A equipe notou a falta de conscientização das outras equipes que compartilharam a sala, pois o seu barulho atrapalhou os nossos ouvintes a compreender a apresentação. Um ponto positivo foi perceber a satisfação dos nossos ouvintes ao conhecer tanto a proposta quanto o site em geral ver que nossos ouvintes se interresaram no nosso trabalho valeu qualquer esforço, além disso a organização com respeito a responsividade ajudou o grupo a se organizar em meio a tantos ouvintes.
