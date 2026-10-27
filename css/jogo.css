@@ -47,6 +47,9 @@ section.bnr h2 {
     margin: 7vw 0vw 0vw 0vw;
 }
 
+.vetor p.principal {
+    font-size: 1.3rem;
+}
 
 /* === SECTION.VETOR === */
 .vetor div.geral {
@@ -193,6 +196,7 @@ section.vetor div.vetor p {
     padding: 0;
 
     overflow: hidden;
+    border-radius: 10px;
 }
 
 
@@ -203,9 +207,8 @@ section.vetor div.vetor p {
     height: 100%;
 
     object-fit: cover;
+    border-radius: 10px;
 }
-
-
 
 
 .vetor .geral>.anterior,
@@ -277,6 +280,7 @@ section.vetor div.vetor p {
         #f0f0f0;
     /* Cor de fundo no final */
     background-size: 350px 150px, 50% auto;
+    background-position: left top -3vw, right center;
 }
 
 .jogos img {
@@ -285,11 +289,11 @@ section.vetor div.vetor p {
 
 .jogos {
     text-align: center;
+    font-weight: bold;
 }
 
 .jogos h3 {
     font-size: 1.5rem;
-    font-size: 1.2rem;
     margin: 2vw 0vw 2vw 0vw;
 }
 
@@ -297,8 +301,8 @@ section.vetor div.vetor p {
     background-color: #C99565;
     padding: 5vw 3vw 7vw 3vw;
     color: #5F3A1F;
-    font-size: 1.1rem;
     width: 100%;
+    font-size: 1.2rem;
 
 }
 
@@ -306,19 +310,19 @@ section.vetor div.vetor p {
     margin: 7vw 0vw 7vw 0vw;
     background-color: #3F6B76;
     padding: 5vw 3vw 7vw 3vw;
-    font-size: 1.1rem;
     color: #F8D794;
     width: 100%;
+    font-size: 1.2rem;
 }
 
 
-.jogos ul li.mehen {
+section.jogos ul li.mehen {
     background-color: #F8D794;
     color: #5F3A1F;
     padding: 5vw 3vw 7vw 3vw;
-    font-size: 1.1rem;
     margin: 7vw 0vw 7vw 0vw;
     width: 100%;
+    font-size: 1.2rem;
 }
 
 .jogos ul li p {
@@ -330,17 +334,17 @@ section.vetor div.vetor p {
 
 
 /* === section.final=== */
-.final h2 {
-    font-size: 1.5rem;
+section.final h2 {
+    font-size: 1.8rem;
     text-align: center;
     font-family: "Caesar Dressing";
     color: #F8D794;
     margin: 3vw 0vw 3vw 0vw;
 }
 
-.final p {
+section.final p {
     color: #C9CBC0;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     padding: 0 15% 0 15%;
     margin: 3vw 0vw 7vw 0vw;
 }
@@ -403,13 +407,14 @@ footer img {
     margin: 3vw 0vw 7vw 0vw;
 }
 
-.final a {
+section.final a {
     background-color: #3F6B76;
     color: #F8D794;
     padding: 3vw 9vw 3vw 9vw;
     border-radius: 20px;
     display: inline-block;
     margin: 0vw 0vw 10vw 0vw;
+    font-weight: bold;
 }
 
 .final h3 {
@@ -492,9 +497,10 @@ footer img {
     padding-left: 3vw;
 }
 
-.instrucoes ul li h3 {
+section.instrucoes ul li h3 {
     font-size: 1.1rem;
     color: #F8D794;
+    font-weight: bold;
 }
 
 .instrucoes ul li p {
@@ -531,7 +537,7 @@ footer img {
 
 .ojogo h4 {
     color: #5F3A1F;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     margin: 7vw 0vw 7vw 0vw;
 }
 
@@ -541,6 +547,7 @@ footer img {
     padding: 2vw 4vw 2vw 4vw;
     border-radius: 15vw;
     margin: 0vw 15vw 0vw 15vw;
+    font-size: 1.5rem;
 }
 
 .ojogo input {
@@ -549,7 +556,7 @@ footer img {
 
 }
 
-.ojogo button.tentar {
+section.ojogo button.tentar {
     background-color: #3F6B76;
     padding: 3vw 4vw 3vw 4vw;
     border-radius: 10vw;
@@ -559,15 +566,17 @@ footer img {
     margin-top: 10vw;
     font-size: 0.67rem;
     margin-right: 9vw;
+    font-weight: bold;
 }
 
-.ojogo button.conferir {
+section.ojogo button.conferir {
     background-color: #914A38;
     color: #F8D794;
     padding: 2vw 4vw 2vw 4vw;
     border-radius: 10vw;
     font-size: 0.8rem;
     margin: 0 10vw 0 0;
+    font-weight: bold;
 }
 
 
@@ -591,7 +600,8 @@ footer img {
 
 .alfa ul li h4 {
     margin-top: 12vw;
-    
+    margin-right: 5vw;
+
 }
 
 .alfa ul li.escutar {
@@ -607,7 +617,6 @@ footer img {
 .alfa ul li {
     padding: 5vw 0vw 0.2vw 0vw;
     color: #F8D794;
-    border-radius: 8px;
 }
 
 .alfa ul li.casa {
@@ -719,12 +728,14 @@ footer img {
     font-size: 1.1rem;
     text-align: center;
 }
-.alfa ul li p{
+
+.alfa ul li p {
     font-size: 1.5rem;
 }
+
 .alfa ul li img {
     transition: background 1s ease;
- 
+
 }
 
 .alfa ul li img:hover {
@@ -1056,12 +1067,13 @@ footer img {
 
         text-shadow: 4px 4px 6px rgba(29, 29, 29, 0.5);
     }
+
     .alfa li.escutar div.escutar p {
         position: relative;
         top: -20px;
         left: 2vw;
     }
-  
+
     /* LISTA */
 
     .alfa ul {
@@ -1178,13 +1190,16 @@ footer img {
         display: inline-block;
         margin: 0;
     }
-    .alfa ul li.escutar h4{
+
+    .alfa ul li.escutar h4 {
         margin-left: 2vw;
     }
+
     .campoResposta {
         font-family: "Noto Sans Egyptian Hieroglyphs", sans-serif;
         font-size: 3rem;
     }
+
     /*=== SECTION.FINAL ===*/
     .final h2 {
         font-size: 5rem !important;

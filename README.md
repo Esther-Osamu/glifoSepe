@@ -151,6 +151,6 @@ Ausentes: Ananda Fusinato e Isabelle Padilha.
 Assunto: Ajustes
 Data: 20/10/2026
 
-Todos os membros da equipe estão trabalhando em ajustes para melhoria na compreenção das páginas.
+Todos os membros da equipe estão trabalhando em ajustes para melhoria na compreenção e movimento das páginas.
 
 ---
