@@ -79,6 +79,68 @@
                 deixou de ser usada, e a forma como era lida também acabou sendo esquecida.
             </p>
         </section>
+        <!--carrossel-->
+        <section class="carrossel">
+            <p class="anterior" onclick="anterior()">
+                &lt;
+            </p>
+            <div class="galeria">
+                <ul class="display">
+                    <li>
+                        <div class="fotos">
+                            <img src="src/inicio/dentropiramide.avif" alt="piramide">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fotos">
+                            <img src="src/inicio/estatua.webp" alt="estatua">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fotos">
+                            <img src="src/inicio/exposicao.jpg" alt="exposicao">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fotos">
+                            <img src="src/inicio/piramides.jpg" alt="piramides">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <p class="proximo" onclick="proximo()">
+                &gt;
+            </p>
+        </section>
+        <script>
+            let posicaoGaleria = 0;
+
+            function proximo() {
+                const display = document.querySelector(".display");
+                const fotos = display.querySelectorAll("li").length;
+
+                if (posicaoGaleria <= -(fotos - 1) *300) {
+                    posicaoGaleria = 0;
+                } else {
+                    posicaoGaleria -= 300;
+                }
+
+                display.style.left = posicaoGaleria + "px";
+            }
+
+            function anterior() {
+                const display = document.querySelector(".display");
+                const fotos = display.querySelectorAll("li").length;
+
+                if(posicaoGaleria >= 0) {
+                    posicaoGaleria = -(fotos - 1) * 300;
+                } else {
+                    posicaoGaleria += 300;
+                }
+
+                 display.style.left = posicaoGaleria + "px";
+            }
+        </script>
         <section class="nome">
             <h2>
                 Por que a escrita egípcia recebeu esse nome?
