@@ -131,6 +131,78 @@ section.nome h2 {
     color: #5F3A1F;
 }
 
+.imagenstxt {
+    font-family: 'caesar dressing';
+    color: #5F3A1F;
+   
+}
+.imagenstxt h2{
+     transform: translateX(37vw);
+     transform: translateY(17vw);
+     text-align: center;
+     font-size: 2.3rem;
+     padding-left: 45vw;
+}
+
+section.carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10vw 0;
+    background-color: #F8D794;
+    width: 42vw;
+    height: 24vw;
+    transform: translateX(8vw);
+    margin-top: 3vw;
+    border-radius: 2vw;
+}
+
+.galeria {
+    width: 300px;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+
+.display {
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: left 0.5s ease;
+    padding: 0;
+    margin: 0;
+}
+
+.display li {
+    min-width: 300px;
+    width: 300px;
+    height: 220px;
+    list-style: none;
+}
+
+.fotos {
+    width: 100%;
+    height: 100%;
+}
+
+.fotos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.carrossel .anterior,
+.carrossel .proximo {
+    color: #5F3A1F;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px;
+}
+
 footer {
     background-color: #C9CBC0;
     padding: 5vw;
@@ -145,6 +217,8 @@ footer img {
     max-width: 25px;
     max-height: 25px;
 }
+
+
 
 @media only screen and (min-width: 600px) {
     header nav {
@@ -227,6 +301,27 @@ footer img {
     }
 
     section.nome h2 {
+        font-size: 3rem;
+    }
+
+    section.carrossel {
+        padding: 5vw 0;
+        gap: 30px;
+    }
+
+    .galeria {
+        width: 600px;
+        height: 350px;
+    }
+
+    .display li {
+        min-width: 300px;
+        width: 300px;
+        height: 350px;
+    }
+
+    .carrossel .anterior,
+    .carrossel .proximo {
         font-size: 3rem;
     }
 
