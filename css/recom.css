@@ -216,6 +216,7 @@ section.filmes ul li>p {
     text-align: left;
     padding: 4vw 4vw;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 section.contato {
@@ -412,12 +413,13 @@ footer img {
 
     section.livros ul li {
         padding: 2vw;
-    } 
-    
+    }
+
     section.livros p a {
         padding: 1vw 2vw;
         margin: 2vw;
     }
+
 
     section.filmes {
         background: url(../src/recomendacoes/back-desktop.png), #5F3A1F;
@@ -429,21 +431,22 @@ footer img {
 
     section.filmes h2 {
         font-size: 3.5rem;
-        padding: 8vw 8vw 0 8vw ;
+        padding: 8vw 8vw 0 8vw;
     }
 
-    section.filmes ul{
+    section.filmes ul {
         display: flex;
         justify-content: center;
         padding: 0%;
     }
 
     section.filmes ul li {
-    padding:2vw;
+        padding: 2vw;
     }
 
-    section.filmes ul li > p {
+    section.filmes ul li>p {
         padding: 0.4vw 4vw 5vw 4vw;
+        font-size: 1.4rem;
     }
 
     section.filmes ul li iframe {
@@ -511,6 +514,35 @@ footer img {
         margin-top: 10vw;
         max-width: 300px;
     }
+
+
+
+    /* Brilho místico da Ankh */
+    section.contato img {
+        filter:
+            drop-shadow(0 0 5px rgba(255, 215, 100, 0.6)) drop-shadow(0 0 15px rgba(255, 190, 70, 0.4)) drop-shadow(0 0 30px rgba(255, 170, 50, 0.2));
+
+        animation:
+            rotate-diagonal-1 15s linear both,
+            luz-mistica 6s ease-in-out infinite;
+    }
+
+    /* Luz que pulsa suavemente */
+    @keyframes luz-mistica {
+
+        0%,
+        100% {
+            filter:
+                drop-shadow(0 0 5px rgba(255, 215, 100, 0.5)) drop-shadow(0 0 15px rgba(255, 190, 70, 0.3)) drop-shadow(0 0 25px rgba(255, 170, 50, 0.2));
+        }
+
+        50% {
+            filter:
+                drop-shadow(0 0 50px rgba(255, 230, 140, 0.9)) drop-shadow(0 0 50px rgba(255, 200, 80, 0.7)) drop-shadow(0 0 60px rgba(255, 170, 50, 0.5));
+        }
+    }
+
+
 
     footer {
         padding: 2vw 4vw;
