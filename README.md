@@ -163,3 +163,11 @@ Data: 27/10/2026
 Todos os membros continuaram seus trabalhos avançando ao máximo para finalização dos seus ajustes.
 
 ---
+
+# **ATA 14**
+Assunto: Ajustes 
+Data: 03/11/2026
+
+A aluna Isabele já terminou a integração do js em sua página e os demais membros continuam seu trabalho.
+
+---
