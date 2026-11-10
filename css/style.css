@@ -139,7 +139,7 @@ section.nome h2 {
 .imagenstxt h2 {
     transform: none;
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 3.4rem;
     padding: 12vw 8vw 5vw;
     margin: 0;
 }
@@ -151,7 +151,7 @@ section.carrossel {
     justify-content: center;
     gap: 10px;
 
-    width: 85%;
+    width: 42%;
     height: auto;
     padding: 5vw 2vw;
     margin: 5vw auto;
@@ -161,6 +161,10 @@ section.carrossel {
 
     background-color: #F8D794;
     border-radius: 15px;
+}
+
+.carrossel ul.display li div img {
+
 }
 
 .galeria {
