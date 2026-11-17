@@ -188,7 +188,7 @@ header nav ul li a:hover{
     display: flex;
     align-items: center;       
     justify-content: center;                             
-    margin-top: 390px;          
+    margin-top: 350px;          
     width: 100%;
     max-width: 500px;       
 }
@@ -197,7 +197,8 @@ header nav ul li a:hover{
     display: flex;
     flex-direction: column;    
     align-items: flex-start;   
-    text-align: left;  
+    text-align: left; 
+    font-size: 1rem; 
 }
 
 .roseta div.direita img{
@@ -239,8 +240,9 @@ header nav ul li a:hover{
 
 .podermagico{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 12vw;
+    padding-top: 1vw;
     background: url(../src/curiosidades/fundos/podermagico-mobile.png); height: auto;
     
 
@@ -312,9 +314,8 @@ header nav ul li a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 20px;
     margin-top: -120px; 
-    padding: 410px 20px 40px 20px;
+    padding: 410px 20px 50px 20px;
     background-size: 100% auto;
     background-position: center top;
     overflow: hidden;
@@ -384,6 +385,7 @@ header nav ul li a:hover{
     margin-right: 20px;
     margin-left: 2vw;
     filter: brightness(25%);
+    padding-right: 5vw;
 }
 
 .balanca div.texto-inferior{
@@ -544,7 +546,7 @@ footer img {
     width: 155px;
     min-height: 250px;
 
-    padding: 80px 20px 25px;
+    padding: 50px 20px 25px;
 
     box-sizing: border-box;
     flex: 1;
@@ -597,7 +599,7 @@ footer img {
     }
 
     .roseta .texto-principal p {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         line-height: 1.5;
 
         margin: 0 0 2vw;
@@ -625,10 +627,11 @@ footer img {
 
         position: static;
 
-        width: 1500px;
+        width: 1150px;
         max-width: 255%;
         height: auto;
         padding: 0;
+        margin-left: 25vw;
     }
 
 
@@ -650,7 +653,7 @@ footer img {
     }
 
     .roseta .imgbloco img {
-        width: 110px;
+        width: 230px;
         height: auto;
     }
 
@@ -659,8 +662,12 @@ footer img {
     }
 
     .roseta .textobloco p {
-        font-size: 1rem;
+        font-size: 1.3rem;
         margin: 0 0 1vw;
+    }
+
+    .roseta .textobloco a{
+        font-size: 1.3rem;
     }
 
 /* == PODER MÀGICO == */
@@ -671,13 +678,14 @@ footer img {
     text-align: left;
     font-size: 3.5rem;
     padding-right: 35vw;
-    margin-top: -5vw;
+    margin-top: 5vw;
+    margin-bottom: -6vw;
 }
 
 .podermagico div{
     display: flex;
     align-items: center;
-    padding-bottom:0;
+    padding-bottom: 0;
     gap: 6vw;
     padding-left: 2vw;
 }
@@ -777,20 +785,21 @@ section.balanca div.moralidade {
 
 .balanca p {
     font-size: 2rem;
-    padding: 5vw 0 0 0;
+    padding: 3vw 2vw 0 2vw;
+    line-height: 1.1;
 }
 
 .balanca p.texto-esquerda {
     text-align: left;
-    margin: -3vw 0 0 15vw;
-    width: 75%;
+    margin: -3vw 0 0vw 5vw;
+    width: 100%;
 }
 
 .balanca div.moralidade p.texto-direita {
     text-align: right;
-    width: 95%;
+    width: 100%;
     margin-top: 3vw;
-    margin-right: 15vw;
+    margin-right: 5vw;
 }
 
 .balanca img {
@@ -804,6 +813,10 @@ section.balanca div.moralidade {
 .balanca a{
     padding: 1vw 2vw;
     font-size: 1.5rem;
+}
+
+.balanca a:hover{
+    background-color: #96462e;
 }
 
 .balanca p.agora{
