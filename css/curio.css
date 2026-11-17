@@ -1,10 +1,8 @@
-/*  === CSS GERAL ===  */
+
+/* === CSS GERAL === */
 
 html {
     font-family: 'bellefair';
-    /* títulos 
-    font-family: 'caesar dressing' 
-    */
     background-color: #914A38;
 }
 
@@ -24,18 +22,18 @@ header nav ul li {
     padding: 1.2vw;
 }
 
-
 header nav ul li a.marc {
     color: #5F3A1F;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
     color: #5F3A1F;
 }
 
+
 /*== BANNER ==*/
 
-.banner{
+.banner {
     text-align: center;
     background: url(../src/curiosidades/fundos/fundo-banner.png) center/cover no-repeat;
     padding: 18vw;
@@ -44,17 +42,18 @@ header nav ul li a:hover{
     z-index: 1;
 }
 
-.banner h2{
+.banner h2 {
     font-size: 3rem;
     font-family: 'caesar dressing';
     color: #F8D794;
     margin-bottom: 20px;
 }
 
-.banner p{
+.banner p {
     font-size: 1rem;
-    color:#C9CBC0;
+    color: #C9CBC0;
 }
+
 
 /* == FESCRITAS == */
 
@@ -63,7 +62,6 @@ header nav ul li a:hover{
     background-repeat: no-repeat;
     background-position: center 70px;
     background-size: 100% 100%;
-
     position: relative;
     z-index: 2;
     margin-top: -300px;
@@ -71,253 +69,282 @@ header nav ul li a:hover{
     padding-bottom: 2vw;
 }
 
-.fescritas h2{
+.fescritas h2 {
     padding-top: 80vw;
     font-family: 'caesar dressing';
-    color: #5F3A1F ;
+    color: #5F3A1F;
     font-size: 2rem;
 }
 
-.fescritas p{
-   color: #914A38;
-   font-size: 1rem;
-   padding-top: 4vw;
-   padding-bottom: 9vw;
+.fescritas p {
+    color: #914A38;
+    font-size: 1rem;
+    padding-top: 4vw;
+    padding-bottom: 9vw;
 }
 
-
-.fescritas ul p{
-   color:#C9CBC0 ;
+.fescritas ul p {
+    color: #C9CBC0;
 }
 
-
-.cards{
-   list-style: none;
+.cards {
+    list-style: none;
 }
 
-
-.cards li{
+.cards li {
     width: 280px;
     margin: 0 auto 50px;
     position: relative;
 }
 
-.cards img{
+.cards img {
     width: 180px;
     height: 180px;
     object-fit: cover;
     border-radius: 50%;
-
     display: block;
     margin: 0 auto -80px;
-    
     position: relative;
     z-index: 2;
 }
 
-.cards .conteudo{
+.cards .conteudo {
     background-color: #3F6B76;
     padding: 70px 10px 25px;
     border-radius: 0 0 10px 10px;
     position: relative;
     z-index: 1;
-
 }
 
-.cards li .conteudo p{
+.cards li .conteudo p {
     max-width: 90px;
     margin: 0 auto;
 }
 
-.conteudo{
+.conteudo {
     width: 170px;
     box-sizing: border-box;
     margin: -35px auto 0;
     padding: 70px 25px 25px;
     border: 2px solid #5F3A1F;
-
-    border-radius: 0 0 10px 10px ;
+    border-radius: 0 0 10px 10px;
 }
+
+
+/* === ANIMAÇÃO DOS CARDS NO CELULAR === */
+
+.fescritas .cards li {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    cursor: pointer;
+}
+
+.fescritas .cards img,
+.fescritas .cards .conteudo,
+.fescritas .cards .conteudo p {
+    transition: all 0.4s ease;
+}
+
+/* Card selecionado */
+
+.fescritas .cards li.expandido {
+    transform: scale(1.04);
+    z-index: 3;
+}
+
+/* Outros cards */
+
+.fescritas .cards li.encolhido {
+    transform: scale(0.94);
+    opacity: 0.75;
+}
+
+/* Ajustes do card selecionado */
+
+.fescritas .cards li.expandido .conteudo {
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.fescritas .cards li.expandido .conteudo p {
+    max-width: 100%;
+    font-size: 1.1rem;
+}
+
+.fescritas .cards li.encolhido .conteudo p {
+    font-size: 0.9rem;
+}
+
 
 /* == ROSETA == */
 
-.roseta{
+.roseta {
     text-align: center;
     position: relative;
 }
 
-.roseta h2{
+.roseta h2 {
     padding: 7vw;
     padding-bottom: 4vw;
     font-size: 2rem;
-    font-family: 'caesar dressing' ;
+    font-family: 'caesar dressing';
     color: #C99565;
 }
 
-.roseta p{
+.roseta p {
     color: #C9CBC0;
     margin: 40px;
 }
 
 .roseta {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  padding-bottom: 120px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 120px;
 }
 
-.roseta h2 { 
-    order: 1; 
+.roseta h2 {
+    order: 1;
 }
-.texto-principal { 
-    order: 2; 
+
+.texto-principal {
+    order: 2;
     z-index: 2;
 }
-.direita { 
-    order: 3; margin: 20px 0;  
+
+.direita {
+    order: 3;
+    margin: 20px 0;
 }
-.blocorec { 
+
+.blocorec {
     order: 4;
     gap: 15px;
     padding: 15px 20px;
-    position: relative; 
-    z-index: 2;  
+    position: relative;
+    z-index: 2;
     display: flex;
-    align-items: center;       
-    justify-content: center;                             
-    margin-top: 350px;          
+    align-items: center;
+    justify-content: center;
+    margin-top: 350px;
     width: 100%;
-    max-width: 500px;       
+    max-width: 500px;
 }
 
 .textobloco {
     display: flex;
-    flex-direction: column;    
-    align-items: flex-start;   
-    text-align: left; 
-    font-size: 1rem; 
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 1rem;
 }
 
-.roseta div.direita img{
+.roseta div.direita img {
     max-width: 330px;
     position: absolute;
     z-index: 1;
-    top: 360px;
-    right: 0;
+    top: 70px;
+    right: 60%;
     width: 100%;
     pointer-events: none;
-    right: 60%;
     transform: translateX(50%);
-    margin-right: 0; 
-    top: 70px; 
+    margin-right: 0;
 }
 
-.roseta .blocorec p{
+.roseta .blocorec p {
     color: #F8D794;
-    margin: 0;                 
-    margin-bottom: 8px;       
-    font-size: 0.95rem;        
-    line-height: 1.4;    
-    
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    line-height: 1.4;
 }
 
-.roseta .blocorec a{
+.roseta .blocorec a {
     color: #F8D794;
     text-decoration: underline;
-
 }
 
-.roseta img.img-desktop{
+.roseta img.img-desktop {
     display: none;
 }
 
 
+/* == PODER MÁGICO == */
 
-/* == PODER MÁGICO ==*/
-
-.podermagico{
+.podermagico {
     text-align: center;
     margin-top: 10px;
     padding: 12vw;
     padding-top: 1vw;
-    background: url(../src/curiosidades/fundos/podermagico-mobile.png); height: auto;
-    
-
+    background: url(../src/curiosidades/fundos/podermagico-mobile.png);
+    height: auto;
 }
 
-.podermagico h2{
+.podermagico h2 {
     color: #C9CBC0;
     font-size: 2rem;
     font-family: 'caesar dressing';
     padding-bottom: 9vw;
-
 }
 
-.podermagico img{
+.podermagico img {
     width: 250px;
 }
-.podermagico p{
+
+.podermagico p {
     color: #C9CBC0;
-    padding: 8vw 3vw 5vw 3vw ;
+    padding: 8vw 3vw 5vw 3vw;
 }
 
-/* == GRAVURAS ==*/
 
+/* == GRAVURAS == */
 
-.gravuras{
-   
+.gravuras {
     padding: 9vw;
     text-align: center;
     position: relative;
     z-index: -1;
 }
-.gravuras img{
+
+.gravuras img {
     width: 300px;
 }
 
-.gravuras p{
+.gravuras p {
     text-align: left;
     padding-left: 15vw;
     padding-right: 17vw;
     padding-bottom: 8vw;
     color: #C9CBC0;
-
 }
 
-.gravuras h3{
+.gravuras h3 {
     text-align: left;
-   padding-left: 15vw;
-   padding-right: 14vw;
-   font-size: 1.5rem;
-   color: #F8D794;
-   padding-bottom: 4vw;
-    
+    padding-left: 15vw;
+    padding-right: 14vw;
+    font-size: 1.5rem;
+    color: #F8D794;
+    padding-bottom: 4vw;
 }
 
-   
-
-.gravuras span{
+.gravuras span {
     color: #F8D794;
 }
 
-/* == BALANCA == */
+
+/* == BALANÇA == */
 
 .balanca {
     text-align: center;
     background: url(../src/curiosidades/fundos/balanca-mobile.png) no-repeat;
-    background-position: top center;
-    background-size: cover;
     background-position: center top;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -120px; 
+    margin-top: -120px;
     padding: 410px 20px 50px 20px;
     background-size: 100% auto;
-    background-position: center top;
     overflow: hidden;
 }
 
@@ -330,7 +357,7 @@ header nav ul li a:hover{
     padding: 0 7vw;
 }
 
-.balanca p.agora{
+.balanca p.agora {
     color: #5F3A1F;
     padding-left: 15vw;
     padding-right: 15vw;
@@ -340,12 +367,11 @@ header nav ul li a:hover{
     padding-bottom: 8vw;
 }
 
-.balanca a{
+.balanca a {
     color: #F8D794;
     background-color: #5F3A1F;
     padding: 3vw 12vw;
     border-radius: 20px;
-
 }
 
 .balanca div.chegou {
@@ -360,8 +386,7 @@ header nav ul li a:hover{
     color: #5F3A1F;
     font-size: 2.2rem;
     margin-bottom: 5px;
-    margin-top:-43vw;
-
+    margin-top: -43vw;
 }
 
 .balanca p.texto-balanca {
@@ -372,14 +397,13 @@ header nav ul li a:hover{
     max-width: 300px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .balanca img {
     max-width: 300px;
     width: 100%;
     height: auto;
-    margin-top:-10vw;
+    margin-top: -10vw;
     justify-content: center;
     display: flex;
     margin-right: 20px;
@@ -388,11 +412,13 @@ header nav ul li a:hover{
     padding-right: 5vw;
 }
 
-.balanca div.texto-inferior{
+.balanca div.texto-inferior {
     background-color: #F8D794;
     margin: 5vw;
 }
 
+
+/* === FOOTER === */
 
 footer {
     background-color: #C9CBC0;
@@ -409,7 +435,13 @@ footer img {
     max-height: 25px;
 }
 
+
+/* ===================================== */
+/* === VERSÃO PARA COMPUTADORES === */
+/* ===================================== */
+
 @media only screen and (min-width: 600px) {
+
     header nav {
         display: flex;
         justify-content: space-between;
@@ -425,155 +457,178 @@ footer img {
     header nav img {
         max-width: 115px;
     }
+
     footer {
         padding: 2vw 4vw;
         line-height: 3vw;
     }
 
+
     /*== BANNER ==*/
 
+    .banner {
+        background: url(../src/curiosidades/fundos/background-desktop-junção.png) no-repeat;
+        background-size: 100%;
+    }
 
-.banner{
-    background: url(../src/curiosidades/fundos/background-desktop-junção.png) no-repeat;
-    background-size: 100%;
-}
+    .banner h2 {
+        font-size: 8rem;
+        text-align: left;
+    }
 
-.banner h2{
-    font-size: 8rem;
-    text-align: left;
-}    
-
-.banner p{
-    font-size: 3rem;
-    text-align: left;
-    padding-right: 13vw;
-  
-}
-
-/*== FESCRITAS ==*/
+    .banner p {
+        font-size: 3rem;
+        text-align: left;
+        padding-right: 13vw;
+    }
 
 
-.fescritas {
-    background-color: #F8D794;
-    margin-top: -120px;
-    padding: 0 5vw 6vw;
+    /*== FESCRITAS ==*/
 
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    .fescritas {
+        background-color: #F8D794;
+        margin-top: -120px;
+        padding: 0 5vw 6vw;
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 2;
+        text-align: center;
+    }
 
-    position: relative;
-    z-index: 2;
+    .fescritas h2 {
+        padding-top: 0;
+        font-size: 3.5rem;
+    }
 
-    text-align: center;
-}
+    .fescritas > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4vw;
+    }
 
-.fescritas h2 {
-    padding-top: 10vw;
-    font-size: 3.5rem;
-}
+    .fescritas > div > div:first-child {
+        width: 35%;
+        text-align: center;
+    }
 
-.fescritas > div > div:first-child p {
-    padding-top: 1vw;
-    padding-bottom: 3vw;
-}
+    .fescritas > div > div:first-child p {
+        padding-top: 1vw;
+        padding-bottom: 0;
+        font-size: 1.5rem;
+    }
 
-
-.fescritas > div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 4vw;
-}
-
-
-.fescritas > div > div:first-child {
-     width: 35%;
-     text-align: center;
-}
-
-.fescritas h2 {
-    padding-top: 0;
-    font-size: 3.5rem;
-}
-
-.fescritas > div > div:first-child p {
-    padding-top: 1vw;
-    padding-bottom: 0;
-    font-size: 1.5rem;
-}
-
-.fescritas > div > div:last-child {
-    width: 65%;
-}
+    .fescritas > div > div:last-child {
+        width: 65%;
+    }
 
 
+    /* == CARDS NO DESKTOP == */
 
-/* == CARDS == */
+    .fescritas .cards {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 2.5vw;
+        padding: 5vw 0 0;
+        margin: 0;
+        min-height: 420px;
+    }
 
-.fescritas .cards {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
+    .fescritas .cards li {
+        width: 175px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.45s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
 
-    gap: 8vw;
+    .fescritas .cards img {
+        width: 165px;
+        height: 165px;
+        object-fit: cover;
+        margin: 0 auto -65px;
+        position: relative;
+        z-index: 2;
+    }
 
-    padding: 0;
-    margin: 0;
-    padding-top: 5vw;
-}
+    .fescritas .cards .conteudo {
+        width: 100%;
+        min-height: 250px;
+        padding: 75px 20px 25px;
+        box-sizing: border-box;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.1s ease;
+    }
 
-.fescritas .cards li {
-    width: 155px;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
+    .fescritas .cards li .conteudo p {
+        max-width: 100%;
+        font-size: 1.15rem;
+        margin: 0 auto;
+        line-height: 1.4;
+        transition: all 0.1s ease;
+    }
 
-.fescritas .cards img {
-    width: 165px;
-    height: 165px;
+    /* Card expandido */
 
-    object-fit: cover;
+    .fescritas .cards li.expandido {
+        width: 340px;
+    }
 
-    margin: 0 auto -65px;
+    .fescritas .cards li.expandido img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: -45px;
+    }
 
-    position: relative;
-    z-index: 2;
-}
+    .fescritas .cards li.expandido .conteudo {
+        border-radius: 15px;
+        padding: 55px 30px 25px;
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+    }
 
-.fescritas .cards .conteudo {
-    width: 155px;
-    min-height: 250px;
+    .fescritas .cards li.expandido .conteudo p {
+        font-size: 1.35rem;
+    }
 
-    padding: 50px 20px 25px;
+    /* Cards encolhidos */
 
-    box-sizing: border-box;
-    flex: 1;
-}
+    .fescritas .cards li.encolhido {
+        width: 120px;
+        opacity: 0.75;
+        transform: scale(0.92);
+    }
 
-.fescritas .cards li .conteudo p {
-    max-width: 160px;
-    font-size: 1.2rem;
-    margin: 0 auto;
-}
+    .fescritas .cards li.encolhido img {
+        width: 115px;
+        height: 115px;
+        margin-bottom: -45px;
+    }
+
+    .fescritas .cards li.encolhido .conteudo p {
+        font-size: 0.95rem;
+    }
 
 
     /* == ROSETA == */
 
-.roseta {
+    .roseta {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "titulo imagem"
             "texto imagem"
             "recomendacao imagem";
-
         column-gap: 4vw;
-
         padding: 5vw 10vw;
         min-height: 650px;
-
         text-align: left;
         align-items: center;
     }
@@ -581,38 +636,28 @@ footer img {
     .roseta h2 {
         grid-area: titulo;
         z-index: 2;
-
         padding: 0;
         margin-top: 2vw;
-
         font-size: 3.5rem;
         text-align: left;
     }
 
-
-    /* == TEXTO PRINCIPAL == */
-
     .roseta .texto-principal {
         grid-area: texto;
-
         width: 100%;
     }
 
     .roseta .texto-principal p {
         font-size: 1.4rem;
         line-height: 1.5;
-
         margin: 0 0 2vw;
     }
 
-
     .roseta .direita {
         grid-area: imagem;
-
         display: flex;
         justify-content: center;
         align-items: center;
-
         margin: 0;
         transform: translateX(-1065px);
         z-index: 1;
@@ -624,9 +669,7 @@ footer img {
 
     .roseta .direita .img-desktop {
         display: block;
-
         position: static;
-
         width: 1150px;
         max-width: 255%;
         height: auto;
@@ -634,21 +677,14 @@ footer img {
         margin-left: 25vw;
     }
 
-
-    /* == RECOMENDAÇÃO == */
-
     .roseta .blocorec {
         grid-area: recomendacao;
-
         display: flex;
         align-items: center;
-
         width: 100%;
         max-width: 500px;
-
         margin: 2vw 0 0;
         padding: 1vw;
-
         gap: 1.5vw;
     }
 
@@ -666,170 +702,165 @@ footer img {
         margin: 0 0 1vw;
     }
 
-    .roseta .textobloco a{
+    .roseta .textobloco a {
         font-size: 1.3rem;
     }
 
-/* == PODER MÀGICO == */
+
+    /* == PODER MÁGICO == */
+
+    .podermagico h2 {
+        text-align: left;
+        font-size: 3.5rem;
+        padding-right: 35vw;
+        margin-top: 5vw;
+        margin-bottom: -6vw;
+    }
+
+    .podermagico div {
+        display: flex;
+        align-items: center;
+        padding-bottom: 0;
+        gap: 6vw;
+        padding-left: 2vw;
+    }
+
+    .podermagico div img {
+        width: 325px;
+        height: auto;
+        max-width: none;
+        object-fit: contain;
+    }
+
+    .podermagico div.p {
+        font-size: 2rem;
+        text-align: left;
+    }
 
 
+    /* == GRAVURAS == */
 
-.podermagico h2{
-    text-align: left;
-    font-size: 3.5rem;
-    padding-right: 35vw;
-    margin-top: 5vw;
-    margin-bottom: -6vw;
-}
+    .gravuras {
+        background: url(../src/curiosidades/fundos/back-3.png) no-repeat;
+    }
 
-.podermagico div{
-    display: flex;
-    align-items: center;
-    padding-bottom: 0;
-    gap: 6vw;
-    padding-left: 2vw;
-}
+    .gravuras ul {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        align-items: flex-start;
+    }
 
-.podermagico div img{
-    width: 325px;
-    height: auto;
-    max-width: none;
-    object-fit: contain;
+    .gravuras ul li {
+        text-align: center;
+    }
 
-   
-}
+    .gravuras img {
+        width: 500px;
+    }
 
-.podermagico div.p{
-  
-    font-size: 2rem;
-    text-align: left;
+    .gravuras h3 {
+        padding: 0;
+        padding-left: 11vw;
+        padding-right: 0;
+        padding-bottom: 2vw;
+        margin: 0 0 12px 0;
+        font-size: 2.5rem;
+    }
 
-}
+    .gravuras p {
+        padding-bottom: 0;
+        padding-left: 1vw;
+        padding-right: 6vw;
+        text-align: left;
+        line-height: 1.5;
+        font-size: 1.3rem;
+    }
 
-/* == GRAVURAS == */
+    .gravuras p.leitura {
+        padding: 5vw;
+        padding-top: 0;
+    }
 
-.gravuras{
-    background:  url(../src/curiosidades/fundos/back-3.png) no-repeat;
-}
-.gravuras ul{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    align-items: flex-start;
-}
+    .gravuras p.mensagem {
+        padding-left: 12vw;
+    }
 
-.gravuras ul li{
-    text-align: center;
+    .gravuras h3.tit-um {
+        padding-left: 5vw;
+    }
 
-
-}
-
-.gravuras img {
-    width: 500px;
-}
-
-.gravuras h3{
-    padding: 0;
-    padding-left: 11vw;
-    padding-right: 0;
-    padding-bottom: 2vw;
-    margin: 0 0 12px 0;
-    font-size: 2.5rem;
-}
+    .gravuras h3.tit-dois {
+        padding-left: 12vw;
+    }
 
 
-.gravuras p{
-    padding-bottom: 0;
-    padding-left: 1vw;
-    padding-right: 6vw;
-    text-align: left;
-    line-height: 1.5;
-    font-size: 1.3rem;
-}
+    /* === BALANÇA === */
 
-.gravuras p.leitura {
-    padding: 5vw;
-    padding-top: 0;
-}
+    .balanca h2 {
+        font-size: 4rem;
+        padding-top: 30vw;
+        padding: 20px 0 20vw 0;
+    }
 
-.gravuras p.mensagem {
-    padding-left: 12vw;
-}
-
-.gravuras h3.tit-um {
-    padding-left: 5vw;
-}
-
-.gravuras h3.tit-dois {
-    padding-left: 12vw;
-}
-
-/* === BALANÇA === */
-
-.balanca h2{
-    font-size: 4rem;
-    padding-top: 30vw;
-    padding: 20 0 20vw 0;
-}
-
-.balanca {
+    .balanca {
         background: url(../src/curiosidades/fundos/balanca.png) no-repeat;
         background-size: 100%;
         margin-top: -25vw;
-}
+    }
 
-section.balanca div.moralidade {
-    display: flex;
-    justify-content: center;
-}
+    section.balanca div.moralidade {
+        display: flex;
+        justify-content: center;
+    }
 
-.balanca p {
-    font-size: 2rem;
-    padding: 3vw 2vw 0 2vw;
-    line-height: 1.1;
-}
+    .balanca p {
+        font-size: 2rem;
+        padding: 3vw 2vw 0 2vw;
+        line-height: 1.1;
+    }
 
-.balanca p.texto-esquerda {
-    text-align: left;
-    margin: -3vw 0 0vw 5vw;
-    width: 100%;
-}
+    .balanca p.texto-esquerda {
+        text-align: left;
+        margin: -3vw 0 0vw 5vw;
+        width: 100%;
+    }
 
-.balanca div.moralidade p.texto-direita {
-    text-align: right;
-    width: 100%;
-    margin-top: 3vw;
-    margin-right: 5vw;
-}
+    .balanca div.moralidade p.texto-direita {
+        text-align: right;
+        width: 100%;
+        margin-top: 3vw;
+        margin-right: 5vw;
+    }
 
-.balanca img {
-    max-width: 500px;
-    margin-top: -3vw;
-    filter: brightness(20%);
-    margin-left: 0;
-    margin-right: 1vw;
-}
+    .balanca img {
+        max-width: 500px;
+        margin-top: -3vw;
+        filter: brightness(20%);
+        margin-left: 0;
+        margin-right: 1vw;
+    }
 
-.balanca a{
-    padding: 1vw 2vw;
-    font-size: 1.5rem;
-}
+    .balanca a {
+        padding: 1vw 2vw;
+        font-size: 1.5rem;
+    }
 
-.balanca a:hover{
-    background-color: #96462e;
-}
+    .balanca a:hover {
+        background-color: #96462e;
+    }
 
-.balanca p.agora{
-    padding: 4vw 0 4vw 0;
-    font-size: 2rem;
-}
+    .balanca p.agora {
+        padding: 4vw 0 4vw 0;
+        font-size: 2rem;
+    }
 
-.balanca h2 {
-    margin-top: -15vw;
-}
+    .balanca h2 {
+        margin-top: -15vw;
+    }
 
-.balanca div.chegou {
-    margin: -3vw 0 0 0;
-}
+    .balanca div.chegou {
+        margin: -3vw 0 0 0;
+    }
 
 }
