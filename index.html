@@ -119,34 +119,40 @@
             </p>
         </section>
         <script>
-            let posicaoGaleria = 0;
+    let posicaoGaleria = 0;
 
-            function proximo() {
-                const display = document.querySelector(".display");
-                const fotos = display.querySelectorAll("li").length;
+    function larguraImagem() {
+        return document.querySelector(".display li").getBoundingClientRect().width;
+    }
 
-                if (posicaoGaleria <= -(fotos - 1) *300) {
-                    posicaoGaleria = 0;
-                } else {
-                    posicaoGaleria -= 300;
-                }
+    function proximo() {
+        const display = document.querySelector(".display");
+        const fotos = display.querySelectorAll("li").length;
+        const largura = larguraImagem();
 
-                display.style.left = posicaoGaleria + "px";
-            }
+        if (posicaoGaleria <= -(fotos - 1) * largura) {
+            posicaoGaleria = 0;
+        } else {
+            posicaoGaleria -= largura;
+        }
 
-            function anterior() {
-                const display = document.querySelector(".display");
-                const fotos = display.querySelectorAll("li").length;
+        display.style.left = posicaoGaleria + "px";
+    }
 
-                if(posicaoGaleria >= 0) {
-                    posicaoGaleria = -(fotos - 1) * 300;
-                } else {
-                    posicaoGaleria += 300;
-                }
+    function anterior() {
+        const display = document.querySelector(".display");
+        const fotos = display.querySelectorAll("li").length;
+        const largura = larguraImagem();
 
-                 display.style.left = posicaoGaleria + "px";
-            }
-        </script>
+        if (posicaoGaleria >= 0) {
+            posicaoGaleria = -(fotos - 1) * largura;
+        } else {
+            posicaoGaleria += largura;
+        }
+
+        display.style.left = posicaoGaleria + "px";
+    }
+</script>
         <section class="nome">
             <h2>
                 Por que a escrita egípcia recebeu esse nome?
