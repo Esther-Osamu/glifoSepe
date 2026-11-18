@@ -146,36 +146,29 @@ section.nome h2 {
 }
 
 
-
-
-/* === CARROSSEL MOBILE === */
-
 section.carrossel {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap;
+    width: 88%;
+    max-width: 360px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 33px 8px 33px 8px;
+    margin: 0 auto 10vw;
+    transform: none;
+
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 6px;
 
-    width: 90%;
-    height: auto;
-    padding: 5vw 3vw;
-    margin: 5vw auto;
-
-    box-sizing: border-box;
     background-color: #F8D794;
-    border-radius: 15px;
+    border-radius: 14px;
 }
 
 .galeria {
-    flex: 0 1 300px;
-    width: 65vw;
-    height: 55vw;
-    max-width: 300px;
-    max-height: 220px;
+    width: min(58vw, 260px);
+    height: min(46vw, 190px);
+    flex: 0 0 min(58vw, 260px);
     min-width: 0;
-
     overflow: hidden;
     position: relative;
 }
@@ -190,12 +183,14 @@ section.carrossel {
 }
 
 .display li {
-    flex: 0 0 100%;
-    width: 100%;
-    height: 55vw;
-    max-height: 220px;
+    width: min(58vw, 260px);
+    min-width: min(58vw, 260px);
+    max-width: min(58vw, 260px);
+    height: min(46vw, 190px);
+    flex: 0 0 min(58vw, 260px);
     list-style: none;
 }
+
 
 .fotos {
     width: 100%;
@@ -207,20 +202,16 @@ section.carrossel {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 12px;
 }
 
 .carrossel .anterior,
 .carrossel .proximo {
     flex: 0 0 auto;
+    padding: 4px;
     margin: 0;
-    padding: 5px;
-
-    color: #5F3A1F;
-    font-size: 1.8rem;
-    font-weight: bold;
-    cursor: pointer;
-    user-select: none;
+    font-size: 1.5rem;
+    line-height: 1;
 }
 
 
@@ -332,20 +323,58 @@ footer p a {
     }
 
     section.carrossel {
-        padding: 5vw 0;
-        gap: 30px;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 3vw 0;
+    background-color: #F8D794;
+    width: 470px;
+    max-width: calc(100% - 32px);
+    height: 24vw;
+    transform: none;
+    margin: 3vw auto 0;
+    border-radius: 2vw;
+}
 
     .galeria {
-        width: 600px;
-        height: 350px;
-    }
+    width: 300px;
+    height: 220px;
+    flex: 0 0 300px;
+    overflow: hidden;
+    position: relative;
+}
 
-    .display li {
-        min-width: 300px;
-        width: 300px;
-        height: 350px;
-    }
+.display {
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: left 0.5s ease;
+    padding: 0;
+    margin: 0;
+}
+
+.display li {
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    height: 220px;
+    flex: 0 0 300px;
+    list-style: none;
+}
+
+.fotos {
+    width: 100%;
+    height: 100%;
+}
+
+.fotos img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
 
     .carrossel .anterior,
     .carrossel .proximo {

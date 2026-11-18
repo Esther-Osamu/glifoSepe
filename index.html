@@ -118,41 +118,6 @@
                 &gt;
             </p>
         </section>
-        <script>
-            let posicaoGaleria = 0;
-
-            function larguraImagem() {
-                return document.querySelector(".display li").getBoundingClientRect().width;
-            }
-
-            function proximo() {
-                const display = document.querySelector(".display");
-                const fotos = display.querySelectorAll("li").length;
-                const largura = larguraImagem();
-
-                if (posicaoGaleria <= -(fotos - 1) * largura) {
-                    posicaoGaleria = 0;
-                } else {
-                    posicaoGaleria -= largura;
-                }
-
-                display.style.left = posicaoGaleria + "px";
-            }
-
-            function anterior() {
-                const display = document.querySelector(".display");
-                const fotos = display.querySelectorAll("li").length;
-                const largura = larguraImagem();
-
-                if (posicaoGaleria >= 0) {
-                    posicaoGaleria = -(fotos - 1) * largura;
-                } else {
-                    posicaoGaleria += largura;
-                }
-
-                display.style.left = posicaoGaleria + "px";
-            }
-        </script>
         <section class="nome">
             <h2>
                 Por que a escrita egípcia recebeu esse nome?

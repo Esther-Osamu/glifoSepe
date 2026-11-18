@@ -233,58 +233,6 @@
     </a>
   </footer>
 
-  <script>
-    const cards = document.querySelectorAll('.fescritas .cards li');
-
-    // Verifica se o dispositivo possui mouse.
-    const temMouse = window.matchMedia(
-      '(hover: hover) and (pointer: fine)'
-    ).matches;
-
-    function ativarCard(cardAtivo) {
-      cards.forEach((card) => {
-        if (card === cardAtivo) {
-          card.classList.add('expandido');
-          card.classList.remove('encolhido');
-        } else {
-          card.classList.add('encolhido');
-          card.classList.remove('expandido');
-        }
-      });
-    }
-
-    function desativarCards() {
-      cards.forEach((card) => {
-        card.classList.remove('expandido', 'encolhido');
-      });
-    }
-
-    cards.forEach((card) => {
-
-      // Computador: efeito ao passar o mouse.
-      if (temMouse) {
-        card.addEventListener('mouseenter', () => {
-          ativarCard(card);
-        });
-
-        card.addEventListener('mouseleave', () => {
-          desativarCards();
-        });
-      }
-
-      // Celular: efeito ao tocar no card.
-      card.addEventListener('click', () => {
-        if (!temMouse) {
-          if (card.classList.contains('expandido')) {
-            desativarCards();
-          } else {
-            ativarCard(card);
-          }
-        }
-      });
-
-    });
-  </script>
 </body>
 
 </html>

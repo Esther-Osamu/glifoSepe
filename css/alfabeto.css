@@ -63,9 +63,9 @@ section.bnt h2 {
   padding: 1vw 1vw 3vw 1vw;
 }
 
-.bnt p {
+.bnt div p {
   color: #f8d794;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .bnt img {
@@ -86,11 +86,12 @@ section.titdois {
   padding: 5vw;
   color: #c9cbc0;
 }
-
+.titdois li.ankh{
+  padding-bottom: 2vw;
+}
 .titdois li.horus {
   padding: 2vw;
 }
-
 section.titdois li {
   text-align: center;
   background-color: #3f6b76;
@@ -110,7 +111,7 @@ section.titdois li h2 {
 section.titdois li p {
   margin-left: 15vw;
   margin-right: 15vw;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: #d8b368;
   padding: 2vw;
 }
@@ -169,26 +170,6 @@ section.bnt p {
   font-size: 0.8rem;
 }
 
-section.final {
-  padding: 7vw;
-  text-align: center;
-  background-size: cover;
-  padding-left: 15vw;
-  padding-right: 19vw;
-  background-image: url(../src/jogo/mobile/background-final.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  padding: 50vw 15vw 15vw 15vw;
-  color: #f8d794;
-  padding-bottom: 25vw;
-  font-size: 1rem;
-}
-
-section.final p {
-  color: #3f6b76;
-  font-weight: 500;
-}
-
 footer {
   background-color: #c9cbc0;
   padding: 5vw;
@@ -229,7 +210,7 @@ footer p a {
 
   section.inicio h2 {
     padding-top: 12vw;
-    font-size: 6vw;
+    font-size: 5rem;
   }
 
   section.inicio p {
@@ -253,14 +234,14 @@ footer p a {
   }
 
   section.bnt h2 {
-    font-size: 4vw;
+    font-size: 4rem;
   }
 
   .bnt div p {
-    font-size: 1.2vw;
+    font-size: 1.3rem;
   }
 
-  .bnt div img {
+  .bnt img {
     width: 120%;
   }
 
@@ -278,11 +259,11 @@ footer p a {
   }
 
   .titdois h2 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   section.imagens h2 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   section.final p {

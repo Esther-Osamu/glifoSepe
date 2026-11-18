@@ -131,48 +131,7 @@ header nav ul li a:hover {
 }
 
 
-/* === ANIMAÇÃO DOS CARDS NO CELULAR === */
 
-.fescritas .cards li {
-    transition: transform 0.4s ease, opacity 0.4s ease;
-    cursor: pointer;
-}
-
-.fescritas .cards img,
-.fescritas .cards .conteudo,
-.fescritas .cards .conteudo p {
-    transition: all 0.4s ease;
-}
-
-/* Card selecionado */
-
-.fescritas .cards li.expandido {
-    transform: scale(1.04);
-    z-index: 3;
-}
-
-/* Outros cards */
-
-.fescritas .cards li.encolhido {
-    transform: scale(0.94);
-    opacity: 0.75;
-}
-
-/* Ajustes do card selecionado */
-
-.fescritas .cards li.expandido .conteudo {
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.fescritas .cards li.expandido .conteudo p {
-    max-width: 100%;
-    font-size: 1.1rem;
-}
-
-.fescritas .cards li.encolhido .conteudo p {
-    font-size: 0.9rem;
-}
 
 
 /* == ROSETA == */
@@ -557,7 +516,7 @@ footer p a {
         display: flex;
         justify-content: center;
         align-items: stretch;
-        gap: 2.5vw;
+        gap:  7vw;
         padding: 5vw 0 0;
         margin: 0;
         min-height: 420px;
@@ -569,8 +528,6 @@ footer p a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        cursor: pointer;
-        transition: all 0.45s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
 
     .fescritas .cards img {
@@ -591,7 +548,6 @@ footer p a {
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: all 0.1s ease;
     }
 
     .fescritas .cards li .conteudo p {
@@ -599,48 +555,9 @@ footer p a {
         font-size: 1.15rem;
         margin: 0 auto;
         line-height: 1.4;
-        transition: all 0.1s ease;
     }
 
-    /* Card expandido */
 
-    .fescritas .cards li.expandido {
-        width: 340px;
-    }
-
-    .fescritas .cards li.expandido img {
-        width: 120px;
-        height: 120px;
-        margin-bottom: -45px;
-    }
-
-    .fescritas .cards li.expandido .conteudo {
-        border-radius: 15px;
-        padding: 55px 30px 25px;
-        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
-    }
-
-    .fescritas .cards li.expandido .conteudo p {
-        font-size: 1.35rem;
-    }
-
-    /* Cards encolhidos */
-
-    .fescritas .cards li.encolhido {
-        width: 120px;
-        opacity: 0.75;
-        transform: scale(0.92);
-    }
-
-    .fescritas .cards li.encolhido img {
-        width: 115px;
-        height: 115px;
-        margin-bottom: -45px;
-    }
-
-    .fescritas .cards li.encolhido .conteudo p {
-        font-size: 0.95rem;
-    }
 
 
     /* == ROSETA == */
@@ -826,7 +743,8 @@ footer p a {
     .balanca h2 {
         font-size: 4rem;
         padding-top: 30vw;
-        padding: 20px 0 20vw 0;
+        padding: 20px 0 5vw 0;
+        margin-top: 20vw;
     }
 
     .balanca {
@@ -844,6 +762,7 @@ footer p a {
         font-size: 2rem;
         padding: 3vw 2vw 0 2vw;
         line-height: 1.1;
+    
     }
 
     .balanca p.texto-esquerda {
@@ -881,9 +800,6 @@ footer p a {
         font-size: 2rem;
     }
 
-    .balanca h2 {
-        margin-top: -15vw;
-    }
 
     .balanca div.chegou {
         margin: -3vw 0 0 0;
