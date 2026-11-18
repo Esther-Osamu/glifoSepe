@@ -86,9 +86,9 @@ section.banner img {
 }
 
 section.banner img.mobile-banner {
-  margin-top: -75vw;
-  padding: 0%;
-  z-index: 0;
+    margin-top: -75vw;
+    padding: 0%;
+    z-index: 0;
 }
 
 section.banner img.desktop-banner {
@@ -135,7 +135,7 @@ section.nome h2 {
     font-family: 'caesar dressing';
     color: #5F3A1F;
 }
-    
+
 .imagenstxt h2 {
     transform: none;
     text-align: center;
@@ -250,6 +250,8 @@ footer p a {
         display: flex;
         justify-content: space-between;
         padding: 2vw 4vw;
+        font-size: 1.5rem;
+
     }
 
     header nav ul {
@@ -363,7 +365,7 @@ footer p a {
 
 
     footer p a {
-        display:block;   
+        display: block;
         margin-left: -8vw;
     }
 

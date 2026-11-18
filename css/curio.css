@@ -450,6 +450,7 @@ footer p a {
         display: flex;
         justify-content: space-between;
         padding: 2vw 4vw;
+        font-size: 1.5rem;
     }
 
     header nav ul {
