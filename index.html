@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <nav>
+        <nav id="topo">
             <h1>
                 <a href="index.html">
                     <img src="src/inicio/logo.png" alt="logo" />
@@ -29,7 +29,7 @@
                     <a href="curiosidades.html">Curiosidades</a>
                 </li>
                 <li>
-                    <a href="simbolos.html" >Símbolos</a>
+                    <a href="simbolos.html">Símbolos</a>
 
                 </li>
                 <li>
@@ -81,16 +81,16 @@
         </section>
         <!--carrossel-->
         <section class="imagenstxt">
-            <h2>  
-                          Conheça um pouco mais<br>do Egito Antigo <br>através destas imagens!
-</h2>
+            <h2>
+                Conheça um pouco mais<br>do Egito Antigo <br>através destas imagens!
+            </h2>
         </section>
         <section class="carrossel">
             <p class="anterior" onclick="anterior()">
                 &lt;
             </p>
             <div class="galeria">
-               
+
                 <ul class="display">
                     <li>
                         <div class="fotos">
@@ -119,40 +119,40 @@
             </p>
         </section>
         <script>
-    let posicaoGaleria = 0;
+            let posicaoGaleria = 0;
 
-    function larguraImagem() {
-        return document.querySelector(".display li").getBoundingClientRect().width;
-    }
+            function larguraImagem() {
+                return document.querySelector(".display li").getBoundingClientRect().width;
+            }
 
-    function proximo() {
-        const display = document.querySelector(".display");
-        const fotos = display.querySelectorAll("li").length;
-        const largura = larguraImagem();
+            function proximo() {
+                const display = document.querySelector(".display");
+                const fotos = display.querySelectorAll("li").length;
+                const largura = larguraImagem();
 
-        if (posicaoGaleria <= -(fotos - 1) * largura) {
-            posicaoGaleria = 0;
-        } else {
-            posicaoGaleria -= largura;
-        }
+                if (posicaoGaleria <= -(fotos - 1) * largura) {
+                    posicaoGaleria = 0;
+                } else {
+                    posicaoGaleria -= largura;
+                }
 
-        display.style.left = posicaoGaleria + "px";
-    }
+                display.style.left = posicaoGaleria + "px";
+            }
 
-    function anterior() {
-        const display = document.querySelector(".display");
-        const fotos = display.querySelectorAll("li").length;
-        const largura = larguraImagem();
+            function anterior() {
+                const display = document.querySelector(".display");
+                const fotos = display.querySelectorAll("li").length;
+                const largura = larguraImagem();
 
-        if (posicaoGaleria >= 0) {
-            posicaoGaleria = -(fotos - 1) * largura;
-        } else {
-            posicaoGaleria += largura;
-        }
+                if (posicaoGaleria >= 0) {
+                    posicaoGaleria = -(fotos - 1) * largura;
+                } else {
+                    posicaoGaleria += largura;
+                }
 
-        display.style.left = posicaoGaleria + "px";
-    }
-</script>
+                display.style.left = posicaoGaleria + "px";
+            }
+        </script>
         <section class="nome">
             <h2>
                 Por que a escrita egípcia recebeu esse nome?
@@ -177,8 +177,16 @@
             Desenvolvido por alunas do 1 info 1 <br>
             Data: 09/10/2026
         </p>
+        <p>
+            <a href="#topo">Voltar para o topo
+                 <img src="src/setas-para-cima.png" alt="seta para cima">
+            </a>
+        </p>
+
+
         <a href="https://www.instagram.com/glifosepe"><img src="src/inicio/insta-logo.png" alt="ícone instagram"></a>
     </footer>
+
 </body>
 
 </html>

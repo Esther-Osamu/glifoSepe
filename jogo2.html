@@ -1,446 +1,449 @@
-
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Jogos</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/jogo.css" />
+  <title>Jogos</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/jogo.css" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bellefair&family=Caesar+Dressing&family=Noto+Sans+Egyptian+Hieroglyphs&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <body>
-    <!-- CABEÇALHO -->
-    <header>
-      <nav>
-        <h1>
-          <a href="index.html">
-            <img src="src/inicio/logo.png" alt="Logo Kemet" />
-          </a>
-        </h1>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bellefair&family=Caesar+Dressing&family=Noto+Sans+Egyptian+Hieroglyphs&display=swap"
+    rel="stylesheet" />
+</head>
 
-        <ul>
-          <li>
-            <a href="index.html">Início</a>
-          </li>
+<body>
+  <!-- CABEÇALHO -->
+  <header>
+    <nav id="topo">
+      <h1>
+        <a href="index.html">
+          <img src="src/inicio/logo.png" alt="Logo Kemet" />
+        </a>
+      </h1>
 
-          <li>
-            <a href="curiosidades.html">Curiosidades</a>
-          </li>
-
-          <li>
-            <a href="simbolos.html">Símbolos</a>
-          </li>
-
-          <li>
-            <a href="jogo1.html" class="marc">Jogos</a>
-          </li>
-
-          <li>
-            <a href="recomendacoes.html">Recomendações</a>
-          </li>
-
-          <li>
-            <a href="saibamais.html">Saiba mais</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- BANNER -->
-    <section class="banr">
-      <h2>KEMET: JOGOS</h2>
-    </section>
-
-    <!-- INSTRUÇÕES -->
-    <section class="instrucoes">
-      <div>
-        <h2>Instruções</h2>
-
-        <ul>
-          <li>
-            <h3>1. PASSO</h3>
-
-            <p>Leia a frase formada no local indicado.</p>
-          </li>
-
-          <li>
-            <h3>2. PASSO</h3>
-
-            <p>Vá ao alfabeto e clique nos símbolos escolhidos.</p>
-          </li>
-
-          <li>
-            <h3>3. PASSO</h3>
-
-            <p>Clique em verificar e confira sua resposta.</p>
-          </li>
-        </ul>
-
-        <img src="src/jogo/jogo2/jogo2/balanca2.png" alt="Balança" />
-      </div>
-    </section>
-
-    <!-- JOGO -->
-    <section class="ojogo">
-      <h2>JOGO</h2>
-
-      <!-- ESTA É A BALANÇA QUE O JAVASCRIPT VAI ALTERAR -->
-      <img
-        id="imagemBalanca"
-        src="src/jogo/jogo2/jogo2/balanca 1.png"
-        alt="Balança"
-      />
-
-      <form onsubmit="return false;">
-        <!-- FRASE ATUAL -->
-        <h4>Frase:</h4>
-
-        <h3 class="frase"></h3>
-
-        <!-- RESPOSTA -->
-        <h4>Resposta:</h4>
-
-        <input type="text" class="campoResposta" readonly />
-
-        <!-- BOTÕES -->
-        <div class="botoes">
-          <button type="button" class="tentar" onclick="tentarNovamente()">
-            TENTAR NOVAMENTE
-          </button>
-
-          <button type="button" class="conferir" onclick="verificar()">
-            CONFERIR
-          </button>
-        </div>
-      </form>
-    </section>
-
-    <!-- ALFABETO / PALAVRAS -->
-
-    <!-- SETA PARA VOLTAR AO INÍCIO DO ALFABETO -->
-    <section class="alfa">
-      <h2>Alfabeto</h2>
-
-      <ul onclick="inserirResposta(event)">
-        <!-- ESCUTAR -->
-        <li class="escutar">
-          <div class="escutar">
-            <img src="src/jogo/jogo2/jogo2/escutar.png" alt="Escutar" />
-
-            <p>Escutar</p>
-          </div>
-
-          <h4>𓂧</h4>
+      <ul>
+        <li>
+          <a href="index.html">Início</a>
         </li>
 
-        <!-- ÁGUA -->
-        <li class="agua">
-          <img src="src/jogo/jogo2/jogo2/agua.png" alt="Água" />
-
-          <p>Água</p>
-
-          <h4>𓈗</h4>
+        <li>
+          <a href="curiosidades.html">Curiosidades</a>
         </li>
 
-        <!-- CASA -->
-        <li class="casa">
-          <img src="src/jogo/jogo2/jogo2/casa.png" alt="Casa" />
-
-          <p>Casa</p>
-
-          <h4>𓉐</h4>
+        <li>
+          <a href="simbolos.html">Símbolos</a>
         </li>
 
-        <!-- SOL -->
-        <li class="sol">
-          <img src="src/jogo/jogo2/jogo2/sol.png" alt="Sol" />
-
-          <p>Sol</p>
-
-          <h4>𓇳</h4>
+        <li>
+          <a href="jogo1.html" class="marc">Jogos</a>
         </li>
 
-        <!-- VIDA -->
-        <li class="vida">
-          <img src="src/jogo/jogo2/jogo2/vida.png" alt="Vida" />
-
-          <p>Vida</p>
-
-          <h4>𓋹</h4>
+        <li>
+          <a href="recomendacoes.html">Recomendações</a>
         </li>
 
-        <!-- EM / PARA -->
-        <li class="em">
-          <img src="src/jogo/jogo2/jogo2/em.png" alt="Em ou para" />
-
-          <p>Em/Para</p>
-
-          <h4>𓈖</h4>
-        </li>
-
-        <!-- PAZ -->
-        <li class="paz">
-          <img src="src/jogo/jogo2/jogo2/paz.png" alt="Paz" />
-
-          <p>Paz</p>
-
-          <h4>𓊵</h4>
-        </li>
-
-        <!-- CAMINHO -->
-        <li class="caminho">
-          <img src="src/jogo/jogo2/jogo2/caminho.png" alt="Caminho" />
-
-          <p>Caminho</p>
-
-          <h4>𓈐</h4>
-        </li>
-
-        <!-- BOM -->
-        <li class="bom">
-          <img src="src/jogo/jogo2/jogo2/bom.png" alt="Bom" />
-
-          <p>Bom</p>
-
-          <h4>𓄤</h4>
+        <li>
+          <a href="saibamais.html">Saiba mais</a>
         </li>
       </ul>
-    </section>
+    </nav>
+  </header>
 
-    <!-- RODAPÉ -->
-    <footer>
-      <p>
-        © Alguns direitos reservados <br />
+  <!-- BANNER -->
+  <section class="banr">
+    <h2>KEMET: JOGOS</h2>
+  </section>
 
-        Desenvolvido por alunas do 1 info 1 <br />
+  <!-- INSTRUÇÕES -->
+  <section class="instrucoes">
+    <div>
+      <h2>Instruções</h2>
 
-        Data: 09/10/2026
-      </p>
+      <ul>
+        <li>
+          <h3>1. PASSO</h3>
 
-      <a href="https://www.instagram.com/glifosepe">
-        <img src="src/inicio/insta-logo.png" alt="Ícone Instagram" />
+          <p>Leia a frase formada no local indicado.</p>
+        </li>
+
+        <li>
+          <h3>2. PASSO</h3>
+
+          <p>Vá ao alfabeto e clique nos símbolos escolhidos.</p>
+        </li>
+
+        <li>
+          <h3>3. PASSO</h3>
+
+          <p>Clique em verificar e confira sua resposta.</p>
+        </li>
+      </ul>
+
+      <img src="src/jogo/jogo2/jogo2/balanca2.png" alt="Balança" />
+    </div>
+  </section>
+
+  <!-- JOGO -->
+  <section class="ojogo">
+    <h2>JOGO</h2>
+
+    <!-- ESTA É A BALANÇA QUE O JAVASCRIPT VAI ALTERAR -->
+    <img id="imagemBalanca" src="src/jogo/jogo2/jogo2/balanca 1.png" alt="Balança" />
+
+    <form onsubmit="return false;">
+      <!-- FRASE ATUAL -->
+      <h4>Frase:</h4>
+
+      <h3 class="frase"></h3>
+
+      <!-- RESPOSTA -->
+      <h4>Resposta:</h4>
+
+      <input type="text" class="campoResposta" readonly />
+
+      <!-- BOTÕES -->
+      <div class="botoes">
+        <button type="button" class="tentar" onclick="tentarNovamente()">
+          TENTAR NOVAMENTE
+        </button>
+
+        <button type="button" class="conferir" onclick="verificar()">
+          CONFERIR
+        </button>
+      </div>
+    </form>
+  </section>
+
+  <!-- ALFABETO / PALAVRAS -->
+
+  <!-- SETA PARA VOLTAR AO INÍCIO DO ALFABETO -->
+  <section class="alfa">
+    <h2>Alfabeto</h2>
+
+    <ul onclick="inserirResposta(event)">
+      <!-- ESCUTAR -->
+      <li class="escutar">
+        <div class="escutar">
+          <img src="src/jogo/jogo2/jogo2/escutar.png" alt="Escutar" />
+
+          <p>Escutar</p>
+        </div>
+
+        <h4>𓂧</h4>
+      </li>
+
+      <!-- ÁGUA -->
+      <li class="agua">
+        <img src="src/jogo/jogo2/jogo2/agua.png" alt="Água" />
+
+        <p>Água</p>
+
+        <h4>𓈗</h4>
+      </li>
+
+      <!-- CASA -->
+      <li class="casa">
+        <img src="src/jogo/jogo2/jogo2/casa.png" alt="Casa" />
+
+        <p>Casa</p>
+
+        <h4>𓉐</h4>
+      </li>
+
+      <!-- SOL -->
+      <li class="sol">
+        <img src="src/jogo/jogo2/jogo2/sol.png" alt="Sol" />
+
+        <p>Sol</p>
+
+        <h4>𓇳</h4>
+      </li>
+
+      <!-- VIDA -->
+      <li class="vida">
+        <img src="src/jogo/jogo2/jogo2/vida.png" alt="Vida" />
+
+        <p>Vida</p>
+
+        <h4>𓋹</h4>
+      </li>
+
+      <!-- EM / PARA -->
+      <li class="em">
+        <img src="src/jogo/jogo2/jogo2/em.png" alt="Em ou para" />
+
+        <p>Em/Para</p>
+
+        <h4>𓈖</h4>
+      </li>
+
+      <!-- PAZ -->
+      <li class="paz">
+        <img src="src/jogo/jogo2/jogo2/paz.png" alt="Paz" />
+
+        <p>Paz</p>
+
+        <h4>𓊵</h4>
+      </li>
+
+      <!-- CAMINHO -->
+      <li class="caminho">
+        <img src="src/jogo/jogo2/jogo2/caminho.png" alt="Caminho" />
+
+        <p>Caminho</p>
+
+        <h4>𓈐</h4>
+      </li>
+
+      <!-- BOM -->
+      <li class="bom">
+        <img src="src/jogo/jogo2/jogo2/bom.png" alt="Bom" />
+
+        <p>Bom</p>
+
+        <h4>𓄤</h4>
+      </li>
+    </ul>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>
+      © Alguns direitos reservados <br />
+
+      Desenvolvido por alunas do 1 info 1 <br />
+
+      Data: 09/10/2026
+    </p>
+    <p>
+      <a href="#topo">Voltar para o topo
+         <img src="src/setas-para-cima.png" alt="seta para cima">
       </a>
-    </footer>
-    <button class="voltar-topo" aria-label="Voltar ao início do alfabeto">
-      ↑
-    </button>
-    <!-- JAVASCRIPT -->
-    <script>
-      const frases = [
-        {
-          frase: "Escutar a água",
-          resposta: "𓂧𓈗",
-        },
+    </p>
 
-        {
-          frase: "A casa do Sol",
-          resposta: "𓉐𓇳",
-        },
 
-        {
-          frase: "Vida em paz",
-          resposta: "𓋹𓈖𓊵",
-        },
 
-        {
-          frase: "O bom caminho",
-          resposta: "𓄤𓈐",
-        },
-      ];
+    <a href="https://www.instagram.com/glifosepe">
+      <img src="src/inicio/insta-logo.png" alt="Ícone Instagram" />
+    </a>
+  </footer>
+  <button class="voltar-topo" aria-label="Voltar ao início do alfabeto">
+    ↑
+  </button>
+  <!-- JAVASCRIPT -->
+  <script>
+    const frases = [
+      {
+        frase: "Escutar a água",
+        resposta: "𓂧𓈗",
+      },
 
-      let indiceFrase = 0;
+      {
+        frase: "A casa do Sol",
+        resposta: "𓉐𓇳",
+      },
 
-      let jogoFinalizado = false;
+      {
+        frase: "Vida em paz",
+        resposta: "𓋹𓈖𓊵",
+      },
 
-      const tituloFrase = document.querySelector(".frase");
+      {
+        frase: "O bom caminho",
+        resposta: "𓄤𓈐",
+      },
+    ];
 
-      const campoResposta = document.querySelector(".campoResposta");
+    let indiceFrase = 0;
 
-      const botaoConferir = document.querySelector(".conferir");
+    let jogoFinalizado = false;
 
-      const botaoTentar = document.querySelector(".tentar");
+    const tituloFrase = document.querySelector(".frase");
 
-      /* BALANÇA DO JOGO */
-      const imagemBalanca = document.querySelector("#imagemBalanca");
+    const campoResposta = document.querySelector(".campoResposta");
 
-      function mostrarFrase() {
-        if (indiceFrase >= frases.length) {
-          finalizarJogo();
+    const botaoConferir = document.querySelector(".conferir");
 
-          return;
-        }
+    const botaoTentar = document.querySelector(".tentar");
 
-        tituloFrase.innerText = frases[indiceFrase].frase;
+    /* BALANÇA DO JOGO */
+    const imagemBalanca = document.querySelector("#imagemBalanca");
 
-        campoResposta.value = "";
+    function mostrarFrase() {
+      if (indiceFrase >= frases.length) {
+        finalizarJogo();
 
-        botaoConferir.disabled = false;
-
-        botaoTentar.disabled = false;
+        return;
       }
 
-      mostrarFrase();
+      tituloFrase.innerText = frases[indiceFrase].frase;
 
-      function inserirResposta(event) {
-        // Se o jogo terminou, não permite mais respostas
-        if (jogoFinalizado) {
-          return;
-        }
+      campoResposta.value = "";
 
-        // Descobre qual <li> foi clicado
-        const item = event.target.closest("li");
+      botaoConferir.disabled = false;
 
-        // Se não clicou em um <li>, não faz nada
-        if (!item) {
-          return;
-        }
+      botaoTentar.disabled = false;
+    }
 
-        // Pega o símbolo dentro do <h4>
-        const simbolo = item.querySelector("h4").innerText.trim();
+    mostrarFrase();
 
-        // Se não encontrou símbolo, não faz nada
-        if (!simbolo) {
-          return;
-        }
-
-        // Adiciona o símbolo ao campo de resposta
-        campoResposta.value += simbolo;
+    function inserirResposta(event) {
+      // Se o jogo terminou, não permite mais respostas
+      if (jogoFinalizado) {
+        return;
       }
 
-      function tentarNovamente() {
-        if (jogoFinalizado) {
-          return;
-        }
+      // Descobre qual <li> foi clicado
+      const item = event.target.closest("li");
 
-        // Limpa a resposta
-        campoResposta.value = "";
+      // Se não clicou em um <li>, não faz nada
+      if (!item) {
+        return;
       }
 
-      /* TROCA A IMAGEM DA BALANÇA */
+      // Pega o símbolo dentro do <h4>
+      const simbolo = item.querySelector("h4").innerText.trim();
 
-      function trocarBalanca(resultado) {
-        // Frase 1 e 3
-        if (indiceFrase === 0 || indiceFrase === 2) {
-          if (resultado === "acerto") {
-            imagemBalanca.src = "src/jogo/jogo2/jogo2/balanca/balancapena2.png";
-          } else {
-            imagemBalanca.src =
-              "src/jogo/jogo2/jogo2/balanca/balancacoracao2.png";
-          }
-        }
-
-        // Frase 2 e 4
-        else if (indiceFrase === 1 || indiceFrase === 3) {
-          if (resultado === "acerto") {
-            imagemBalanca.src = "src/jogo/jogo2/jogo2/balanca/balancapena3.png";
-          } else {
-            imagemBalanca.src =
-              "src/jogo/jogo2/jogo2/balanca/balancacoracao3.png";
-          }
-        }
+      // Se não encontrou símbolo, não faz nada
+      if (!simbolo) {
+        return;
       }
 
-      function verificar() {
-        if (jogoFinalizado) {
-          return;
-        }
+      // Adiciona o símbolo ao campo de resposta
+      campoResposta.value += simbolo;
+    }
 
-        // Resposta que o jogador digitou/selecionou
-        const respostaJogador = campoResposta.value.trim();
+    function tentarNovamente() {
+      if (jogoFinalizado) {
+        return;
+      }
 
-        // Resposta correta da frase atual
-        const respostaCorreta = frases[indiceFrase].resposta;
+      // Limpa a resposta
+      campoResposta.value = "";
+    }
 
-        /*
-      Verifica se o campo está vazio
-      */
+    /* TROCA A IMAGEM DA BALANÇA */
 
-        if (respostaJogador === "") {
-          alert("Escolha os símbolos para formar a resposta.");
-
-          return;
-        }
-
-        /*
-      Compara a resposta do jogador
-      com a resposta correta
-      */
-
-        if (respostaJogador === respostaCorreta) {
-          alert("Acertou!");
-
-          /* TROCA PARA A BALANÇA COM A PENA */
-          trocarBalanca("acerto");
-
-          // Vai para a próxima frase
-          indiceFrase++;
-
-          // Mostra a próxima frase
-          if (indiceFrase < frases.length) {
-            mostrarFrase();
-          } else {
-            finalizarJogo();
-          }
+    function trocarBalanca(resultado) {
+      // Frase 1 e 3
+      if (indiceFrase === 0 || indiceFrase === 2) {
+        if (resultado === "acerto") {
+          imagemBalanca.src = "src/jogo/jogo2/jogo2/balanca/balancapena2.png";
         } else {
-          alert("Resposta incorreta! Tente novamente.");
-
-          /* TROCA PARA A BALANÇA COM O CORAÇÃO */
-          trocarBalanca("erro");
+          imagemBalanca.src =
+            "src/jogo/jogo2/jogo2/balanca/balancacoracao2.png";
         }
       }
 
-      function finalizarJogo() {
-        jogoFinalizado = true;
-
-        tituloFrase.innerText = "Parabéns! Você completou o jogo!";
-
-        campoResposta.value = "";
-
-        botaoConferir.disabled = true;
-        botaoTentar.disabled = true;
-
-        // Mensagem final
-        setTimeout(function () {
-          alert("Obrigado por jogar! Um bom dia!");
-        }, 500);
-      }
-      /* === SETA PARA VOLTAR AO ALFABETO === */
-
-      const seta = document.querySelector(".voltar-topo");
-      const casa = document.querySelector(".alfa li.casa");
-      const alfabeto = document.querySelector(".alfa");
-
-      // Observa quando a casa aparece na tela
-      const observador = new IntersectionObserver(function (entradas) {
-        if (entradas[0].isIntersecting) {
-          // Mostra a seta
-          seta.classList.add("visivel");
-
-          // Para de observar a casa, mantendo a seta visível
-          observador.disconnect();
+      // Frase 2 e 4
+      else if (indiceFrase === 1 || indiceFrase === 3) {
+        if (resultado === "acerto") {
+          imagemBalanca.src = "src/jogo/jogo2/jogo2/balanca/balancapena3.png";
+        } else {
+          imagemBalanca.src =
+            "src/jogo/jogo2/jogo2/balanca/balancacoracao3.png";
         }
-      });
+      }
+    }
 
-      observador.observe(casa);
+    function verificar() {
+      if (jogoFinalizado) {
+        return;
+      }
 
-      // Volta ao início do alfabeto ao clicar
-      seta.addEventListener("click", function () {
-        alfabeto.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
+      // Resposta que o jogador digitou/selecionou
+      const respostaJogador = campoResposta.value.trim();
+
+      // Resposta correta da frase atual
+      const respostaCorreta = frases[indiceFrase].resposta;
+
+      /*
+    Verifica se o campo está vazio
+    */
+
+      if (respostaJogador === "") {
+        alert("Escolha os símbolos para formar a resposta.");
+
+        return;
+      }
+
+      /*
+    Compara a resposta do jogador
+    com a resposta correta
+    */
+
+      if (respostaJogador === respostaCorreta) {
+        alert("Acertou!");
+
+        /* TROCA PARA A BALANÇA COM A PENA */
+        trocarBalanca("acerto");
+
+        // Vai para a próxima frase
+        indiceFrase++;
+
+        // Mostra a próxima frase
+        if (indiceFrase < frases.length) {
+          mostrarFrase();
+        } else {
+          finalizarJogo();
+        }
+      } else {
+        alert("Resposta incorreta! Tente novamente.");
+
+        /* TROCA PARA A BALANÇA COM O CORAÇÃO */
+        trocarBalanca("erro");
+      }
+    }
+
+    function finalizarJogo() {
+      jogoFinalizado = true;
+
+      tituloFrase.innerText = "Parabéns! Você completou o jogo!";
+
+      campoResposta.value = "";
+
+      botaoConferir.disabled = true;
+      botaoTentar.disabled = true;
+
+      // Mensagem final
+      setTimeout(function () {
+        alert("Obrigado por jogar! Um bom dia!");
+      }, 500);
+    }
+    /* === SETA PARA VOLTAR AO ALFABETO === */
+
+    const seta = document.querySelector(".voltar-topo");
+    const casa = document.querySelector(".alfa li.casa");
+    const alfabeto = document.querySelector(".alfa");
+
+    // Observa quando a casa aparece na tela
+    const observador = new IntersectionObserver(function (entradas) {
+      if (entradas[0].isIntersecting) {
+        // Mostra a seta
+        seta.classList.add("visivel");
+
+        // Para de observar a casa, mantendo a seta visível
+        observador.disconnect();
+      }
+    });
+
+    observador.observe(casa);
+
+    // Volta ao início do alfabeto ao clicar
+    seta.addEventListener("click", function () {
+      alfabeto.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>

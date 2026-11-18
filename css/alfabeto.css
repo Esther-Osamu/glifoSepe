@@ -181,6 +181,10 @@ footer img {
   max-height: 25px;
 }
 
+footer p a {
+  display: none;
+}
+
 @media only screen and (min-width: 600px) {
   header nav {
     display: flex;
@@ -246,10 +250,31 @@ footer img {
     font-size: 3rem;
     padding-bottom: 5vw;
   }
-  footer {
-    padding: 2vw 4vw;
-    line-height: 3vw;
-  }
+    footer {
+        padding: 2vw 4vw;
+        line-height: 1.3vw;
+        font-size: 1.1rem;
+    }
+
+    footer img {
+        max-width: 39px;
+        max-height: 39px;
+    }
+
+
+    footer p a {
+        display:block;   
+        margin-left: -8vw;
+    }
+
+    footer p a img {
+        max-width: 18px;
+    }
+
+    footer p a:hover {
+        color: #5F3A1F;
+        margin-top: 0.5vw;
+    }
 }
 /* === ANIMAÇÃO === */
 

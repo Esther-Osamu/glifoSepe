@@ -460,7 +460,28 @@ footer img {
 
     footer {
         padding: 2vw 4vw;
-        line-height: 3vw;
+        line-height: 1.3vw;
+        font-size: 1.1rem;
+    }
+
+    footer img {
+        max-width: 39px;
+        max-height: 39px;
+    }
+
+
+    footer p a {
+        display:block;   
+        margin-left: -8vw;
+    }
+
+    footer p a img {
+        max-width: 18px;
+    }
+
+    footer p a:hover {
+        color: #5F3A1F;
+        margin-top: 0.5vw;
     }
 
 
