@@ -171,3 +171,16 @@ Data: 03/11/2026
 A aluna Isabele já terminou a integração do js em sua página e os demais membros continuam seu trabalho.
 
 ---
+
+# **ATA 15**
+Assunto: Ajustes
+Data: 10/11/2026
+
+Os membros continuaram a realizar ajustes na animação da página.
+
+# **ATA 16**
+Assunto: Ajustes
+Data: 17/ 11/ 2026
+
+Finalização dos ajustes da animação com js
+
