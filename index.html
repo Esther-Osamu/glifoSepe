@@ -118,6 +118,7 @@
                 &gt;
             </p>
         </section>
+
         <section class="nome">
             <h2>
                 Por que a escrita egípcia recebeu esse nome?
@@ -136,6 +137,35 @@
             </div>
         </section>
     </main>
+    <script>
+    let imagemAtual = 0;
+
+    function proximo() {
+        let imagens = document.querySelectorAll('.display li');
+        let lista = document.querySelector('.display');
+
+        imagemAtual++;
+
+        if (imagemAtual >= imagens.length) {
+            imagemAtual = 0;
+        }
+
+        lista.style.left = -imagemAtual * imagens[0].offsetWidth + 'px';
+    }
+
+    function anterior() {
+        let imagens = document.querySelectorAll('.display li');
+        let lista = document.querySelector('.display');
+
+        imagemAtual--;
+
+        if (imagemAtual < 0) {
+            imagemAtual = imagens.length - 1;
+        }
+
+        lista.style.left = -imagemAtual * imagens[0].offsetWidth + 'px';
+    }
+</script>
     <footer>
         <p>
             © Alguns direitos reservados <br>
