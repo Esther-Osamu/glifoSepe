@@ -343,6 +343,10 @@ footer img {
   max-height: 25px;
 }
 
+footer p a {
+    display: none;
+}
+
 
 /* === DESKTOP === */
 
