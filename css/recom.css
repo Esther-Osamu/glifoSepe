@@ -391,6 +391,10 @@ footer p a {
         padding: 0%;
     }
 
+    section.locais ul li p a:hover {
+        color:#ffefd0 ;
+    }
+
     section.explore {
         padding: 0%;
         margin: -9vw;
@@ -398,6 +402,10 @@ footer p a {
 
     section.explore p a {
         padding: 1vw 2vw;
+    }
+
+    section.explore p a:hover {
+        background-color: #ffefd0;
     }
 
     section.livros {
@@ -425,6 +433,18 @@ footer p a {
     section.livros p a {
         padding: 1vw 2vw;
         margin: 2vw;
+    }
+
+    section.livros ul li p a:hover {
+        color: #1e444e;
+    }
+
+    section.livros ul li p a {
+        font-size: 1.5rem;
+    }
+
+    section.livros > p a:hover {
+        background-color: #1e444e;
     }
 
 
@@ -510,10 +530,18 @@ footer p a {
         font-size: 1.2rem;
     }
 
+    section.contato form button:hover {
+        background-color: #1e444e;
+    }
+
     section.contato form button.limpar {
         padding: 0.5vw 2vw;
         margin: 2vw 1vw 0 0;
 
+    }
+
+    section.contato form button.limpar:hover {
+        background-color: #9fa197;
     }
 
     section.contato img {
