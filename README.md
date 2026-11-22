@@ -178,6 +178,8 @@ Data: 10/11/2026
 
 Os membros continuaram a realizar ajustes na animação da página.
 
+Ausentes: Esther Alves 
+
 # **ATA 16**
 Assunto: Ajustes
 Data: 17/ 11/ 2026
