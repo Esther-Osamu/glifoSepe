@@ -366,7 +366,7 @@ header nav ul li a:hover {
     justify-content: center;
     display: flex;
     margin-right: 20px;
-    margin-left: 7vw;
+    margin-left: 9vw;
     filter: brightness(25%);
     padding-right: 5vw;
 }
